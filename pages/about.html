@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - StyleHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="announcement">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span>
+                    </div>
+                    <div class="top-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h1>StyleHub</h1>
+                    </div>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="shop.html?category=car">Car T-shirts</a>
+                                <a href="shop.html?category=bike">Bike Design</a>
+                                <a href="shop.html?category=anime">Anime Design</a>
+                                <a href="shop.html?category=floral">Floral Design</a>
+                                <a href="shop.html?category=teddy">Teddy Bear T-shirts</a>
+                                <a href="shop.html?category=girls">Girl's T-shirts</a>
+                                <a href="shop.html?category=butterfly">Butterfly Design</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-link active">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search products..." id="searchInput">
+                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="user-actions">
+                            <button class="wishlist-btn" id="wishlistBtn">
+                                <i class="fas fa-heart"></i>
+                                <span class="wishlist-count" id="wishlistCount">0</span>
+                            </button>
+                            <button class="cart-btn" id="cartBtn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count" id="cartCount">0</span>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rs. 0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-btn" id="closeWishlistBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems">
+            <!-- Wishlist items will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>About Us</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <div class="about-hero-text">
+                        <h1>About StyleHub</h1>
+                        <p>Your one-stop destination for trendy and comfortable clothing. We believe that fashion should be accessible, sustainable, and expressive of your unique personality.</p>
+                    </div>
+                    <div class="about-hero-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="StyleHub Team">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To provide high-quality, trendy clothing that empowers individuals to express their unique style while maintaining affordability and sustainability.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To become the leading fashion destination in Sri Lanka, known for innovative designs, exceptional quality, and outstanding customer service.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Quality, Innovation, Customer Satisfaction, Sustainability, and Community. These core values guide everything we do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Story</h2>
+                        <p>StyleHub was founded in 2020 with a simple yet powerful vision: to make fashion accessible to everyone. What started as a small local shop in Colombo has grown into one of Sri Lanka's most trusted fashion destinations.</p>
+                        <p>Our journey began when our founder, Sarah Perera, noticed a gap in the market for affordable, trendy clothing that didn't compromise on quality. She envisioned a brand that would combine contemporary designs with traditional craftsmanship.</p>
+                        <p>Today, StyleHub serves thousands of customers across Sri Lanka, offering a diverse range of clothing from casual wear to statement pieces. We're proud to have built a community of fashion enthusiasts who trust us for their style needs.</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Journey">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p>The passionate individuals behind StyleHub's success</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sarah Perera">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Perera</h3>
+                            <p class="member-role">Founder & CEO</p>
+                            <p class="member-description">With over 10 years of experience in fashion retail, Sarah leads StyleHub with passion and innovation.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rajith Silva">
+                        </div>
+                        <div class="member-info">
+                            <h3>Rajith Silva</h3>
+                            <p class="member-role">Creative Director</p>
+                            <p class="member-description">Rajith brings creativity and artistic vision to every design, ensuring StyleHub stays ahead of trends.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Priya Fernando">
+                        </div>
+                        <div class="member-info">
+                            <h3>Priya Fernando</h3>
+                            <p class="member-role">Head of Operations</p>
+                            <p class="member-description">Priya ensures smooth operations and exceptional customer service across all our channels.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Customer Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Sets Us Apart</h2>
+                    <p>Our commitment to excellence in every aspect of our business</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Quality Materials</h3>
+                        <p>We use only the finest fabrics and materials to ensure comfort and durability in every piece.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Unique Designs</h3>
+                        <p>Our in-house design team creates exclusive patterns and styles that you won't find anywhere else.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainable Practices</h3>
+                        <p>We're committed to reducing our environmental impact through eco-friendly manufacturing processes.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our customer service team is always ready to help you with any questions or concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for trendy and comfortable clothing. Quality meets style in every piece.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="delivery.html">Delivery Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=car">Car T-shirts</a></li>
+                        <li><a href="shop.html?category=bike">Bike Design</a></li>
+                        <li><a href="shop.html?category=anime">Anime Design</a></li>
+                        <li><a href="shop.html?category=floral">Floral Design</a></li>
+                        <li><a href="shop.html?category=teddy">Teddy Bear T-shirts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Colombo, Sri Lanka</p>
+                        <p><i class="fas fa-phone"></i> +94 11 234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@stylehub.lk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information - StyleHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="announcement">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span>
+                    </div>
+                    <div class="top-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h1>StyleHub</h1>
+                    </div>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="shop.html?category=car">Car T-shirts</a>
+                                <a href="shop.html?category=bike">Bike Design</a>
+                                <a href="shop.html?category=anime">Anime Design</a>
+                                <a href="shop.html?category=floral">Floral Design</a>
+                                <a href="shop.html?category=teddy">Teddy Bear T-shirts</a>
+                                <a href="shop.html?category=girls">Girl's T-shirts</a>
+                                <a href="shop.html?category=butterfly">Butterfly Design</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search products..." id="searchInput">
+                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="user-actions">
+                            <button class="wishlist-btn" id="wishlistBtn">
+                                <i class="fas fa-heart"></i>
+                                <span class="wishlist-count" id="wishlistCount">0</span>
+                            </button>
+                            <button class="cart-btn" id="cartBtn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count" id="cartCount">0</span>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" id="closeCartBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rs. 0</span>
+            </div>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-btn" id="closeWishlistBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems">
+            <!-- Wishlist items will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Delivery Information</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Delivery Hero -->
+        <section class="delivery-hero">
+            <div class="container">
+                <div class="delivery-hero-content">
+                    <h1>Delivery Information</h1>
+                    <p>Fast, reliable, and secure delivery to your doorstep. Learn about our shipping options and delivery process.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shipping Options -->
+        <section class="shipping-options">
+            <div class="container">
+                <h2>Shipping Options</h2>
+                <div class="shipping-grid">
+                    <div class="shipping-card">
+                        <div class="shipping-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Standard Delivery</h3>
+                        <div class="shipping-details">
+                            <p class="delivery-time">3-5 Business Days</p>
+                            <p class="delivery-cost">Free on orders above Rs. 2000</p>
+                            <p class="delivery-cost">Rs. 300 for orders below Rs. 2000</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> Order tracking</li>
+                            <li><i class="fas fa-check"></i> SMS notifications</li>
+                            <li><i class="fas fa-check"></i> Safe packaging</li>
+                        </ul>
+                    </div>
+                    <div class="shipping-card featured">
+                        <div class="shipping-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="featured-badge">Most Popular</div>
+                        <h3>Express Delivery</h3>
+                        <div class="shipping-details">
+                            <p class="delivery-time">1-2 Business Days</p>
+                            <p class="delivery-cost">Rs. 500</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> Priority processing</li>
+                            <li><i class="fas fa-check"></i> Real-time tracking</li>
+                            <li><i class="fas fa-check"></i> SMS & email updates</li>
+                            <li><i class="fas fa-check"></i> Premium packaging</li>
+                        </ul>
+                    </div>
+                    <div class="shipping-card">
+                        <div class="shipping-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Same Day Delivery</h3>
+                        <div class="shipping-details">
+                            <p class="delivery-time">Same Day (Colombo only)</p>
+                            <p class="delivery-cost">Rs. 800</p>
+                            <p class="delivery-note">Order before 12:00 PM</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> Instant processing</li>
+                            <li><i class="fas fa-check"></i> Live tracking</li>
+                            <li><i class="fas fa-check"></i> Direct delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery Process -->
+        <section class="delivery-process">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Place Order</h3>
+                        <p>Browse our collection and place your order online. Choose your preferred shipping option.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Processing</h3>
+                        <p>We carefully process your order, ensuring quality check and secure packaging.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Shipping</h3>
+                        <p>Your order is shipped via our trusted delivery partners with real-time tracking.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Delivery</h3>
+                        <p>Your package arrives safely at your doorstep with signature confirmation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery Areas -->
+        <section class="delivery-areas">
+            <div class="container">
+                <h2>Delivery Areas</h2>
+                <div class="areas-content">
+                    <div class="areas-info">
+                        <h3>We deliver to all major cities in Sri Lanka</h3>
+                        <div class="areas-grid">
+                            <div class="area-category">
+                                <h4>Major Cities</h4>
+                                <ul>
+                                    <li>Colombo</li>
+                                    <li>Kandy</li>
+                                    <li>Galle</li>
+                                    <li>Jaffna</li>
+                                    <li>Anuradhapura</li>
+                                    <li>Kurunegala</li>
+                                </ul>
+                            </div>
+                            <div class="area-category">
+                                <h4>Other Cities</h4>
+                                <ul>
+                                    <li>Matara</li>
+                                    <li>Ratnapura</li>
+                                    <li>Badulla</li>
+                                    <li>Polonnaruwa</li>
+                                    <li>Trincomalee</li>
+                                    <li>Batticaloa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="delivery-note">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Delivery times may vary based on your location. Remote areas may take 1-2 additional days.</p>
+                        </div>
+                    </div>
+                    <div class="areas-map">
+                        <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Sri Lanka Map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracking Information -->
+        <section class="tracking-info">
+            <div class="container">
+                <h2>Track Your Order</h2>
+                <div class="tracking-content">
+                    <div class="tracking-form">
+                        <h3>Enter your tracking number</h3>
+                        <form id="trackingForm">
+                            <div class="tracking-input">
+                                <input type="text" id="trackingNumber" placeholder="Enter tracking number..." required>
+                                <button type="submit" class="track-btn">
+                                    <i class="fas fa-search"></i>
+                                    Track Order
+                                </button>
+                            </div>
+                        </form>
+                        <div class="tracking-example">
+                            <p><strong>Example:</strong> STH-2024-001234</p>
+                        </div>
+                    </div>
+                    <div class="tracking-features">
+                        <div class="tracking-feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>SMS Updates</h4>
+                            <p>Receive real-time updates via SMS at every step of your delivery.</p>
+                        </div>
+                        <div class="tracking-feature">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email Notifications</h4>
+                            <p>Get detailed tracking information and delivery confirmations via email.</p>
+                        </div>
+                        <div class="tracking-feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Live Tracking</h4>
+                            <p>Track your package location in real-time with our advanced tracking system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery FAQ -->
+        <section class="delivery-faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does delivery take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Standard delivery takes 3-5 business days, express delivery takes 1-2 business days, and same-day delivery is available in Colombo for orders placed before 12:00 PM.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you deliver on weekends?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we deliver on Saturdays but not on Sundays and public holidays. Saturday deliveries are available for express and standard shipping options.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What if I'm not home during delivery?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our delivery partner will attempt delivery twice. If you're not available, they'll leave a delivery note with instructions for pickup or rescheduling.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I change my delivery address?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can change your delivery address within 2 hours of placing your order by contacting our customer service team.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is delivery free?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Standard delivery is free for orders above Rs. 2000. For orders below Rs. 2000, a delivery fee of Rs. 300 applies. Express and same-day delivery have additional charges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for trendy and comfortable clothing. We believe that fashion should be accessible, sustainable, and expressive of your unique personality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=car">Car T-shirts</a></li>
+                        <li><a href="shop.html?category=bike">Bike Design</a></li>
+                        <li><a href="shop.html?category=anime">Anime Design</a></li>
+                        <li><a href="shop.html?category=floral">Floral Design</a></li>
+                        <li><a href="shop.html?category=teddy">Teddy Bear T-shirts</a></li>
+                        <li><a href="shop.html?category=girls">Girl's T-shirts</a></li>
+                        <li><a href="shop.html?category=butterfly">Butterfly Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="delivery.html">Shipping Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="delivery.js"></script>
+</body>
+</html>

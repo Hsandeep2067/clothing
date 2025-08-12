@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - StyleHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="announcement">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span>
+                    </div>
+                    <div class="top-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h1>StyleHub</h1>
+                    </div>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="shop.html" class="nav-link active">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="shop.html?category=car">Car T-shirts</a>
+                                <a href="shop.html?category=bike">Bike Design</a>
+                                <a href="shop.html?category=anime">Anime Design</a>
+                                <a href="shop.html?category=floral">Floral Design</a>
+                                <a href="shop.html?category=teddy">Teddy Bear T-shirts</a>
+                                <a href="shop.html?category=girls">Girl's T-shirts</a>
+                                <a href="shop.html?category=butterfly">Butterfly Design</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search products..." id="searchInput">
+                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="user-actions">
+                            <button class="wishlist-btn" id="wishlistBtn">
+                                <i class="fas fa-heart"></i>
+                                <span class="wishlist-count" id="wishlistCount">0</span>
+                            </button>
+                            <button class="cart-btn" id="cartBtn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count" id="cartCount">0</span>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rs. 0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-btn" id="closeWishlistBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems">
+            <!-- Wishlist items will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Shop</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="shop-section">
+            <div class="container">
+                <div class="shop-content">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar">
+                        <div class="filter-group">
+                            <h3>Categories</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="car" class="category-filter">
+                                    <span>Car T-shirts</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="bike" class="category-filter">
+                                    <span>Bike Design</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="anime" class="category-filter">
+                                    <span>Anime Design</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="floral" class="category-filter">
+                                    <span>Floral Design</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="teddy" class="category-filter">
+                                    <span>Teddy Bear T-shirts</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="girls" class="category-filter">
+                                    <span>Girl's T-shirts</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="butterfly" class="category-filter">
+                                    <span>Butterfly Design</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Price Range</h3>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" min="0" max="5000" value="5000" step="100">
+                                <div class="price-inputs">
+                                    <input type="number" id="minPrice" placeholder="Min" min="0" max="5000">
+                                    <span>-</span>
+                                    <input type="number" id="maxPrice" placeholder="Max" min="0" max="5000" value="5000">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Rating</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="5" class="rating-filter">
+                                    <span>5 Stars</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="4" class="rating-filter">
+                                    <span>4+ Stars</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="3" class="rating-filter">
+                                    <span>3+ Stars</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Availability</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="sale" class="availability-filter">
+                                    <span>On Sale</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="new" class="availability-filter">
+                                    <span>New Arrivals</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="clear-filters-btn" id="clearFiltersBtn">Clear All Filters</button>
+                    </aside>
+
+                    <!-- Products Section -->
+                    <div class="products-section">
+                        <div class="products-header">
+                            <div class="products-info">
+                                <h2>All Products</h2>
+                                <p id="productsCount">Showing <span id="showingCount">0</span> of <span id="totalCount">0</span> products</p>
+                            </div>
+                            <div class="products-controls">
+                                <div class="sort-controls">
+                                    <label for="sortSelect">Sort by:</label>
+                                    <select id="sortSelect">
+                                        <option value="default">Default</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="rating">Rating</option>
+                                        <option value="newest">Newest</option>
+                                    </select>
+                                </div>
+                                <div class="view-controls">
+                                    <button class="view-btn active" data-view="grid">
+                                        <i class="fas fa-th"></i>
+                                    </button>
+                                    <button class="view-btn" data-view="list">
+                                        <i class="fas fa-list"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-grid" id="productsGrid">
+                            <!-- Products will be dynamically loaded here -->
+                        </div>
+
+                        <div class="products-pagination">
+                            <button class="pagination-btn" id="prevPageBtn" disabled>
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            <div class="pagination-numbers" id="paginationNumbers">
+                                <!-- Pagination numbers will be dynamically loaded here -->
+                            </div>
+                            <button class="pagination-btn" id="nextPageBtn">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for trendy and comfortable clothing. Quality meets style in every piece.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="delivery.html">Delivery Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=car">Car T-shirts</a></li>
+                        <li><a href="shop.html?category=bike">Bike Design</a></li>
+                        <li><a href="shop.html?category=anime">Anime Design</a></li>
+                        <li><a href="shop.html?category=floral">Floral Design</a></li>
+                        <li><a href="shop.html?category=teddy">Teddy Bear T-shirts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Colombo, Sri Lanka</p>
+                        <p><i class="fas fa-phone"></i> +94 11 234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@stylehub.lk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

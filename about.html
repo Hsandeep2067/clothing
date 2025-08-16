@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - StyleHub</title>
+    <title>About Us - NEXTRA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="top-bar-content">
-                    <div class="announcement">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span>
-                    </div>
-                    <div class="top-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+   <!-- Header -->
+   <header class="header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="announcement">
+                    <!-- <i class="fas fa-shipping-fast"></i> -->
+                    <!-- <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span> -->
+                </div>
+                <div class="top-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <h1>StyleHub</h1>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>NEXTRA</h1>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <div class="dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="shop.html?category=car">Car T-shirts</a>
+                            <a href="shop.html?category=bike">Bike Design</a>
+                            <a href="shop.html?category=anime">Anime Design</a>
+                            <a href="shop.html?category=floral">Floral Design</a>
+                            <a href="shop.html?category=teddy">Teddy Bear T-shirts</a>
+                            <a href="shop.html?category=girls">Girl's T-shirts</a>
+                            <a href="shop.html?category=butterfly">Butterfly Design</a>
+                        </div>
                     </div>
-                    <div class="nav-menu" id="navMenu">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <div class="dropdown">
-                            <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="shop.html?category=car">Car T-shirts</a>
-                                <a href="shop.html?category=bike">Bike Design</a>
-                                <a href="shop.html?category=anime">Anime Design</a>
-                                <a href="shop.html?category=floral">Floral Design</a>
-                                <a href="shop.html?category=teddy">Teddy Bear T-shirts</a>
-                                <a href="shop.html?category=girls">Girl's T-shirts</a>
-                                <a href="shop.html?category=butterfly">Butterfly Design</a>
-                            </div>
-                        </div>
-                        <a href="about.html" class="nav-link active">About</a>
-                        <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="payment.html" class="nav-link"> How to pay</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products..." id="searchInput">
+                        <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
                     </div>
-                    <div class="nav-actions">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search products..." id="searchInput">
-                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
-                        </div>
-                        <div class="user-actions">
-                            <button class="wishlist-btn" id="wishlistBtn">
-                                <i class="fas fa-heart"></i>
-                                <span class="wishlist-count" id="wishlistCount">0</span>
-                            </button>
-                            <button class="cart-btn" id="cartBtn">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="cart-count" id="cartCount">0</span>
-                            </button>
-                        </div>
-                        <button class="mobile-menu-btn" id="mobileMenuBtn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div class="user-actions">
+                        <button class="wishlist-btn" id="wishlistBtn">
+                            <i class="fas fa-heart"></i>
+                            <span class="wishlist-count" id="wishlistCount">0</span>
+                        </button>
+                        <button class="cart-btn" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
                         </button>
                     </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <!-- Cart Sidebar -->
     <div class="cart-sidebar" id="cartSidebar">

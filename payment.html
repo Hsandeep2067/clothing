@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Pay - NEXTRA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Scoped overrides to match index.html theme (black + cyan) */
+        .page-payment .payment-hero {
+            padding: 60px 0;
+            background: #000000;
+            color: #ffffff;
+            text-align: center;
+        }
+        .page-payment .breadcrumb-nav a {
+            color: #000000;
+        }
+        .page-payment .breadcrumb-nav a:hover {
+            color: #27FFFF;
+        }
+        .page-payment .shipping-icon,
+        .page-payment .contact-icon,
+        .page-payment .step-icon {
+            background: #27FFFF;
+            color: #000000;
+        }
+        .page-payment .shipping-card.featured {
+            border-color: #27FFFF;
+        }
+        .page-payment .delivery-time {
+            color: #27FFFF;
+        }
+        .page-payment .info-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 2px solid #27FFFF;
+            color: #000000;
+            background: #ffffff;
+            font-weight: 600;
+        }
+        .page-payment .bank-details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .page-payment .bank-details-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+        }
+        .page-payment .bank-details-list li:last-child {
+            border-bottom: none;
+        }
+        .page-payment .note-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #27FFFF;
+            border-radius: 8px;
+            color: #666;
+        }
+        .page-payment .faq-question i {
+            color: #27FFFF;
+        }
+        .page-payment .btn-pay {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 2px solid #000000;
+            background: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .page-payment .btn-pay:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+    
+</head>
+<body class="page-payment">
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="announcement">
+                        <!-- <i class="fas fa-shipping-fast"></i> -->
+                        <!-- <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span> -->
+                    </div>
+                    <div class="top-links">
+                        <a href="https://www.facebook.com/share/1AizwR49N6/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@nexraclothing"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/message/3BV3MYQMCFSGK1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="NEXTRA Logo">
+                    </div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="shop.html?category=car">FILM & TVSERIES</a>
+                                <a href="shop.html?category=bike">GAMES</a>
+                                <a href="shop.html?category=anime">TRENDING</a>
+                                <a href="shop.html?category=floral">MUSIC</a>
+                                <a href="shop.html?category=teddy">VEHICLES</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="payment.html" class="nav-link active"> How to pay</a>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search products..." id="searchInput">
+                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="user-actions">
+                            <button class="wishlist-btn" id="wishlistBtn">
+                                <i class="fas fa-heart"></i>
+                                <span class="wishlist-count" id="wishlistCount">0</span>
+                            </button>
+                            <button class="cart-btn" id="cartBtn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count" id="cartCount">0</span>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount" id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-wishlist" id="closeWishlist"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>How to Pay</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Payment Hero -->
+        <section class="payment-hero">
+            <div class="container">
+                <div class="payment-hero-content">
+                    <h1>How to Pay</h1>
+                    <p>Choose the most convenient payment method: Cash on Delivery, Bank Transfer, or Card/Online Payment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods -->
+        <section class="shipping-options">
+            <div class="container">
+                <h2>Payment Methods</h2>
+                <div class="shipping-grid">
+                    <div class="shipping-card featured">
+                        <div class="shipping-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3>Cash on Delivery (COD)</h3>
+                        <div class="shipping-details">
+                            <div class="delivery-time">Pay when you receive</div>
+                            <p>Available across Sri Lanka. Have the exact amount ready for a smooth handover.</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> No prepayment needed</li>
+                            <li><i class="fas fa-check"></i> Verify package before paying</li>
+                            <li><i class="fas fa-check"></i> Fast and easy</li>
+                        </ul>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="shipping-icon"><i class="fas fa-university"></i></div>
+                        <h3>Bank Transfer</h3>
+                        <div class="shipping-details">
+                            <div class="delivery-time">Transfer before dispatch</div>
+                            <p>Make a transfer to our bank account and share the receipt for quick order processing.</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> Safe and traceable</li>
+                            <li><i class="fas fa-check"></i> No extra fees</li>
+                            <li><i class="fas fa-check"></i> Priority processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="shipping-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Card/Online Payment</h3>
+                        <div class="shipping-details">
+                            <div class="delivery-time">Visa / MasterCard</div>
+                            <p>Pay securely online with your debit or credit card via our trusted payment partner.</p>
+                        </div>
+                        <ul class="shipping-features">
+                            <li><i class="fas fa-check"></i> Instant confirmation</li>
+                            <li><i class="fas fa-check"></i> Encrypted & secure</li>
+                            <li><i class="fas fa-check"></i> International cards accepted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bank Details -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Bank Details</h2>
+                        <div class="contact-card" style="margin-bottom: 15px;">
+                            <div class="contact-icon"><i class="fas fa-receipt"></i></div>
+                            <div class="contact-details">
+                                <h3>Account Information</h3>
+                                <ul class="bank-details-list">
+                                    <li><strong>Bank</strong>: ABC Bank PLC</li>
+                                    <li><strong>Branch</strong>: Colombo 03</li>
+                                    <li><strong>Account Name</strong>: NEXTRA Clothing</li>
+                                    <li><strong>Account Number</strong>: 1234567890</li>
+                                    <li><strong>SWIFT</strong>: ABCDLKLX</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="note-box">
+                            <i class="fas fa-info-circle"></i>
+                            <p>After making the transfer, WhatsApp your payment slip to <strong>+94 76 176 7633</strong> with your order ID for faster processing.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Security & Privacy</h2>
+                        <div class="tracking-features">
+                            <div class="tracking-feature">
+                                <i class="fas fa-lock"></i>
+                                <div>
+                                    <h4>Secure Payments</h4>
+                                    <p>All online payments are encrypted and processed via PCI DSS compliant gateways.</p>
+                                </div>
+                            </div>
+                            <div class="tracking-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Buyer Protection</h4>
+                                    <p>Orders are eligible for refunds or exchanges according to our return policy.</p>
+                                </div>
+                            </div>
+                            <div class="tracking-feature">
+                                <i class="fas fa-user-shield"></i>
+                                <div>
+                                    <h4>Privacy First</h4>
+                                    <p>Your personal information is used only to fulfill your order and support your experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step -->
+        <section class="delivery-process">
+            <div class="container">
+                <h2>Step-by-Step Guide</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="step-number">1</span>
+                        <div class="step-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h3>Place Your Order</h3>
+                        <p>Add items to cart and proceed to checkout. Choose your preferred payment method.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">2</span>
+                        <div class="step-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3>Payment</h3>
+                        <p>
+                            For COD: Pay on delivery.<br>
+                            For Bank Transfer: Make the transfer and send receipt.<br>
+                            For Card: Complete secure online payment.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">3</span>
+                        <div class="step-icon"><i class="fas fa-box"></i></div>
+                        <h3>Processing & Dispatch</h3>
+                        <p>We verify your payment (if applicable) and dispatch your order promptly.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">4</span>
+                        <div class="step-icon"><i class="fas fa-truck"></i></div>
+                        <h3>Delivery</h3>
+                        <p>Receive your package and enjoy your purchase. Keep your receipt for returns/exchanges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-content">
+                    <h2>Payment FAQs</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is Cash on Delivery available nationwide?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, COD is available across Sri Lanka for most areas. Remote areas may have limitations.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I share my bank transfer receipt?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>WhatsApp a clear photo or PDF of the receipt with your Order ID to +94 76 176 7633.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Are my card details safe?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely. We never store card details. All transactions are processed through secure, compliant payment gateways.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>StyleHub is your destination for premium quality t-shirts with unique designs. We offer comfort, style, and quality in every piece.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +94 76 176 7633</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="delivery.html">Delivery Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li><a href="shop.html?category=anime">FILM & TVSERIES</a></li>
+                        <li><a href="shop.html?category=bike">GAMES</a></li>
+                        <li><a href="shop.html?category=butterfly">TRENDING</a></li>
+                        <li><a href="shop.html?category=car">MUSIC</a></li>
+                        <li><a href="shop.html?category=floral">VEHICLES</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1AizwR49N6/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@nexraclothing"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/message/3BV3MYQMCFSGK1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -134,59 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupScrollToTop();
 });
 
-// Image Slider Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const sliderTrack = document.getElementById('imageSliderTrack');
-    const prevBtn = document.getElementById('imagePrevBtn');
-    const nextBtn = document.getElementById('imageNextBtn');
-    const dots = document.querySelectorAll('#imageSliderDots .dot');
-    
-    let currentSlide = 0;
-    const totalSlides = 5;
-    const slidesToShow = 4; // Show 4 images at once
-    
-    // Function to update slider position
-    function updateSlider() {
-        const slideWidth = 100 / slidesToShow; // Each slide takes 25% width
-        const translateX = currentSlide * slideWidth;
-        sliderTrack.style.transform = `translateX(-${translateX}%)`;
-        
-        // Update dots - show current position in sequence
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentSlide);
-        });
-    }
-    
-    // Next button click - move to next image in sequence
-    nextBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlider();
-    });
-    
-    // Previous button disabled - only forward movement allowed
-    prevBtn.style.display = 'none';
-    
-    // Dot navigation - jump to specific image (forward only)
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            // Only allow jumping to current or future images
-            if (index >= currentSlide) {
-                currentSlide = index;
-                updateSlider();
-            }
-        });
-    });
-    
-    // Auto-slide every 3 seconds - continuous sequence: 1,2,3,4,5,1,2,3,4,5...
-    const autoSlideInterval = setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlider();
-        console.log('Auto-sliding to image:', currentSlide + 1); // Debug log
-    }, 3000);
-    
-    // Initialize the slider
-    updateSlider();
-});
+
 
 // Event Listeners Setup
 function setupEventListeners() {

@@ -1,19 +1,19 @@
 // Product Data
 const products = [
+    // {
+    //     id: 1,
+    //     name: "GRATEFUL vehicles Design Back Printed T-Shirt",
+    //     category: "vehicles",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+    //     rating: 4.8,
+    //     reviews: 45,
+    //     badge: "Sale",
+    //     description: "Beautiful vehicles design with premium cotton fabric"
+    // },
     {
         id: 1,
-        name: "GRATEFUL Floral Design Back Printed T-Shirt",
-        category: "floral",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
-        rating: 4.8,
-        reviews: 45,
-        badge: "Sale",
-        description: "Beautiful floral design with premium cotton fabric"
-    },
-    {
-        id: 2,
         name: "BECOME BUTTERFLY Butterfly Design T-Shirt",
         category: "butterfly",
         price: 2490,
@@ -25,7 +25,7 @@ const products = [
         description: "Elegant butterfly design perfect for women"
     },
     {
-        id: 3,
+        id: 2,
         name: "DREAM FLIGHT Butterfly Design T-Shirt",
         category: "butterfly",
         price: 2490,
@@ -37,7 +37,7 @@ const products = [
         description: "Dreamy butterfly design with soft fabric"
     },
     {
-        id: 4,
+        id: 3,
         name: "MONEY Teddy Bear Back Printed T-Shirt",
         category: "teddy",
         price: 2490,
@@ -49,7 +49,7 @@ const products = [
         description: "Cute teddy bear design for men and women"
     },
     {
-        id: 5,
+        id: 4,
         name: "SELF LOVE IS THE BEST LOVE T-Shirt",
         category: "girls",
         price: 2490,
@@ -61,7 +61,7 @@ const products = [
         description: "Empowering message with comfortable fit"
     },
     {
-        id: 6,
+        id: 5,
         name: "BMW 1000RR Bike T-Shirt",
         category: "bike",
         price: 2490,
@@ -73,7 +73,7 @@ const products = [
         description: "Premium quality unisex bike design"
     },
     {
-        id: 7,
+        id: 6,
         name: "DUCATI PANIGALE Bike T-Shirt",
         category: "bike",
         price: 2490,
@@ -85,7 +85,7 @@ const products = [
         description: "High-quality bike enthusiast design"
     },
     {
-        id: 8,
+        id: 7,
         name: "HONDA CBR Bike T-Shirt",
         category: "bike",
         price: 2490,
@@ -95,6 +95,150 @@ const products = [
         reviews: 19,
         badge: "Sale",
         description: "Classic Honda CBR design"
+    },
+    {
+        id: 8,
+        name: "Mercedes-Benz C63 Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/MERCEDES BENZ C63 - VR001.jpg",
+        rating: 4.9,
+        reviews: 52,
+        badge: "New",
+        description: "Performance-inspired C63 print for vehicle enthusiasts"
+    },
+    {
+        id: 9,
+        name: "Nissan GTR Nismo Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/GTR Nismo - VR002.jpg",
+        rating: 4.8,
+        reviews: 47,
+        badge: "New",
+        description: "Iconic GTR Nismo silhouette with bold styling"
+    },
+    {
+        id: 10,
+        name: "Ayrton Senna 1988 Tribute T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Senna 1988 - VR006.jpg",
+        rating: 5.0,
+        reviews: 65,
+        badge: "New",
+        description: "Legendary Senna tribute design for racing fans"
+    },
+    {
+        id: 11,
+        name: "Ford Mustang Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Ford Mustang - VR007.jpg",
+        rating: 4.7,
+        reviews: 39,
+        badge: "New",
+        description: "Classic Mustang profile for muscle car lovers"
+    },
+    {
+        id: 12,
+        name: "Toyota Supra MK4 Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Toyota Supra mk4 - VR009.jpg",
+        rating: 4.9,
+        reviews: 58,
+        badge: "New",
+        description: "JDM legend Supra MK4 design with clean lines"
+    },
+    {
+        id: 13,
+        name: "Honda Civic Type R Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Honda Type R - VR010.jpg",
+        rating: 4.6,
+        reviews: 26,
+        badge: "New",
+        description: "Track-ready Type R inspired streetwear"
+    },
+    {
+        id: 14,
+        name: "BYD Seal Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/BYD SEAL - VR011.jpg",
+        rating: 4.5,
+        reviews: 18,
+        badge: "New",
+        description: "Modern EV aesthetic with minimalist lines"
+    },
+    {
+        id: 15,
+        name: "Ford GT Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Ford GT - VR012.jpg",
+        rating: 4.7,
+        reviews: 31,
+        badge: "New",
+        description: "Endurance racing icon rendered in bold graphic"
+    },
+    {
+        id: 16,
+        name: "McLaren P1 Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/Mclaren P1 - VR013.jpg",
+        rating: 4.8,
+        reviews: 44,
+        badge: "New",
+        description: "Hybrid hypercar silhouette with dynamic flow"
+    },
+    {
+        id: 17,
+        name: "Pagani Zonda C12 Vehicle T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/The Pagani Zonda C1 - VR014.jpg",
+        rating: 4.9,
+        reviews: 53,
+        badge: "New",
+        description: "Exotic Zonda profile for supercar aficionados"
+    },
+    {
+        id: 18,
+        name: "Squid Game TV Series T-Shirt",
+        category: "games",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game - TR001.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "Iconic Squid Game design for Netflix series fans"
+    },
+    {
+        id: 19,
+        name: "Squid Game TV Series T-Shirt",
+        category: "music",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/sports/Squid Game - TR001.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "Iconic Squid Game design for Netflix series fans"
     }
 ];
 
@@ -240,16 +384,42 @@ function renderCart() {
                 <h4>${item.name}</h4>
                 <p class="cart-item-price">රු${item.price.toLocaleString()}</p>
                 <div class="cart-item-quantity">
-                    <button onclick="updateCartItemQuantity(${item.id}, ${item.quantity - 1})">-</button>
+                    <button class="quantity-btn minus" data-product-id="${item.id}" data-action="decrease">-</button>
                     <span>${item.quantity}</span>
-                    <button onclick="updateCartItemQuantity(${item.id}, ${item.quantity + 1})">+</button>
+                    <button class="quantity-btn plus" data-product-id="${item.id}" data-action="increase">+</button>
                 </div>
             </div>
-            <button class="remove-cart-item" onclick="removeFromCart(${item.id})">
+            <button class="remove-cart-item" data-product-id="${item.id}">
                 <i class="fas fa-trash"></i>
             </button>
         </div>
     `).join('');
+
+    // Add event listeners for cart item buttons
+    cartItems.querySelectorAll('.quantity-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            const productId = parseInt(this.dataset.productId);
+            const action = this.dataset.action;
+            const item = cart.find(item => item.id === productId);
+            
+            if (item) {
+                if (action === 'decrease') {
+                    updateCartItemQuantity(productId, item.quantity - 1);
+                } else if (action === 'increase') {
+                    updateCartItemQuantity(productId, item.quantity + 1);
+                }
+            }
+        });
+    });
+
+    cartItems.querySelectorAll('.remove-cart-item').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            const productId = parseInt(this.dataset.productId);
+            removeFromCart(productId);
+        });
+    });
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     cartTotal.textContent = `රු${total.toLocaleString()}`;
@@ -306,15 +476,32 @@ function renderWishlist() {
             <div class="wishlist-item-details">
                 <h4>${item.name}</h4>
                 <p class="wishlist-item-price">රු${item.price.toLocaleString()}</p>
-                <button class="add-to-cart-from-wishlist" onclick="addToCart(${item.id})">
+                <button class="add-to-cart-from-wishlist" data-product-id="${item.id}">
                     Add to Cart
                 </button>
             </div>
-            <button class="remove-wishlist-item" onclick="removeFromWishlist(${item.id})">
+            <button class="remove-wishlist-item" data-product-id="${item.id}">
                 <i class="fas fa-trash"></i>
             </button>
         </div>
     `).join('');
+
+    // Add event listeners for wishlist item buttons
+    wishlistItems.querySelectorAll('.add-to-cart-from-wishlist').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            const productId = parseInt(this.dataset.productId);
+            addToCart(productId);
+        });
+    });
+
+    wishlistItems.querySelectorAll('.remove-wishlist-item').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            const productId = parseInt(this.dataset.productId);
+            removeFromWishlist(productId);
+        });
+    });
 }
 
 function updateWishlistCount() {
@@ -329,6 +516,31 @@ function saveWishlist() {
 function loadFeaturedProducts() {
     const featured = products.slice(0, 8); // Show first 8 products
     featuredProducts.innerHTML = featured.map(product => createProductCard(product)).join('');
+    
+    // Add event listeners for product card buttons
+    featuredProducts.querySelectorAll('.wishlist-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const productId = parseInt(this.dataset.productId);
+            addToWishlist(productId);
+        });
+    });
+
+    featuredProducts.querySelectorAll('.quick-view-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const productId = parseInt(this.dataset.productId);
+            quickView(productId);
+        });
+    });
+
+    featuredProducts.querySelectorAll('.add-to-cart').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const productId = parseInt(this.dataset.productId);
+            addToCart(productId);
+        });
+    });
 }
 
 function createProductCard(product) {
@@ -341,10 +553,10 @@ function createProductCard(product) {
                 <img src="${product.image}" alt="${product.name}">
                 ${product.badge ? `<div class="product-badge">${product.badge} -${discount}%</div>` : ''}
                 <div class="product-actions">
-                    <button class="action-btn" onclick="addToWishlist(${product.id})" title="Add to Wishlist">
+                    <button class="action-btn wishlist-btn" data-product-id="${product.id}" title="Add to Wishlist">
                         <i class="fas fa-heart ${isInWishlist ? 'text-danger' : ''}"></i>
                     </button>
-                    <button class="action-btn" onclick="quickView(${product.id})" title="Quick View">
+                    <button class="action-btn quick-view-btn" data-product-id="${product.id}" title="Quick View">
                         <i class="fas fa-eye"></i>
                     </button>
                 </div>
@@ -361,7 +573,7 @@ function createProductCard(product) {
                     <span class="current-price">රු${product.price.toLocaleString()}</span>
                     <span class="original-price">රු${product.originalPrice.toLocaleString()}</span>
                 </div>
-                <button class="add-to-cart" onclick="addToCart(${product.id})">
+                <button class="add-to-cart" data-product-id="${product.id}">
                     Add to Cart
                 </button>
             </div>
@@ -413,10 +625,10 @@ function quickView(productId) {
                             <span class="original-price">රු${product.originalPrice.toLocaleString()}</span>
                         </div>
                         <div class="product-actions">
-                            <button class="btn btn-primary" onclick="addToCart(${product.id})">
+                            <button class="btn btn-primary modal-add-to-cart" data-product-id="${product.id}">
                                 Add to Cart
                             </button>
-                            <button class="btn btn-secondary" onclick="addToWishlist(${product.id})">
+                            <button class="btn btn-secondary modal-add-to-wishlist" data-product-id="${product.id}">
                                 <i class="fas fa-heart"></i> Wishlist
                             </button>
                         </div>
@@ -427,6 +639,20 @@ function quickView(productId) {
     `;
 
     document.body.appendChild(modal);
+    
+    // Add event listeners for modal buttons
+    modal.querySelector('.modal-add-to-cart').addEventListener('click', function(e) {
+        e.stopPropagation();
+        const productId = parseInt(this.dataset.productId);
+        addToCart(productId);
+        document.body.removeChild(modal);
+    });
+
+    modal.querySelector('.modal-add-to-wishlist').addEventListener('click', function(e) {
+        e.stopPropagation();
+        const productId = parseInt(this.dataset.productId);
+        addToWishlist(productId);
+    });
     
     // Close modal functionality
     modal.querySelector('.close-modal').addEventListener('click', () => {
@@ -554,9 +780,40 @@ function proceedToCheckout() {
         return;
     }
     
-    // In a real application, this would redirect to a checkout page
-    showNotification('Proceeding to checkout...', 'info');
-    // window.location.href = 'checkout.html';
+    // Create WhatsApp message with cart details
+    const whatsappMessage = createWhatsAppMessage();
+    
+    // WhatsApp API URL with the message
+    const whatsappUrl = `https://wa.me/94772953138?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    showNotification('Redirecting to WhatsApp...', 'success');
+}
+
+function createWhatsAppMessage() {
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    
+    let message = `🛒 *NEW ORDER*\n\n`;
+    message += `Hello! I would like to place an order:\n\n`;
+    
+    // Add cart items
+    cart.forEach((item, index) => {
+        message += `${index + 1}. *${item.name}*\n`;
+        message += `   Quantity: ${item.quantity}\n`;
+        message += `   Price: රු${item.price.toLocaleString()}\n`;
+        message += `   Subtotal: රු${(item.price * item.quantity).toLocaleString()}\n\n`;
+    });
+    
+    message += `💰 *Total Amount: රු${total.toLocaleString()}*\n\n`;
+    message += `Please provide:\n`;
+    message += `• Delivery address\n`;
+    message += `• Contact number\n`;
+    message += `• Preferred delivery time\n\n`;
+    message += `Thank you! 🙏`;
+    
+    return message;
 }
 
 // Add CSS for notifications and modals

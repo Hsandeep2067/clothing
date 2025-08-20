@@ -1,446 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEXTRA - Premium Clothing Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="top-bar-content">
-                    <div class="announcement">
-                        <!-- <i class="fas fa-shipping-fast"></i> -->
-                        <!-- <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span> -->
-                    </div>
-                    <div class="top-links">
-                        <a href="https://www.facebook.com/share/1AizwR49N6/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="><i class="fab fa-instagram"></i></a>
-                        <a href="http://tiktok.com/@nexraclothing"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://wa.me/message/3BV3MYQMCFSGK1"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-content">
+            <div class="announcement">
+              <!-- <i class="fas fa-shipping-fast"></i> -->
+              <!-- <span>ENJOY FREE SHIPPING FOR ALL ORDERS</span> -->
             </div>
+            <div class="top-links">
+              <a href="https://www.facebook.com/share/1AizwR49N6/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="http://tiktok.com/@nexraclothing"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="https://wa.me/message/3BV3MYQMCFSGK1"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="NEXTRA Logo">
-                    </div>
-                    
-                    <div class="nav-menu" id="navMenu">
-                        <a href="index.html" class="nav-link active">Home</a>
-                        <div class="dropdown">
-                            <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="shop.html?category=car">FILM & TVSERIES</a>
-                                <a href="shop.html?category=bike">GAMES</a>
-                                <a href="shop.html?category=anime">TRENDING</a>
-                                <a href="shop.html?category=floral">MUSIC</a>
-                                <a href="shop.html?category=teddy">VEHICLES</a>
-                                <!-- <a href="shop.html?category=girls">Girl's T-shirts</a>
-                                <a href="shop.html?category=butterfly">Butterfly Design</a> -->
-                            </div>
-                        </div>
-                        <a href="about.html" class="nav-link">About</a>
-                        <a href="contact.html" class="nav-link">Contact</a>
-                        <a href="payment.html" class="nav-link"> How to pay</a>
-                    </div>
-                    
-                    <div class="nav-actions">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search products..." id="searchInput">
-                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
-                        </div>
-                        <div class="user-actions">
-                            <button class="wishlist-btn" id="wishlistBtn">
-                                <i class="fas fa-heart"></i>
-                                <span class="wishlist-count" id="wishlistCount">0</span>
-                            </button>
-                            <button class="cart-btn" id="cartBtn">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="cart-count" id="cartCount">0</span>
-                            </button>
-                        </div>
-                        <button class="mobile-menu-btn" id="mobileMenuBtn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <img src="images/logo.png" alt="NEXTRA Logo" />
             </div>
-        </nav>
+
+            <div class="nav-menu" id="navMenu">
+              <a href="index.html" class="nav-link active">HOME</a>
+              <div class="dropdown">
+                <a href="shop.html" class="nav-link"
+                  >SHOP<i class="fas fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-content">
+                  <a href="shop.html?category=games">GAMES</a>
+                  <a href="shop.html?category=trending">TRENDING</a>
+                  <a href="shop.html?category=sports">SPORTS</a>
+                  <a href="shop.html?category=filmtvseries">FILM & TVSERIES</a>
+                  <a href="shop.html?category=music">MUSIC</a>
+                  <a href="shop.html?category=vehicles">VEHICLES</a>
+                  <!-- <a href="shop.html?category=girls">Girl's T-shirts</a>
+                            <a href="shop.html?category=butterfly">Butterfly Design</a> -->
+                </div>
+              </div>
+              <a href="about.html" class="nav-link">ABOUT</a>
+              <a href="contact.html" class="nav-link">CONTACT</a>
+              <a href="payment.html" class="nav-link">HOW TO PAY</a>
+              <a href="delivery.html" class="nav-link">DELIVERY INFO</a>
+            </div>
+
+            <div class="nav-actions">
+              <div class="search-box">
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  id="searchInput"
+                />
+                <button type="button" id="searchBtn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <div class="user-actions">
+                <button class="wishlist-btn" id="wishlistBtn">
+                  <i class="fas fa-heart"></i>
+                  <span class="wishlist-count" id="wishlistCount">0</span>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-count" id="cartCount">0</span>
+                </button>
+              </div>
+              <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Shopping Cart Sidebar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h3>Shopping Cart</h3>
-            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-amount" id="cartTotal">$0.00</span>
         </div>
-        <div class="cart-items" id="cartItems">
-            <!-- Cart items will be dynamically added here -->
-        </div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span class="total-amount" id="cartTotal">$0.00</span>
-            </div>
-            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
-        </div>
+        <button class="checkout-btn" id="checkoutBtn">
+          Proceed to Checkout
+        </button>
+      </div>
     </div>
 
     <!-- Wishlist Sidebar -->
     <div class="wishlist-sidebar" id="wishlistSidebar">
-        <div class="wishlist-header">
-            <h3>Wishlist</h3>
-            <button class="close-wishlist" id="closeWishlist"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="wishlist-items" id="wishlistItems">
-            <!-- Wishlist items will be dynamically added here -->
-        </div>
+      <div class="wishlist-header">
+        <h3>Wishlist</h3>
+        <button class="close-wishlist" id="closeWishlist">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="wishlist-items" id="wishlistItems">
+        <!-- Wishlist items will be dynamically added here -->
+      </div>
     </div>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-image">
-                <img src="images/cover 3.jpg" alt="Fashion Collection">
-                <div class="hero-category-buttons">
-                    <button class="category-btn">FILM & TVSERIES</button>
-                    <button class="category-btn">GAMES</button>
-                    <button class="category-btn">TRENDING</button>
-                    <button class="category-btn">MUSIC</button>
-                    <button class="category-btn">VEHICLES</button>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-image">
+          <img src="images/cover 3.jpg" alt="Fashion Collection" />
+          <div class="hero-category-buttons">
+            <button  class="category-btn">GAMES</button>
+            <button class="category-btn">TRENDING</button>
+            <button class="category-btn">SPORTS</button>
+            <button class="category-btn">FILM & TVSERIES</button>
+            <button class="category-btn">MUSIC</button>
+            <button class="category-btn">VEHICLES</button>
+          </div>
+        </div>
+        <div class="hero-spacer"></div>
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-text">
+              <!-- <h1>Discover Your Style</h1> -->
+              <!-- <p>Premium quality t-shirts with unique designs for every personality</p> -->
+              <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="#featured" class="btn btn-secondary"
+                  >View Collections</a
+                >
+              </div>
             </div>
-            <div class="hero-spacer"></div>
-            <div class="hero-content">
-                <div class="container">
-                    <div class="hero-text">
-                        <!-- <h1>Discover Your Style</h1> -->
-                        <!-- <p>Premium quality t-shirts with unique designs for every personality</p> -->
-                        <div class="hero-buttons">
-                            <a href="shop.html" class="btn btn-primary">Shop Now</a>
-                            <a href="#featured" class="btn btn-secondary">View Collections</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-shipping-fast"></i>
+              <h3>Fast Shipping</h3>
+              <p>Enjoy fast shipping on all orders!</p>
             </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-shipping-fast"></i>
-                        <h3>Fast Shipping</h3>
-                        <p>Enjoy fast shipping on all
-                            orders!</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-undo"></i>
-                        <h3>Easy Returns</h3>
-                        <p>7-day hassle-free returns. *conditions apply*</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-headset"></i>
-                        <h3>24/7 Support</h3>
-                        <p>Round the clock customer service</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/customizable.png" alt="Customizable" class="feature-icon">
-                        <h3>Customizability</h3>
-                        <p> We offer customization
-                            in our products</p>
-                    </div>
-                </div>
+            <div class="feature-card">
+              <i class="fas fa-undo"></i>
+              <h3>Easy Returns</h3>
+              <p>7-day hassle-free returns. *conditions apply*</p>
             </div>
-        </section>
-
-        <!-- Featured Products -->
-        <section class="featured-products" id="featured">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Featured Products</h2>
-                    <p>Top sale on this week</p>
-                </div>
-                <div class="products-grid" id="featuredProducts">
-                    <!-- Products will be dynamically loaded here -->
-                </div>
-                <div class="view-all-container">
-                    <a href="shop.html" class="btn btn-outline">View All Products</a>
-                </div>
+            <div class="feature-card">
+              <i class="fas fa-headset"></i>
+              <h3>24/7 Support</h3>
+              <p>Round the clock customer service</p>
             </div>
-        </section>
-
-        <!-- Categories Section -->
-        <section class="categories">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Shop by Category</h2>
-                    <p>Find your perfect style</p>
-                </div>
-                <div class="categories-grid">
-                    <div class="category-card" data-category="anime">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Anime Design">
-                        <div class="category-overlay">
-                            <h3>Anime Design</h3>
-                            <span class="product-count">31 products</span>
-                        </div>
-                    </div>
-                    <div class="category-card" data-category="bike">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Bike Design">
-                        <div class="category-overlay">
-                            <h3>Bike Design</h3>
-                            <span class="product-count">22 products</span>
-                        </div>
-                    </div>
-                    <div class="category-card" data-category="floral">
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Floral Design">
-                        <div class="category-overlay">
-                            <h3>Floral Design</h3>
-                            <span class="product-count">34 products</span>
-                        </div>
-                    </div>
-                    <div class="category-card" data-category="butterfly">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Butterfly Design">
-                        <div class="category-overlay">
-                            <h3>Butterfly Design</h3>
-                            <span class="product-count">13 products</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature-card">
+              <div class="feature-icon-frame">
+                <i class="fas fa-tshirt icon-base"></i>
+                <i class="fas fa-cog icon-overlay"></i>
+              </div>
+              <h3>Customizability</h3>
+              <p>We offer customization in our products</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <h2>What Our Clients Say</h2>
-                    <p>Discover what our customers love about our t-shirts!</p>
-                </div>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Love these T-shirts! Stylish, comfortable, and great quality. Perfect fit and vibrant designs. Highly recommend for casual wear!"</p>
-                        <div class="testimonial-author">
-                            <h4>Dimuth Jayasundara</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"I just got my first order and I have one word WOW!!!! The quality is amazing and the designs are unique."</p>
-                        <div class="testimonial-author">
-                            <h4>Sachira R Costa</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Absolutely love the collection! The design is unique and captures the perfect vibe. The fabric feels comfortable, and the print quality is excellent."</p>
-                        <div class="testimonial-author">
-                            <h4>Vajira Edirisinghe</h4>
-                        </div>
-                    </div>
-                </div>
-                
+      <!-- Featured Products -->
+      <section class="featured-products" id="featured">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Top sale on this week</p>
+          </div>
+          <div class="products-grid" id="featuredProducts">
+            <!-- Products will be dynamically loaded here -->
+          </div>
+          <div class="view-all-container">
+            <a href="shop.html" class="btn btn-outline">View All Products</a>
+          </div>
+        </div>
+      </section>
 
-                
-
+      <!-- Categories Section -->
+      <section class="categories">
+        <div class="container">
+          <div class="section-header">
+            <h2>Shop by Category</h2>
+            <p>Find your perfect style</p>
+          </div>
+          <div class="categories-grid">
+            <div class="category-card" data-category="games">
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Anime Design"
+              />
+              <div class="category-overlay">
+                <h3>GAMES</h3>
+                <span class="product-count">31 products</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Horizontal Image Gallery -->
-        <section class="horizontal-gallery">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Customer Gallery</h2>
-                    <p>See our products in action - real customers, real style!</p>
-                </div>
-                
-                <div class="gallery-container">
-                    <div class="gallery-track" id="galleryTrack">
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Floral Design</h4>
-                                <p>Summer vibes</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Butterfly Collection</h4>
-                                <p>Elegant style</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Anime Series</h4>
-                                <p>For anime lovers</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Bike Collection</h4>
-                                <p>Motorcycle style</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Teddy Bear</h4>
-                                <p>Cute & comfy</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Car Design</h4>
-                                <p>For car lovers</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Duplicate items for seamless loop -->
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Floral Design</h4>
-                                <p>Summer vibes</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Butterfly Collection</h4>
-                                <p>Elegant style</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Anime Series</h4>
-                                <p>For anime lovers</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Bike Collection</h4>
-                                <p>Motorcycle style</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Teddy Bear</h4>
-                                <p>Cute & comfy</p>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Customer wearing our t-shirt">
-                            <div class="gallery-overlay">
-                                <h4>Car Design</h4>
-                                <p>For car lovers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="category-card" data-category="trending">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                alt="Bike Design"
+              />
+              <div class="category-overlay">
+                <h3>TRENDING</h3>
+                <span class="product-count">22 products</span>
+              </div>
             </div>
-        </section>
+            <div class="category-card" data-category="sports">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                alt="Bike Design"
+              />
+              <div class="category-overlay">
+                <h3>SPORTS</h3>
+                <span class="product-count">22 products</span>
+              </div>
+            </div>
+            <div class="category-card" data-category="filmtvseries">
+              <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Film & TVSeries"
+              />
+              <div class="category-overlay">
+                <h3>FILM & TVSERIES</h3>
+                <span class="product-count">34 products</span>
+              </div>
+            </div>
+              <div class="category-card" data-category="music">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                alt="Music Design"
+              />
+              <div class="category-overlay">
+                <h3>MUSIC</h3>
+                <span class="product-count">13 products</span>
+              </div>
+            </div>
+            <div class="category-card" data-category="vehicles">
+              <img
+                src="images/vehicles/MERCEDES BENZ C63 - VR001.jpg"
+                alt="Vehicles"
+              />
+              <div class="category-overlay">
+                <h3>VEHICLES</h3>
+                <span class="product-count">9 products</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Horizontal Image Gallery -->
+      <section class="horizontal-gallery">
+        <div class="container">
+          <div class="section-header">
+            <h2>Customer Gallery</h2>
+            <p>See our products in action - real customers, real style!</p>
+          </div>
+
+          <div class="gallery-container">
+            <div class="gallery-track" id="galleryTrack">
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Floral Design</h4>
+                  <p>Summer vibes</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Butterfly Collection</h4>
+                  <p>Elegant style</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Anime Series</h4>
+                  <p>For anime lovers</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Bike Collection</h4>
+                  <p>Motorcycle style</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Teddy Bear</h4>
+                  <p>Cute & comfy</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Car Design</h4>
+                  <p>For car lovers</p>
+                </div>
+              </div>
+
+              <!-- Duplicate items for seamless loop -->
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Floral Design</h4>
+                  <p>Summer vibes</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Butterfly Collection</h4>
+                  <p>Elegant style</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Anime Series</h4>
+                  <p>For anime lovers</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Bike Collection</h4>
+                  <p>Motorcycle style</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Teddy Bear</h4>
+                  <p>Cute & comfy</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Customer wearing our t-shirt"
+                />
+                <div class="gallery-overlay">
+                  <h4>Car Design</h4>
+                  <p>For car lovers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Discover what our customers love about our t-shirts!</p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Love these T-shirts! Stylish, comfortable, and great quality.
+                Perfect fit and vibrant designs. Highly recommend for casual
+                wear!"
+              </p>
+              <div class="testimonial-author">
+                <h4>Dimuth Jayasundara</h4>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "I just got my first order and I have one word WOW!!!! The
+                quality is amazing and the designs are unique."
+              </p>
+              <div class="testimonial-author">
+                <h4>Sachira R Costa</h4>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Absolutely love the collection! The design is unique and
+                captures the perfect vibe. The fabric feels comfortable, and the
+                print quality is excellent."
+              </p>
+              <div class="testimonial-author">
+                <h4>Vajira Edirisinghe</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Us</h3>
-                    <p>StyleHub is your destination for premium quality t-shirts with unique designs. We offer comfort, style, and quality in every piece.</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +94 76 176 7633</p>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="delivery.html">Delivery Info</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Product Categories</h3>
-                    <ul>
-                        <li><a href="shop.html?category=anime">FILM & TVSERIES</a></li>
-                        <li><a href="shop.html?category=bike">GAMES</a></li>
-                        <li><a href="shop.html?category=butterfly">TRENDING</a></li>
-                        <li><a href="shop.html?category=car">MUSIC</a></li>
-                        <li><a href="shop.html?category=floral">VEHICLES</a></li>
-                        <!-- <li><a href="shop.html?category=girls">Girl's T-shirts (19)</a></li>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              StyleHub is your destination for premium quality t-shirts with
+              unique designs. We offer comfort, style, and quality in every
+              piece.
+            </p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +94 76 176 7633</p>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="payment.html">How to Pay</a></li>
+              <li><a href="delivery.html">Delivery Info</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Product Categories</h3>
+            <ul>
+              <li><a href="shop.html?category=games">GAMES</a></li>
+              <li><a href="shop.html?category=trending">TRENDING</a></li>
+              <li><a href="shop.html?category=sports">SPORTS</a></li>
+              <li><a href="shop.html?category=filmtvseries">FILM & TVSERIES</a></li>
+              <li><a href="shop.html?category=music">MUSIC</a></li>
+              <li><a href="shop.html?category=vehicles">VEHICLES</a></li>
+              <!-- <li><a href="shop.html?category=girls">Girl's T-shirts (19)</a></li>
                         <li><a href="shop.html?category=teddy">Teddy Bear T-shirts (14)</a></li> -->
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Get in Touch</h3>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1AizwR49N6/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="><i class="fab fa-instagram"></i></a>
-                        <!-- <a href=""><i class="fab fa-youtube"></i></a> -->
-                        <a href="http://tiktok.com/@nexraclothing"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://wa.me/message/3BV3MYQMCFSGK1"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Get in Touch</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/1AizwR49N6/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nexra.clothing?igsh=MWxndXZ2YXh1NGNveg=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <!-- <a href=""><i class="fab fa-youtube"></i></a> -->
+              <a href="http://tiktok.com/@nexraclothing"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="https://wa.me/message/3BV3MYQMCFSGK1"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 StyleHub. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 StyleHub. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

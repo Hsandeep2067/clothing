@@ -12,92 +12,92 @@ const products = [
     //     badge: "Sale",
     //     description: "Beautiful vehicles design with premium cotton fabric"
     // },
+    // {
+    //     id: 1,
+    //     name: "BECOME BUTTERFLY Butterfly Design T-Shirt",
+    //     category: "butterfly",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    //     rating: 4.9,
+    //     reviews: 32,
+    //     badge: "Sale",
+    //     description: "Elegant butterfly design perfect for women"
+    // },
+    // {
+    //     id: 2,
+    //     name: "DREAM FLIGHT Butterfly Design T-Shirt",
+    //     category: "butterfly",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    //     rating: 4.7,
+    //     reviews: 28,
+    //     badge: "Sale",
+    //     description: "Dreamy butterfly design with soft fabric"
+    // },
+    // {
+    //     id: 3,
+    //     name: "MONEY Teddy Bear Back Printed T-Shirt",
+    //     category: "teddy",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    //     rating: 5.0,
+    //     reviews: 67,
+    //     badge: "Sale",
+    //     description: "Cute teddy bear design for men and women"
+    // },
+    // {
+    //     id: 4,
+    //     name: "SELF LOVE IS THE BEST LOVE T-Shirt",
+    //     category: "girls",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    //     rating: 5.0,
+    //     reviews: 89,
+    //     badge: "Sale",
+    //     description: "Empowering message with comfortable fit"
+    // },
+    // {
+    //     id: 5,
+    //     name: "BMW 1000RR Bike T-Shirt",
+    //     category: "bike",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    //     rating: 4.6,
+    //     reviews: 23,
+    //     badge: "Sale",
+    //     description: "Premium quality unisex bike design"
+    // },
+    // {
+    //     id: 6,
+    //     name: "DUCATI PANIGALE Bike T-Shirt",
+    //     category: "bike",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    //     rating: 4.8,
+    //     reviews: 34,
+    //     badge: "Sale",
+    //     description: "High-quality bike enthusiast design"
+    // },
+    // {
+    //     id: 7,
+    //     name: "HONDA CBR Bike T-Shirt",
+    //     category: "bike",
+    //     price: 2490,
+    //     originalPrice: 2990,
+    //     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    //     rating: 4.5,
+    //     reviews: 19,
+    //     badge: "Sale",
+    //     description: "Classic Honda CBR design"
+    // },
     {
         id: 1,
-        name: "BECOME BUTTERFLY Butterfly Design T-Shirt",
-        category: "butterfly",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        rating: 4.9,
-        reviews: 32,
-        badge: "Sale",
-        description: "Elegant butterfly design perfect for women"
-    },
-    {
-        id: 2,
-        name: "DREAM FLIGHT Butterfly Design T-Shirt",
-        category: "butterfly",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        rating: 4.7,
-        reviews: 28,
-        badge: "Sale",
-        description: "Dreamy butterfly design with soft fabric"
-    },
-    {
-        id: 3,
-        name: "MONEY Teddy Bear Back Printed T-Shirt",
-        category: "teddy",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        rating: 5.0,
-        reviews: 67,
-        badge: "Sale",
-        description: "Cute teddy bear design for men and women"
-    },
-    {
-        id: 4,
-        name: "SELF LOVE IS THE BEST LOVE T-Shirt",
-        category: "girls",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        rating: 5.0,
-        reviews: 89,
-        badge: "Sale",
-        description: "Empowering message with comfortable fit"
-    },
-    {
-        id: 5,
-        name: "BMW 1000RR Bike T-Shirt",
-        category: "bike",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        rating: 4.6,
-        reviews: 23,
-        badge: "Sale",
-        description: "Premium quality unisex bike design"
-    },
-    {
-        id: 6,
-        name: "DUCATI PANIGALE Bike T-Shirt",
-        category: "bike",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        rating: 4.8,
-        reviews: 34,
-        badge: "Sale",
-        description: "High-quality bike enthusiast design"
-    },
-    {
-        id: 7,
-        name: "HONDA CBR Bike T-Shirt",
-        category: "bike",
-        price: 2490,
-        originalPrice: 2990,
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        rating: 4.5,
-        reviews: 19,
-        badge: "Sale",
-        description: "Classic Honda CBR design"
-    },
-    {
-        id: 8,
         name: "Mercedes-Benz C63 Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -109,7 +109,7 @@ const products = [
         description: "Performance-inspired C63 print for vehicle enthusiasts"
     },
     {
-        id: 9,
+        id: 2,
         name: "Nissan GTR Nismo Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -121,7 +121,7 @@ const products = [
         description: "Iconic GTR Nismo silhouette with bold styling"
     },
     {
-        id: 10,
+        id: 3,
         name: "Ayrton Senna 1988 Tribute T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -133,7 +133,7 @@ const products = [
         description: "Legendary Senna tribute design for racing fans"
     },
     {
-        id: 11,
+        id: 4,
         name: "Ford Mustang Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -145,7 +145,7 @@ const products = [
         description: "Classic Mustang profile for muscle car lovers"
     },
     {
-        id: 12,
+        id: 5,
         name: "Toyota Supra MK4 Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -157,7 +157,7 @@ const products = [
         description: "JDM legend Supra MK4 design with clean lines"
     },
     {
-        id: 13,
+        id: 6,
         name: "Honda Civic Type R Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -169,7 +169,7 @@ const products = [
         description: "Track-ready Type R inspired streetwear"
     },
     {
-        id: 14,
+        id: 7,
         name: "BYD Seal Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -181,7 +181,7 @@ const products = [
         description: "Modern EV aesthetic with minimalist lines"
     },
     {
-        id: 15,
+        id: 8,
         name: "Ford GT Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -193,7 +193,7 @@ const products = [
         description: "Endurance racing icon rendered in bold graphic"
     },
     {
-        id: 16,
+        id: 9,
         name: "McLaren P1 Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -205,7 +205,7 @@ const products = [
         description: "Hybrid hypercar silhouette with dynamic flow"
     },
     {
-        id: 17,
+        id: 10,
         name: "Pagani Zonda C12 Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
@@ -217,9 +217,9 @@ const products = [
         description: "Exotic Zonda profile for supercar aficionados"
     },
     {
-        id: 18,
+        id: 11,
         name: "Squid Game TV Series T-Shirt",
-        category: "games",
+        category: "filmtvseries",
         price: 2490,
         originalPrice: 2990,
         image: "images/film & tvseries/Squid Game - TR001.jpg",
@@ -229,17 +229,41 @@ const products = [
         description: "Iconic Squid Game design for Netflix series fans"
     },
     {
-        id: 19,
-        name: "Squid Game TV Series T-Shirt",
-        category: "music",
+        id: 12,
+        name: "CM Punk - SR001 T-Shirt",
+        category: "sports",
         price: 2490,
         originalPrice: 2990,
-        image: "images/sports/Squid Game - TR001.jpg",
+        image: "images/sports/CM Punk - SR001.jpg",
         rating: 4.8,
         reviews: 41,
         badge: "New",
-        description: "Iconic Squid Game design for Netflix series fans"
-    }
+        description: "CM Punk design for sports fans"
+    },
+    {
+        id: 13,
+        name: "Metallica - MR001 T-Shirt",
+        category: "music",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/music/Metallica - MR001.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "Metallica design for music fans"
+    },
+    {
+        id: 14,
+        name: "Call of Duty Ghosts - VR001 T-Shirt",
+        category: "games",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/games/Call of Duty Ghosts - VR001.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "Call of Duty Ghosts design for games fans"
+    },
 ];
 
 // Cart and Wishlist Management

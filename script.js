@@ -1,101 +1,6 @@
 // Product Data
 const products = [
-    // {
-    //     id: 1,
-    //     name: "GRATEFUL vehicles Design Back Printed T-Shirt",
-    //     category: "vehicles",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
-    //     rating: 4.8,
-    //     reviews: 45,
-    //     badge: "Sale",
-    //     description: "Beautiful vehicles design with premium cotton fabric"
-    // },
-    // {
-    //     id: 1,
-    //     name: "BECOME BUTTERFLY Butterfly Design T-Shirt",
-    //     category: "butterfly",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    //     rating: 4.9,
-    //     reviews: 32,
-    //     badge: "Sale",
-    //     description: "Elegant butterfly design perfect for women"
-    // },
-    // {
-    //     id: 2,
-    //     name: "DREAM FLIGHT Butterfly Design T-Shirt",
-    //     category: "butterfly",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    //     rating: 4.7,
-    //     reviews: 28,
-    //     badge: "Sale",
-    //     description: "Dreamy butterfly design with soft fabric"
-    // },
-    // {
-    //     id: 3,
-    //     name: "MONEY Teddy Bear Back Printed T-Shirt",
-    //     category: "teddy",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    //     rating: 5.0,
-    //     reviews: 67,
-    //     badge: "Sale",
-    //     description: "Cute teddy bear design for men and women"
-    // },
-    // {
-    //     id: 4,
-    //     name: "SELF LOVE IS THE BEST LOVE T-Shirt",
-    //     category: "girls",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    //     rating: 5.0,
-    //     reviews: 89,
-    //     badge: "Sale",
-    //     description: "Empowering message with comfortable fit"
-    // },
-    // {
-    //     id: 5,
-    //     name: "BMW 1000RR Bike T-Shirt",
-    //     category: "bike",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    //     rating: 4.6,
-    //     reviews: 23,
-    //     badge: "Sale",
-    //     description: "Premium quality unisex bike design"
-    // },
-    // {
-    //     id: 6,
-    //     name: "DUCATI PANIGALE Bike T-Shirt",
-    //     category: "bike",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    //     rating: 4.8,
-    //     reviews: 34,
-    //     badge: "Sale",
-    //     description: "High-quality bike enthusiast design"
-    // },
-    // {
-    //     id: 7,
-    //     name: "HONDA CBR Bike T-Shirt",
-    //     category: "bike",
-    //     price: 2490,
-    //     originalPrice: 2990,
-    //     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    //     rating: 4.5,
-    //     reviews: 19,
-    //     badge: "Sale",
-    //     description: "Classic Honda CBR design"
-    // },
+    
     {
         id: 1,
         name: "Mercedes-Benz C63 Vehicle T-Shirt",
@@ -264,6 +169,139 @@ const products = [
         badge: "New",
         description: "Call of Duty Ghosts design for games fans"
     },
+    {
+        id: 15,
+        name: "Super Man - FR001 T-Shirt",
+        category: "filmtvseries",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/film &tvseries/Super Man - FR001.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "Call of Duty Ghosts design for games fans"
+    },
+    {
+        id: 16,
+        name: "BMW m1000RR Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/BMW m1000RR - VR005.jpg",
+        rating: 4.8,
+        reviews: 41,
+        badge: "New",
+        description: "BMW m1000RR design for vehicle enthusiasts"
+    },
+    {
+        id: 17,
+        name: "Yamaha YZF-R1 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Yamaha YZF-R1 - VR016.jpg",
+        rating: 4.9,
+        reviews: 38,
+        badge: "New",
+        description: "Yamaha YZF-R1 superbike design for racing fans"
+    },
+    {
+        id: 18,
+        name: "Kawasaki Ninja H2 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/KAWASAKI ninja h2 - VR008.jpg",
+        rating: 4.7,
+        reviews: 45,
+        badge: "New",
+        description: "Kawasaki Ninja H2 supercharged design"
+    },
+    {
+        id: 19,
+        name: "Harley Davidson Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Harly Davidson - VR004.jpg",
+        rating: 4.6,
+        reviews: 52,
+        badge: "New",
+        description: "Classic Harley Davidson cruiser design"
+    },
+    {
+        id: 20,
+        name: "Suzuki DR-Z400SM Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/suzuki DR-Z400SM - VR019.jpg",
+        rating: 4.5,
+        reviews: 29,
+        badge: "New",
+        description: "Suzuki DR-Z400SM supermoto design"
+    },
+    {
+        id: 21,
+        name: "Yamaha MT-15 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Yamaha MT 15 - VR020.jpg",
+        rating: 4.4,
+        reviews: 33,
+        badge: "New",
+        description: "Yamaha MT-15 naked bike design"
+    },
+    {
+        id: 22,
+        name: "Suzuki Djebel 250 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Suzuki Djebel 250 - VR003.jpg",
+        rating: 4.3,
+        reviews: 27,
+        badge: "New",
+        description: "Suzuki Djebel 250 adventure bike design"
+    },
+    {
+        id: 23,
+        name: "Honda CB250 Hornet Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Honda CB250 Hornet - VR018.jpg",
+        rating: 4.5,
+        reviews: 31,
+        badge: "New",
+        description: "Honda CB250 Hornet street bike design"
+    },
+    {
+        id: 24,
+        name: "Kawasaki KLX250D Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Kawasaki KLX250D - VR015.jpg",
+        rating: 4.4,
+        reviews: 25,
+        badge: "New",
+        description: "Kawasaki KLX250D dual-sport design"
+    },
+    {
+        id: 25,
+        name: "Honda CB600 Hornet Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Honda CB 600 HORNET - VR017.jpg",
+        rating: 4.6,
+        reviews: 42,
+        badge: "New",
+        description: "Honda CB600 Hornet middleweight design"
+    }
+
 ];
 
 // Cart and Wishlist Management

@@ -961,7 +961,7 @@ main {
         left: -100%;
         width: 100%;
         height: calc(100vh - 100%);
-        background: white;
+        background: rgb(18, 18, 18);
         flex-direction: column;
         padding: 40px 20px;
         transition: left 0.3s ease;

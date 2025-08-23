@@ -104,202 +104,202 @@ const products = [
         price: 2490,
         originalPrice: 2990,
         image: "images/vehicles/Mclaren P1 - VR013.jpg",
-        rating: 4.8,
+        rating: 4.9,
         reviews: 44,
         badge: "New",
-        description: "Hybrid hypercar silhouette with dynamic flow"
+        description: "Hypercar excellence in streetwear form"
     },
     {
         id: 10,
-        name: "Pagani Zonda C12 Vehicle T-Shirt",
+        name: "Pagani Zonda C1 Vehicle T-Shirt",
         category: "vehicles",
         price: 2490,
         originalPrice: 2990,
         image: "images/vehicles/The Pagani Zonda C1 - VR014.jpg",
-        rating: 4.9,
-        reviews: 53,
+        rating: 4.8,
+        reviews: 37,
         badge: "New",
-        description: "Exotic Zonda profile for supercar aficionados"
+        description: "Italian craftsmanship meets automotive art"
     },
     {
         id: 11,
-        name: "Squid Game TV Series T-Shirt",
-        category: "filmtvseries",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/film & tvseries/Squid Game - TR001.jpg",
-        rating: 4.8,
-        reviews: 41,
-        badge: "New",
-        description: "Iconic Squid Game design for Netflix series fans"
-    },
-    {
-        id: 12,
-        name: "CM Punk - SR001 T-Shirt",
-        category: "sports",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/sports/CM Punk - SR001.jpg",
-        rating: 4.8,
-        reviews: 41,
-        badge: "New",
-        description: "CM Punk design for sports fans"
-    },
-    {
-        id: 13,
-        name: "Metallica - MR001 T-Shirt",
-        category: "music",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/music/Metallica - MR001.jpg",
-        rating: 4.8,
-        reviews: 41,
-        badge: "New",
-        description: "Metallica design for music fans"
-    },
-    {
-        id: 14,
-        name: "Call of Duty Ghosts - VR001 T-Shirt",
-        category: "games",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/games/Call of Duty Ghosts - VR001.jpg",
-        rating: 4.8,
-        reviews: 41,
-        badge: "New",
-        description: "Call of Duty Ghosts design for games fans"
-    },
-    {
-        id: 15,
-        name: "Super Man - FR001 T-Shirt",
-        category: "filmtvseries",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/film &tvseries/Super Man - FR001.jpg",
-        rating: 4.8,
-        reviews: 41,
-        badge: "New",
-        description: "Call of Duty Ghosts design for games fans"
-    },
-    {
-        id: 16,
-        name: "BMW m1000RR Bike T-Shirt",
+        name: "BMW M1000RR Bike T-Shirt",
         category: "vehicles",
         price: 2490,
         originalPrice: 2990,
         image: "images/vehicles/bikes/BMW m1000RR - VR005.jpg",
-        rating: 4.8,
-        reviews: 41,
+        rating: 4.9,
+        reviews: 51,
         badge: "New",
-        description: "BMW m1000RR design for vehicle enthusiasts"
+        description: "Track-focused superbike design for riders"
     },
     {
-        id: 17,
+        id: 12,
+        name: "Harley Davidson Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Harly Davidson - VR004.jpg",
+        rating: 4.7,
+        reviews: 38,
+        badge: "New",
+        description: "American cruiser heritage in bold print"
+    },
+    {
+        id: 13,
+        name: "Suzuki Djebel 250 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Suzuki Djebel 250 - VR003.jpg",
+        rating: 4.6,
+        reviews: 29,
+        badge: "New",
+        description: "Adventure bike spirit for outdoor enthusiasts"
+    },
+    {
+        id: 14,
+        name: "Kawasaki Ninja H2 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/KAWASAKI ninja h2 - VR008.jpg",
+        rating: 4.8,
+        reviews: 42,
+        badge: "New",
+        description: "Supercharged performance in streetwear"
+    },
+    {
+        id: 15,
+        name: "Kawasaki KLX250D Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Kawasaki KLX250D - VR015.jpg",
+        rating: 4.5,
+        reviews: 23,
+        badge: "New",
+        description: "Dual-sport versatility for adventure seekers"
+    },
+    {
+        id: 16,
         name: "Yamaha YZF-R1 Bike T-Shirt",
         category: "vehicles",
         price: 2490,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Yamaha YZF-R1 - VR016.jpg",
         rating: 4.9,
-        reviews: 38,
+        reviews: 48,
         badge: "New",
-        description: "Yamaha YZF-R1 superbike design for racing fans"
+        description: "MotoGP-inspired racing design"
     },
     {
-        id: 18,
-        name: "Kawasaki Ninja H2 Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/KAWASAKI ninja h2 - VR008.jpg",
-        rating: 4.7,
-        reviews: 45,
-        badge: "New",
-        description: "Kawasaki Ninja H2 supercharged design"
-    },
-    {
-        id: 19,
-        name: "Harley Davidson Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Harly Davidson - VR004.jpg",
-        rating: 4.6,
-        reviews: 52,
-        badge: "New",
-        description: "Classic Harley Davidson cruiser design"
-    },
-    {
-        id: 20,
-        name: "Suzuki DR-Z400SM Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/suzuki DR-Z400SM - VR019.jpg",
-        rating: 4.5,
-        reviews: 29,
-        badge: "New",
-        description: "Suzuki DR-Z400SM supermoto design"
-    },
-    {
-        id: 21,
-        name: "Yamaha MT-15 Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Yamaha MT 15 - VR020.jpg",
-        rating: 4.4,
-        reviews: 33,
-        badge: "New",
-        description: "Yamaha MT-15 naked bike design"
-    },
-    {
-        id: 22,
-        name: "Suzuki Djebel 250 Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Suzuki Djebel 250 - VR003.jpg",
-        rating: 4.3,
-        reviews: 27,
-        badge: "New",
-        description: "Suzuki Djebel 250 adventure bike design"
-    },
-    {
-        id: 23,
-        name: "Honda CB250 Hornet Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Honda CB250 Hornet - VR018.jpg",
-        rating: 4.5,
-        reviews: 31,
-        badge: "New",
-        description: "Honda CB250 Hornet street bike design"
-    },
-    {
-        id: 24,
-        name: "Kawasaki KLX250D Bike T-Shirt",
-        category: "vehicles",
-        price: 2490,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Kawasaki KLX250D - VR015.jpg",
-        rating: 4.4,
-        reviews: 25,
-        badge: "New",
-        description: "Kawasaki KLX250D dual-sport design"
-    },
-    {
-        id: 25,
+        id: 17,
         name: "Honda CB600 Hornet Bike T-Shirt",
         category: "vehicles",
         price: 2490,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Honda CB 600 HORNET - VR017.jpg",
         rating: 4.6,
-        reviews: 42,
+        reviews: 35,
         badge: "New",
-        description: "Honda CB600 Hornet middleweight design"
+        description: "Streetfighter attitude for urban riders"
+    },
+    {
+        id: 18,
+        name: "Honda CB250 Hornet Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Honda CB250 Hornet - VR018.jpg",
+        rating: 4.4,
+        reviews: 28,
+        badge: "New",
+        description: "Compact power in stylish design"
+    },
+    {
+        id: 19,
+        name: "Suzuki DR-Z400SM Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/suzuki DR-Z400SM - VR019.jpg",
+        rating: 4.7,
+        reviews: 33,
+        badge: "New",
+        description: "SuperMoto style for street and track"
+    },
+    {
+        id: 20,
+        name: "Yamaha MT-15 Bike T-Shirt",
+        category: "vehicles",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/vehicles/bikes/Yamaha MT 15 - VR020.jpg",
+        rating: 4.5,
+        reviews: 25,
+        badge: "New",
+        description: "Naked bike aesthetics for modern riders"
+    },
+    {
+        id: 21,
+        name: "Call of Duty Ghosts Game T-Shirt",
+        category: "games",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/games/Call of Duty Ghosts - VR001.jpg",
+        rating: 4.8,
+        reviews: 67,
+        badge: "New",
+        description: "Gaming excellence in comfortable wear"
+    },
+    {
+        id: 22,
+        name: "CM Punk Sports T-Shirt",
+        category: "sports",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/sports/CM Punk - SR001.jpg",
+        rating: 4.9,
+        reviews: 89,
+        badge: "New",
+        description: "Wrestling legend in bold design"
+    },
+    {
+        id: 23,
+        name: "Superman Film & TV Series T-Shirt",
+        category: "filmtvseries",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Super Man - FR001.jpg",
+        rating: 4.7,
+        reviews: 73,
+        badge: "New",
+        description: "Man of Steel in iconic style"
+    },
+    {
+        id: 24,
+        name: "Squid Game Film & TV Series T-Shirt",
+        category: "filmtvseries",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game - TR001.jpg",
+        rating: 4.8,
+        reviews: 81,
+        badge: "New",
+        description: "Netflix sensation in streetwear"
+    },
+    {
+        id: 25,
+        name: "Metallica Music T-Shirt",
+        category: "music",
+        price: 2490,
+        originalPrice: 2990,
+        image: "images/music/Metallica - MR001.jpg",
+        rating: 4.9,
+        reviews: 95,
+        badge: "New",
+        description: "Heavy metal legends in bold print"
     }
 
 ];
@@ -308,7 +308,7 @@ const products = [
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-// DOM Elements
+// DOM Elements - Check if they exist before using
 const cartBtn = document.getElementById('cartBtn');
 const cartSidebar = document.getElementById('cartSidebar');
 const closeCart = document.getElementById('closeCart');
@@ -332,79 +332,163 @@ const featuredProducts = document.getElementById('featuredProducts');
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    updateCartCount();
-    updateWishlistCount();
-    loadFeaturedProducts();
+    console.log('DOM Content Loaded - Initializing application...');
+    
+    // Debug: Log which elements exist
+    console.log('Cart elements:', {
+        cartBtn: !!cartBtn,
+        cartSidebar: !!cartSidebar,
+        cartCount: !!cartCount,
+        cartItems: !!cartItems,
+        cartTotal: !!cartTotal,
+        checkoutBtn: !!checkoutBtn
+    });
+    
+    console.log('Wishlist elements:', {
+        wishlistBtn: !!wishlistBtn,
+        wishlistSidebar: !!wishlistSidebar,
+        wishlistCount: !!wishlistCount,
+        wishlistItems: !!wishlistItems
+    });
+    
+    // Only initialize cart/wishlist if elements exist
+    if (cartCount) {
+        console.log('Updating cart count...');
+        updateCartCount();
+    }
+    if (wishlistCount) {
+        console.log('Updating wishlist count...');
+        updateWishlistCount();
+    }
+    
+    // Only load featured products if the element exists
+    if (featuredProducts) {
+        console.log('Loading featured products...');
+        loadFeaturedProducts();
+    }
+    
+    console.log('Setting up event listeners...');
     setupEventListeners();
+    console.log('Setting up animations...');
     setupAnimations();
+    console.log('Setting up scroll to top...');
     setupScrollToTop();
+    
+    console.log('Application initialization complete!');
 });
-
-
 
 // Event Listeners Setup
 function setupEventListeners() {
-    // Cart functionality
-    cartBtn.addEventListener('click', toggleCart);
-    closeCart.addEventListener('click', toggleCart);
-    checkoutBtn.addEventListener('click', proceedToCheckout);
+    console.log('Setting up event listeners...');
+    
+    // Cart functionality - only if elements exist
+    if (cartBtn && cartSidebar && closeCart && checkoutBtn) {
+        console.log('Setting up cart event listeners...');
+        cartBtn.addEventListener('click', toggleCart);
+        closeCart.addEventListener('click', toggleCart);
+        checkoutBtn.addEventListener('click', proceedToCheckout);
+    } else {
+        console.log('Cart elements missing:', { cartBtn: !!cartBtn, cartSidebar: !!cartSidebar, closeCart: !!closeCart, checkoutBtn: !!checkoutBtn });
+    }
 
-    // Wishlist functionality
-    wishlistBtn.addEventListener('click', toggleWishlist);
-    closeWishlist.addEventListener('click', toggleWishlist);
+    // Wishlist functionality - only if elements exist
+    if (wishlistBtn && wishlistSidebar && closeWishlist) {
+        console.log('Setting up wishlist event listeners...');
+        wishlistBtn.addEventListener('click', toggleWishlist);
+        closeWishlist.addEventListener('click', toggleWishlist);
+    } else {
+        console.log('Wishlist elements missing:', { wishlistBtn: !!wishlistBtn, wishlistSidebar: !!wishlistSidebar, closeWishlist: !!closeWishlist });
+    }
 
-    // Search functionality
-    searchBtn.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-
-    // Mobile menu
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-
-    // Category cards
-    document.querySelectorAll('.category-card').forEach(card => {
-        card.addEventListener('click', function() {
-            const category = this.dataset.category;
-            window.location.href = `shop.html?category=${category}`;
+    // Search functionality - only if elements exist
+    if (searchBtn && searchInput) {
+        console.log('Setting up search event listeners...');
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
         });
-    });
+    } else {
+        console.log('Search elements missing:', { searchBtn: !!searchBtn, searchInput: !!searchInput });
+    }
 
-    // Close sidebars when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!cartSidebar.contains(e.target) && !cartBtn.contains(e.target)) {
-            cartSidebar.classList.remove('active');
-        }
-        if (!wishlistSidebar.contains(e.target) && !wishlistBtn.contains(e.target)) {
-            wishlistSidebar.classList.remove('active');
-        }
-    });
+    // Mobile menu - only if elements exist
+    if (mobileMenuBtn && navMenu) {
+        console.log('Setting up mobile menu event listeners...');
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    } else {
+        console.log('Mobile menu elements missing:', { mobileMenuBtn: !!mobileMenuBtn, navMenu: !!navMenu });
+    }
+
+    // Category cards - only if they exist
+    const categoryCards = document.querySelectorAll('.category-card');
+    if (categoryCards.length > 0) {
+        console.log('Setting up category card event listeners...');
+        categoryCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const category = this.dataset.category;
+                window.location.href = `shop.html?category=${category}`;
+            });
+        });
+    } else {
+        console.log('No category cards found');
+    }
+
+    // Close sidebars when clicking outside - only if elements exist
+    if (cartSidebar || wishlistSidebar) {
+        console.log('Setting up sidebar close event listeners...');
+        document.addEventListener('click', function(e) {
+            if (cartSidebar && !cartSidebar.contains(e.target) && cartBtn && !cartBtn.contains(e.target)) {
+                cartSidebar.classList.remove('active');
+            }
+            if (wishlistSidebar && !wishlistSidebar.contains(e.target) && wishlistBtn && !wishlistBtn.contains(e.target)) {
+                wishlistSidebar.classList.remove('active');
+            }
+        });
+    } else {
+        console.log('No sidebars found for close functionality');
+    }
+    
+    console.log('Event listeners setup complete!');
 }
 
 // Cart Functions
 function toggleCart() {
+    console.log('toggleCart called');
+    if (!cartSidebar) {
+        console.log('Cart sidebar not found!');
+        return;
+    }
     cartSidebar.classList.toggle('active');
+    console.log('Cart sidebar active:', cartSidebar.classList.contains('active'));
     if (cartSidebar.classList.contains('active')) {
         renderCart();
     }
 }
 
 function addToCart(productId, quantity = 1) {
+    console.log('addToCart called with productId:', productId, 'quantity:', quantity);
     const product = products.find(p => p.id === productId);
-    if (!product) return;
+    if (!product) {
+        console.log('Product not found with ID:', productId);
+        return;
+    }
+    console.log('Product found:', product.name);
 
     const existingItem = cart.find(item => item.id === productId);
     if (existingItem) {
         existingItem.quantity += quantity;
+        console.log('Updated existing item quantity to:', existingItem.quantity);
     } else {
         cart.push({
             ...product,
             quantity: quantity
         });
+        console.log('Added new item to cart');
     }
 
+    console.log('Current cart:', cart);
     updateCartCount();
     saveCart();
     showNotification('Product added to cart!', 'success');
@@ -414,7 +498,7 @@ function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
     updateCartCount();
     saveCart();
-    renderCart();
+    if (cartItems) renderCart();
     showNotification('Product removed from cart!', 'info');
 }
 
@@ -427,12 +511,14 @@ function updateCartItemQuantity(productId, quantity) {
             item.quantity = quantity;
             updateCartCount();
             saveCart();
-            renderCart();
+            if (cartItems) renderCart();
         }
     }
 }
 
 function renderCart() {
+    if (!cartItems || !cartTotal) return;
+    
     if (cart.length === 0) {
         cartItems.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
         cartTotal.textContent = 'රු0.00';
@@ -488,8 +574,13 @@ function renderCart() {
 }
 
 function updateCartCount() {
+    if (!cartCount) {
+        console.log('Cart count element not found!');
+        return;
+    }
     const count = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCount.textContent = count;
+    console.log('Updated cart count to:', count);
 }
 
 function saveCart() {
@@ -498,35 +589,52 @@ function saveCart() {
 
 // Wishlist Functions
 function toggleWishlist() {
+    console.log('toggleWishlist called');
+    if (!wishlistSidebar) {
+        console.log('Wishlist sidebar not found!');
+        return;
+    }
     wishlistSidebar.classList.toggle('active');
+    console.log('Wishlist sidebar active:', wishlistSidebar.classList.contains('active'));
     if (wishlistSidebar.classList.contains('active')) {
         renderWishlist();
     }
 }
 
 function addToWishlist(productId) {
+    console.log('addToWishlist called with productId:', productId);
     const product = products.find(p => p.id === productId);
-    if (!product) return;
+    if (!product) {
+        console.log('Product not found with ID:', productId);
+        return;
+    }
+    console.log('Product found:', product.name);
 
     if (!wishlist.find(item => item.id === productId)) {
         wishlist.push(product);
+        console.log('Added product to wishlist');
         updateWishlistCount();
         saveWishlist();
         showNotification('Product added to wishlist!', 'success');
     } else {
+        console.log('Product already in wishlist');
         showNotification('Product already in wishlist!', 'info');
     }
+    
+    console.log('Current wishlist:', wishlist);
 }
 
 function removeFromWishlist(productId) {
     wishlist = wishlist.filter(item => item.id !== productId);
     updateWishlistCount();
     saveWishlist();
-    renderWishlist();
+    if (wishlistItems) renderWishlist();
     showNotification('Product removed from wishlist!', 'info');
 }
 
 function renderWishlist() {
+    if (!wishlistItems) return;
+    
     if (wishlist.length === 0) {
         wishlistItems.innerHTML = '<p class="empty-wishlist">Your wishlist is empty</p>';
         return;
@@ -567,7 +675,12 @@ function renderWishlist() {
 }
 
 function updateWishlistCount() {
+    if (!wishlistCount) {
+        console.log('Wishlist count element not found!');
+        return;
+    }
     wishlistCount.textContent = wishlist.length;
+    console.log('Updated wishlist count to:', wishlist.length);
 }
 
 function saveWishlist() {
@@ -576,6 +689,8 @@ function saveWishlist() {
 
 // Product Functions
 function loadFeaturedProducts() {
+    if (!featuredProducts) return;
+    
     const featured = products.slice(0, 8); // Show first 8 products
     featuredProducts.innerHTML = featured.map(product => createProductCard(product)).join('');
     
@@ -730,6 +845,7 @@ function quickView(productId) {
 
 // Search Functions
 function performSearch() {
+    if (!searchInput) return;
     const query = searchInput.value.trim().toLowerCase();
     if (!query) return;
 
@@ -751,6 +867,7 @@ function performSearch() {
 
 // Mobile Menu Functions
 function toggleMobileMenu() {
+    if (!mobileMenuBtn || !navMenu) return;
     mobileMenuBtn.classList.toggle('active');
     navMenu.classList.toggle('active');
 }
@@ -771,10 +888,13 @@ function setupAnimations() {
         });
     }, observerOptions);
 
-    // Observe elements for animation
-    document.querySelectorAll('.feature-card, .product-card, .category-card, .testimonial-card').forEach(el => {
-        observer.observe(el);
-    });
+    // Observe elements for animation - only if they exist
+    const elementsToObserve = document.querySelectorAll('.feature-card, .product-card, .category-card, .testimonial-card');
+    if (elementsToObserve.length > 0) {
+        elementsToObserve.forEach(el => {
+            observer.observe(el);
+        });
+    }
 }
 
 // Scroll to Top Function

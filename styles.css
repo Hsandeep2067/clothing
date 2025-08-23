@@ -83,7 +83,7 @@ body {
 .logo h1 {
     font-size: 28px;
     font-weight: 700;
-    background: linear-gradient(135deg, #667eea 0%, #27FFFF 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #27FFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -356,7 +356,8 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #f8f9fa;
+    
     overflow: hidden;
 }
 
@@ -409,7 +410,7 @@ main {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 15px 40px rgba(20, 20, 21, 0.4);
 }
 
 .btn-secondary {
@@ -680,7 +681,7 @@ main {
 }
 
 .action-btn:hover {
-    background: #667eea;
+    background: #27FFFF;
     color: white;
     transform: scale(1.1);
 }
@@ -722,7 +723,7 @@ main {
 .current-price {
     font-size: 20px;
     font-weight: 700;
-    color: #667eea;
+    color: #27FFFF;
 }
 
 .original-price {
@@ -1150,7 +1151,7 @@ main {
     width: 20px;
     height: 20px;
     border: 3px solid #f3f3f3;
-    border-top: 3px solid #667eea;
+    border-top: 3px solid #27FFFF;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -1265,13 +1266,13 @@ main {
 }
 
 .filter-option:hover {
-    color: #667eea;
+    color: #27FFFF;
 }
 
 .filter-option input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: #667eea;
+    accent-color: #27FFFF;
 }
 
 .price-range {
@@ -1294,7 +1295,7 @@ main {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #667eea;
+    background: #27FFFF;
     cursor: pointer;
 }
 
@@ -1408,9 +1409,9 @@ main {
 
 .view-btn:hover,
 .view-btn.active {
-    background: #667eea;
+    background: #27FFFF;
     color: white;
-    border-color: #667eea;
+    border-color: #27FFFF;
 }
 
 /* Products Grid */
@@ -1466,9 +1467,9 @@ main {
 }
 
 .pagination-btn:hover:not(:disabled) {
-    background: #667eea;
+    background: #27FFFF;
     color: white;
-    border-color: #667eea;
+    border-color: #27FFFF;
 }
 
 .pagination-btn:disabled {
@@ -1495,9 +1496,9 @@ main {
 
 .pagination-numbers button:hover,
 .pagination-numbers button.active {
-    background: #667eea;
+    background: #27FFFF;
     color: white;
-    border-color: #667eea;
+    border-color: #27FFFF;
 }
 
 /* Shop page overrides to match home (black + cyan) */
@@ -1615,7 +1616,7 @@ main {
 /* About Page Styles */
 .about-hero {
     padding: 60px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     color: white;
 }
 
@@ -1674,7 +1675,7 @@ main {
 .mission-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1784,7 +1785,7 @@ main {
 }
 
 .member-role {
-    color: #667eea;
+    color: #27FFFF;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -1809,13 +1810,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #667eea;
+    color: #27FFFF;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .member-social a:hover {
-    background: #667eea;
+    background: #27FFFF;
     color: white;
     transform: translateY(-3px);
 }
@@ -1823,7 +1824,7 @@ main {
 /* Stats Section */
 .stats-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     color: white;
 }
 
@@ -1878,7 +1879,7 @@ main {
 .value-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1959,7 +1960,7 @@ main {
 /* Contact Page Styles */
 .contact-hero {
     padding: 60px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     color: white;
     text-align: center;
 }
@@ -2042,16 +2043,16 @@ main {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #27FFFF;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .form-group.focused label {
-    color: #667eea;
+    color: #27FFFF;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -2109,7 +2110,7 @@ main {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #27FFFF 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2221,7 +2222,7 @@ main {
 
 .faq-question i {
     font-size: 14px;
-    color: #667eea;
+    color: #27FFFF;
     transition: transform 0.3s ease;
 }
 

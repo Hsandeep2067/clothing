@@ -1043,7 +1043,7 @@ const additionalStyles = `
     }
 
     .add-to-cart-from-wishlist {
-        background: #667eea;
+        background: linear-gradient(135deg, rgb(58, 58, 58) 0%, #000000 100%);
         color: white;
         border: none;
         padding: 8px 12px;

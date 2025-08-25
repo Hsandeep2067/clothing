@@ -1134,7 +1134,7 @@ const additionalStyles = `
     }
 
     .cart-item-price, .wishlist-item-price {
-        color: #667eea;
+        color:rgb(0, 0, 0);
         font-weight: 600;
         margin-bottom: 5px;
     }

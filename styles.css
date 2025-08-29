@@ -3049,6 +3049,42 @@ main {
     margin-bottom: 8px;
 }
 
+/* Size Options - Horizontal Buttons */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.size-btn {
+    padding: 8px 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    background: white;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 40px;
+    text-align: center;
+}
+
+.size-btn:hover {
+    border-color: #27FFFF;
+    color: #27FFFF;
+    transform: translateY(-1px);
+}
+
+.size-btn.active {
+    background: #27FFFF;
+    border-color: #27FFFF;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(39, 255, 255, 0.3);
+}
+
+/* Legacy dropdown styles (keeping for backward compatibility) */
 .size-selector {
     width: 100%;
     padding: 8px 12px;
@@ -3075,6 +3111,42 @@ main {
     margin-bottom: 20px;
 }
 
+/* Modal Size Options - Horizontal Buttons */
+.modal-size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modal-size-btn {
+    padding: 10px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    background: white;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 50px;
+    text-align: center;
+}
+
+.modal-size-btn:hover {
+    border-color: #27FFFF;
+    color: #27FFFF;
+    transform: translateY(-1px);
+}
+
+.modal-size-btn.active {
+    background: #27FFFF;
+    border-color: #27FFFF;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(39, 255, 255, 0.3);
+}
+
+/* Legacy modal dropdown styles (keeping for backward compatibility) */
 .modal-size-selector {
     width: 100%;
     padding: 10px 15px;
@@ -3173,6 +3245,27 @@ main {
         padding: 3px 6px;
     }
     
+    .size-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+        min-width: 35px;
+    }
+    
+    .modal-size-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        min-width: 40px;
+    }
+    
+    .size-options {
+        gap: 6px;
+    }
+    
+    .modal-size-options {
+        gap: 8px;
+    }
+    
+    /* Legacy dropdown responsive styles */
     .size-selector {
         padding: 6px 10px;
         font-size: 13px;

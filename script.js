@@ -1221,11 +1221,19 @@ function loadFeaturedProducts() {
         });
     });
     
-    // Add event listeners for size selectors
-    featuredProducts.querySelectorAll('.size-selector').forEach(selector => {
-        selector.addEventListener('change', function(e) {
+    // Add event listeners for size buttons
+    featuredProducts.querySelectorAll('.size-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
             const productId = parseInt(this.dataset.productId);
-            const selectedSize = this.value;
+            const selectedSize = this.dataset.size;
+            
+            // Update active button
+            const sizeOptions = this.parentElement;
+            sizeOptions.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update price
             updateProductPrice(productId, selectedSize);
         });
     });
@@ -1272,11 +1280,11 @@ function createProductCard(product) {
                 ${product.sizes ? `
                 <div class="size-selection">
                     <label class="size-label">Size:</label>
-                    <select class="size-selector" data-product-id="${product.id}">
+                    <div class="size-options" data-product-id="${product.id}">
                         ${Object.keys(product.sizes).map(size => 
-                            `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                            `<button class="size-btn ${size === defaultSize ? 'active' : ''}" data-size="${size}" data-product-id="${product.id}">${size}</button>`
                         ).join('')}
-                    </select>
+                    </div>
                 </div>
                 ` : ''}
                 <div class="product-price">
@@ -1293,8 +1301,8 @@ function createProductCard(product) {
 
 // Helper functions for size selection and pricing
 function getSelectedSize(productId) {
-    const sizeSelector = document.querySelector(`.size-selector[data-product-id="${productId}"]`);
-    return sizeSelector ? sizeSelector.value : 'M';
+    const activeButton = document.querySelector(`.size-btn.active[data-product-id="${productId}"]`);
+    return activeButton ? activeButton.dataset.size : 'M';
 }
 
 function updateProductPrice(productId, selectedSize) {
@@ -1374,11 +1382,11 @@ function quickView(productId) {
                         ${product.sizes ? `
                         <div class="modal-size-selection">
                             <label class="size-label">Size:</label>
-                            <select class="modal-size-selector" data-product-id="${product.id}">
+                            <div class="modal-size-options" data-product-id="${product.id}">
                                 ${Object.keys(product.sizes).map(size => 
-                                    `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                                    `<button class="modal-size-btn ${size === defaultSize ? 'active' : ''}" data-size="${size}">${size}</button>`
                                 ).join('')}
-                            </select>
+                            </div>
                         </div>
                         ` : ''}
                         <div class="product-price">
@@ -1401,16 +1409,24 @@ function quickView(productId) {
 
     document.body.appendChild(modal);
     
-    // Add event listener for size selector in modal
-    const modalSizeSelector = modal.querySelector('.modal-size-selector');
-    if (modalSizeSelector) {
-        modalSizeSelector.addEventListener('change', function() {
-            const selectedSize = this.value;
-            const sizeData = product.sizes[selectedSize];
-            if (sizeData) {
-                modal.querySelector('.modal-current-price').textContent = `රු${sizeData.price.toLocaleString()}`;
-                modal.querySelector('.modal-original-price').textContent = `රු${sizeData.originalPrice.toLocaleString()}`;
-            }
+    // Add event listeners for size buttons in modal
+    const modalSizeButtons = modal.querySelectorAll('.modal-size-btn');
+    if (modalSizeButtons.length > 0) {
+        modalSizeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const selectedSize = this.dataset.size;
+                
+                // Update active button
+                modalSizeButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update prices
+                const sizeData = product.sizes[selectedSize];
+                if (sizeData) {
+                    modal.querySelector('.modal-current-price').textContent = `රු${sizeData.price.toLocaleString()}`;
+                    modal.querySelector('.modal-original-price').textContent = `රු${sizeData.originalPrice.toLocaleString()}`;
+                }
+            });
         });
     }
     
@@ -1418,7 +1434,8 @@ function quickView(productId) {
     modal.querySelector('.modal-add-to-cart').addEventListener('click', function(e) {
         e.stopPropagation();
         const productId = parseInt(this.dataset.productId);
-        const selectedSize = modalSizeSelector ? modalSizeSelector.value : null;
+        const activeButton = modal.querySelector('.modal-size-btn.active');
+        const selectedSize = activeButton ? activeButton.dataset.size : null;
         addToCart(productId, 1, selectedSize);
         document.body.removeChild(modal);
     });

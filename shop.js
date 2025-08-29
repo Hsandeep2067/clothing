@@ -398,11 +398,11 @@ function createProductCard(product) {
             ${product.sizes ? `
             <div class="size-selection">
                 <label class="size-label">Size:</label>
-                <select class="size-selector" data-product-id="${product.id}">
+                <div class="size-options" data-product-id="${product.id}">
                     ${Object.keys(product.sizes).map(size => 
-                        `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                        `<button class="size-btn ${size === defaultSize ? 'active' : ''}" data-size="${size}" data-product-id="${product.id}">${size}</button>`
                     ).join('')}
-                </select>
+                </div>
             </div>
             ` : ''}
             <div class="product-price">
@@ -419,12 +419,22 @@ function createProductCard(product) {
         </div>
     `;
     
-    // Add event listener for size selector
-    const sizeSelector = card.querySelector('.size-selector');
-    if (sizeSelector) {
-        sizeSelector.addEventListener('change', function() {
-            const selectedSize = this.value;
-            updateProductPriceInShop(product.id, selectedSize, card);
+    // Add event listeners for size buttons
+    const sizeButtons = card.querySelectorAll('.size-btn');
+    if (sizeButtons.length > 0) {
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const selectedSize = this.dataset.size;
+                
+                // Update active button
+                const sizeOptions = this.parentElement;
+                sizeOptions.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update price
+                updateProductPriceInShop(product.id, selectedSize, card);
+            });
         });
     }
     
@@ -476,8 +486,8 @@ function updateProductPriceInShop(productId, selectedSize, cardElement) {
 
 function addToCartWithSize(productId) {
     const productCard = document.querySelector(`[data-product-id="${productId}"]`);
-    const sizeSelector = productCard ? productCard.querySelector('.size-selector') : null;
-    const selectedSize = sizeSelector ? sizeSelector.value : null;
+    const activeButton = productCard ? productCard.querySelector('.size-btn.active') : null;
+    const selectedSize = activeButton ? activeButton.dataset.size : null;
     
     // Use the addToCart function from script.js with size parameter
     if (typeof addToCart === 'function') {

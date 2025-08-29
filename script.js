@@ -1268,7 +1268,7 @@ function createProductCard(product) {
                     <div class="stars">
                         ${generateStars(product.rating)}
                     </div>
-                    <span class="rating-text">(${product.reviews})</span>
+                    <span class="stock-status">In Stock</span>
                 </div>
                 ${product.specifications ? `
                 <div class="product-specs">
@@ -1365,7 +1365,7 @@ function quickView(productId) {
                     <div class="product-details">
                         <h2>${product.name}</h2>
                         <div class="product-rating">
-                            ${generateStars(product.rating)} (${product.reviews} reviews)
+                            ${generateStars(product.rating)} <span class="stock-status">In Stock</span>
                         </div>
                         <p class="product-description">${product.description}</p>
                         ${product.specifications ? `

@@ -386,7 +386,7 @@ function createProductCard(product) {
                 <div class="stars">
                     ${generateStars(product.rating)}
                 </div>
-                <span class="rating-text">(${product.reviews})</span>
+                <span class="stock-status">In Stock</span>
             </div>
             ${product.specifications ? `
             <div class="product-specs">

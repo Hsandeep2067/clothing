@@ -700,7 +700,8 @@ main {
 .product-rating {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 8px;
     margin-bottom: 10px;
 }
 
@@ -711,6 +712,17 @@ main {
 .rating-text {
     color: #666;
     font-size: 14px;
+}
+
+/* Stock Status Styling */
+.stock-status {
+    color: #27FFFF;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(39, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 255, 255, 0.3);
 }
 
 .product-price {
@@ -3286,5 +3298,11 @@ main {
     
     .product-specifications li {
         font-size: 13px;
+    }
+    
+    /* Stock status responsive styling */
+    .stock-status {
+        font-size: 12px;
+        padding: 2px 6px;
     }
 }

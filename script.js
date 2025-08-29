@@ -1251,7 +1251,7 @@ function createProductCard(product) {
     return `
         <div class="product-card" data-product-id="${product.id}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: pointer;">
                 ${product.badge ? `<div class="product-badge">${product.badge} -${discount}%</div>` : ''}
                 <div class="product-actions">
                     <button class="action-btn wishlist-btn" data-product-id="${product.id}" title="Add to Wishlist">
@@ -1830,3 +1830,47 @@ const additionalStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = additionalStyles;
 document.head.appendChild(styleSheet);
+
+// Image zoom functionality
+function zoomImage(imageUrl, productName) {
+    // Create zoom modal
+    const zoomModal = document.createElement('div');
+    zoomModal.className = 'image-zoom-modal';
+    zoomModal.innerHTML = `
+        <div class="zoom-modal-overlay" onclick="closeZoomModal(this.parentElement)">
+            <div class="zoom-modal-content" onclick="event.stopPropagation()">
+                <button class="close-zoom-btn" onclick="closeZoomModal(this.parentElement.parentElement.parentElement)">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img src="${imageUrl}" alt="${productName}" class="zoomed-image">
+                <div class="zoom-image-title">${productName}</div>
+            </div>
+        </div>
+    `;
+    
+    // Add modal to body
+    document.body.appendChild(zoomModal);
+    
+    // Show modal with animation
+    setTimeout(() => {
+        zoomModal.classList.add('active');
+    }, 10);
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function escapeHandler(e) {
+        if (e.key === 'Escape') {
+            closeZoomModal(zoomModal);
+            document.removeEventListener('keydown', escapeHandler);
+        }
+    });
+}
+
+// Close zoom modal
+function closeZoomModal(modal) {
+    modal.classList.remove('active');
+    setTimeout(() => {
+        if (modal && modal.parentNode) {
+            modal.parentNode.removeChild(modal);
+        }
+    }, 300);
+}

@@ -337,7 +337,7 @@ function createProductCard(product) {
     
     card.innerHTML = `
         <div class="product-image">
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: pointer;">
             ${product.badge ? `<span class="product-badge ${product.badge.toLowerCase()}">${product.badge}</span>` : ''}
             ${discount > 0 ? `<span class="discount-badge">-${discount}%</span>` : ''}
             <div class="product-overlay">
@@ -476,4 +476,48 @@ function addToCartWithSize(productId) {
     } else {
         console.error('addToCart function not found');
     }
+}
+
+// Image zoom functionality
+function zoomImage(imageUrl, productName) {
+    // Create zoom modal
+    const zoomModal = document.createElement('div');
+    zoomModal.className = 'image-zoom-modal';
+    zoomModal.innerHTML = `
+        <div class="zoom-modal-overlay" onclick="closeZoomModal(this.parentElement)">
+            <div class="zoom-modal-content" onclick="event.stopPropagation()">
+                <button class="close-zoom-btn" onclick="closeZoomModal(this.parentElement.parentElement.parentElement)">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img src="${imageUrl}" alt="${productName}" class="zoomed-image">
+                <div class="zoom-image-title">${productName}</div>
+            </div>
+        </div>
+    `;
+    
+    // Add modal to body
+    document.body.appendChild(zoomModal);
+    
+    // Show modal with animation
+    setTimeout(() => {
+        zoomModal.classList.add('active');
+    }, 10);
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function escapeHandler(e) {
+        if (e.key === 'Escape') {
+            closeZoomModal(zoomModal);
+            document.removeEventListener('keydown', escapeHandler);
+        }
+    });
+}
+
+// Close zoom modal
+function closeZoomModal(modal) {
+    modal.classList.remove('active');
+    setTimeout(() => {
+        if (modal && modal.parentNode) {
+            modal.parentNode.removeChild(modal);
+        }
+    }, 300);
 }

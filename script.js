@@ -1251,7 +1251,7 @@ function createProductCard(product) {
     return `
         <div class="product-card" data-product-id="${product.id}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: pointer;">
+                <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: zoom-in;">
                 ${product.badge ? `<div class="product-badge">${product.badge} -${discount}%</div>` : ''}
                 <div class="product-actions">
                     <button class="action-btn wishlist-btn" data-product-id="${product.id}" title="Add to Wishlist">

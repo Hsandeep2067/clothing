@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeShop();
     setupEventListeners();
     loadProducts();
+    setupRandomGallery();
 });
 
 function initializeShop() {
@@ -28,33 +29,44 @@ function initializeShop() {
         // Check the corresponding checkbox
         const checkbox = document.querySelector(`input[value="${category}"]`);
         if (checkbox) checkbox.checked = true;
+        // Hide gallery since filter is applied
+        hideRandomGallery();
+    } else {
+        // Show gallery initially if no category filter
+        showRandomGallery();
     }
     
     if (search) {
-        document.getElementById('searchInput').value = search;
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) searchInput.value = search;
         performSearch(search);
     }
     
-    // Initialize price range
+    // Initialize price range (only if elements exist)
     const priceRangeInput = document.getElementById('priceRange');
     const maxPriceInput = document.getElementById('maxPrice');
+    const minPriceInput = document.getElementById('minPrice');
     
-    priceRangeInput.addEventListener('input', function() {
-        priceRange.max = parseInt(this.value);
-        maxPriceInput.value = this.value;
-        applyFilters();
-    });
+    if (priceRangeInput && maxPriceInput) {
+        priceRangeInput.addEventListener('input', function() {
+            priceRange.max = parseInt(this.value);
+            maxPriceInput.value = this.value;
+            applyFilters();
+        });
+        
+        maxPriceInput.addEventListener('input', function() {
+            priceRange.max = parseInt(this.value) || 5000;
+            priceRangeInput.value = this.value;
+            applyFilters();
+        });
+    }
     
-    maxPriceInput.addEventListener('input', function() {
-        priceRange.max = parseInt(this.value) || 5000;
-        priceRangeInput.value = this.value;
-        applyFilters();
-    });
-    
-    document.getElementById('minPrice').addEventListener('input', function() {
-        priceRange.min = parseInt(this.value) || 0;
-        applyFilters();
-    });
+    if (minPriceInput) {
+        minPriceInput.addEventListener('input', function() {
+            priceRange.min = parseInt(this.value) || 0;
+            applyFilters();
+        });
+    }
 }
 
 function setupEventListeners() {
@@ -130,10 +142,12 @@ function loadProducts() {
 
 function applyFilters() {
     let filtered = [...products];
+    let hasActiveFilters = false;
     
     // Apply category filter
     if (selectedCategories.length > 0) {
         filtered = filtered.filter(product => selectedCategories.includes(product.category));
+        hasActiveFilters = true;
     }
     
     // Apply price filter
@@ -146,6 +160,7 @@ function applyFilters() {
         filtered = filtered.filter(product => 
             selectedRatings.some(rating => product.rating >= rating)
         );
+        hasActiveFilters = true;
     }
     
     // Apply availability filter
@@ -159,12 +174,20 @@ function applyFilters() {
             }
             return true;
         });
+        hasActiveFilters = true;
     }
     
     filteredProducts = filtered;
     currentPage = 1;
     renderProducts();
     updateProductsCount();
+    
+    // Show/hide random gallery based on filter state
+    if (hasActiveFilters || selectedCategories.length > 0) {
+        hideRandomGallery();
+    } else {
+        showRandomGallery();
+    }
 }
 
 function renderProducts() {
@@ -285,17 +308,25 @@ function clearAllFilters() {
     });
     selectedAvailability = [];
     
-    // Reset price range
-    document.getElementById('priceRange').value = 5000;
-    document.getElementById('minPrice').value = '';
-    document.getElementById('maxPrice').value = 5000;
+    // Reset price range (only if elements exist)
+    const priceRangeInput = document.getElementById('priceRange');
+    const minPriceInput = document.getElementById('minPrice');
+    const maxPriceInput = document.getElementById('maxPrice');
+    
+    if (priceRangeInput) priceRangeInput.value = 5000;
+    if (minPriceInput) minPriceInput.value = '';
+    if (maxPriceInput) maxPriceInput.value = 5000;
     priceRange = { min: 0, max: 5000 };
     
     // Clear search
-    document.getElementById('searchInput').value = '';
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) searchInput.value = '';
     
     // Apply filters
     applyFilters();
+    
+    // Show random gallery
+    showRandomGallery();
 }
 
 function performSearch(query) {
@@ -315,6 +346,9 @@ function performSearch(query) {
     currentPage = 1;
     renderProducts();
     updateProductsCount();
+    
+    // Hide random gallery when searching
+    hideRandomGallery();
     
     // Update URL with search parameter
     const url = new URL(window.location);
@@ -520,4 +554,76 @@ function closeZoomModal(modal) {
             modal.parentNode.removeChild(modal);
         }
     }, 300);
+}
+
+// Random Gallery Setup
+function setupRandomGallery() {
+    const galleryTrack = document.getElementById('randomGalleryTrack');
+    if (!galleryTrack) return;
+    
+    // Get random products for gallery display
+    const randomProducts = getRandomProducts(12); // Display 12 random products
+    
+    // Create gallery items
+    randomProducts.forEach(product => {
+        const galleryItem = createGalleryItem(product);
+        galleryTrack.appendChild(galleryItem);
+    });
+    
+    // Duplicate items for seamless scrolling effect
+    randomProducts.forEach(product => {
+        const galleryItem = createGalleryItem(product);
+        galleryTrack.appendChild(galleryItem);
+    });
+}
+
+function getRandomProducts(count) {
+    const shuffled = [...products].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+function createGalleryItem(product) {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    
+    // Calculate discount percentage
+    const defaultSize = product.defaultSize || 'M';
+    const currentPrice = product.sizes ? product.sizes[defaultSize].price : product.price;
+    const currentOriginalPrice = product.sizes ? product.sizes[defaultSize].originalPrice : product.originalPrice;
+    const discount = currentOriginalPrice > currentPrice ? 
+        Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100) : 0;
+    
+    item.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: zoom-in;">
+        <div class="gallery-overlay">
+            <h4>${product.name}</h4>
+            <p>${product.category.toUpperCase()}</p>
+            <div class="gallery-price">
+                <span class="gallery-current-price">Rs. ${currentPrice.toLocaleString()}</span>
+                ${discount > 0 ? `<span class="gallery-discount">-${discount}%</span>` : ''}
+            </div>
+            <button class="gallery-view-btn" onclick="quickView(${product.id})">
+                <i class="fas fa-eye"></i> Quick View
+            </button>
+        </div>
+        ${product.badge ? `<span class="gallery-badge ${product.badge.toLowerCase()}">${product.badge}</span>` : ''}
+    `;
+    
+    return item;
+}
+
+// Function to hide gallery when filters are applied
+function hideRandomGallery() {
+    const gallery = document.getElementById('randomGallery');
+    if (gallery) {
+        gallery.style.display = 'none';
+    }
+}
+
+// Function to show gallery when no filters are applied
+function showRandomGallery() {
+    const gallery = document.getElementById('randomGallery');
+    if (gallery) {
+        gallery.style.display = 'block';
+    }
 }

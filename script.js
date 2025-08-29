@@ -5,301 +5,776 @@ const products = [
         id: 1,
         name: "Mercedes-Benz C63 Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/MERCEDES BENZ C63 - VR001.jpg",
         rating: 4.9,
         reviews: 52,
         badge: "New",
-        description: "Performance-inspired C63 print for vehicle enthusiasts"
+        description: "Performance-inspired C63 print for vehicle enthusiasts",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 2,
         name: "Nissan GTR Nismo Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/GTR Nismo - VR002.jpg",
         rating: 4.8,
         reviews: 47,
         badge: "New",
-        description: "Iconic GTR Nismo silhouette with bold styling"
+        description: "Iconic GTR Nismo silhouette with bold styling",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 3,
         name: "Ayrton Senna 1988 Tribute T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Senna 1988 - VR006.jpg",
         rating: 5.0,
         reviews: 65,
         badge: "New",
-        description: "Legendary Senna tribute design for racing fans"
+        description: "Legendary Senna tribute design for racing fans",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 4,
         name: "Ford Mustang Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Ford Mustang - VR007.jpg",
         rating: 4.7,
         reviews: 39,
         badge: "New",
-        description: "Classic Mustang profile for muscle car lovers"
+        description: "Classic Mustang profile for muscle car lovers",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 5,
         name: "Toyota Supra MK4 Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Toyota Supra mk4 - VR009.jpg",
         rating: 4.9,
         reviews: 58,
         badge: "New",
-        description: "JDM legend Supra MK4 design with clean lines"
+        description: "JDM legend Supra MK4 design with clean lines",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 6,
         name: "Honda Civic Type R Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Honda Type R - VR010.jpg",
         rating: 4.6,
         reviews: 26,
         badge: "New",
-        description: "Track-ready Type R inspired streetwear"
+        description: "Track-ready Type R inspired streetwear",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 7,
         name: "BYD Seal Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/BYD SEAL - VR011.jpg",
         rating: 4.5,
         reviews: 18,
         badge: "New",
-        description: "Modern EV aesthetic with minimalist lines"
+        description: "Modern EV aesthetic with minimalist lines",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 8,
         name: "Ford GT Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Ford GT - VR012.jpg",
         rating: 4.7,
         reviews: 31,
         badge: "New",
-        description: "Endurance racing icon rendered in bold graphic"
+        description: "Endurance racing icon rendered in bold graphic",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 9,
         name: "McLaren P1 Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/Mclaren P1 - VR013.jpg",
         rating: 4.9,
         reviews: 44,
         badge: "New",
-        description: "Hypercar excellence in streetwear form"
+        description: "Hypercar excellence in streetwear form",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 10,
         name: "Pagani Zonda C1 Vehicle T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/The Pagani Zonda C1 - VR014.jpg",
         rating: 4.8,
         reviews: 37,
         badge: "New",
-        description: "Italian craftsmanship meets automotive art"
+        description: "Italian craftsmanship meets automotive art",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 11,
         name: "BMW M1000RR Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/BMW m1000RR - VR005.jpg",
         rating: 4.9,
         reviews: 51,
         badge: "New",
-        description: "Track-focused superbike design for riders"
+        description: "Track-focused superbike design for riders",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 12,
         name: "Harley Davidson Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Harly Davidson - VR004.jpg",
         rating: 4.7,
         reviews: 38,
         badge: "New",
-        description: "American cruiser heritage in bold print"
+        description: "American cruiser heritage in bold print",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 13,
         name: "Suzuki Djebel 250 Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Suzuki Djebel 250 - VR003.jpg",
         rating: 4.6,
         reviews: 29,
         badge: "New",
-        description: "Adventure bike spirit for outdoor enthusiasts"
+        description: "Adventure bike spirit for outdoor enthusiasts",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 14,
         name: "Kawasaki Ninja H2 Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/KAWASAKI ninja h2 - VR008.jpg",
         rating: 4.8,
         reviews: 42,
         badge: "New",
-        description: "Supercharged performance in streetwear"
+        description: "Supercharged performance in streetwear",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 15,
         name: "Kawasaki KLX250D Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Kawasaki KLX250D - VR015.jpg",
         rating: 4.5,
         reviews: 23,
         badge: "New",
-        description: "Dual-sport versatility for adventure seekers"
+        description: "Dual-sport versatility for adventure seekers",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 16,
         name: "Yamaha YZF-R1 Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Yamaha YZF-R1 - VR016.jpg",
         rating: 4.9,
         reviews: 48,
         badge: "New",
-        description: "MotoGP-inspired racing design"
+        description: "MotoGP-inspired racing design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 17,
         name: "Honda CB600 Hornet Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Honda CB 600 HORNET - VR017.jpg",
         rating: 4.6,
         reviews: 35,
         badge: "New",
-        description: "Streetfighter attitude for urban riders"
+        description: "Streetfighter attitude for urban riders",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 18,
         name: "Honda CB250 Hornet Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Honda CB250 Hornet - VR018.jpg",
         rating: 4.4,
         reviews: 28,
         badge: "New",
-        description: "Compact power in stylish design"
+        description: "Compact power in stylish design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 19,
         name: "Suzuki DR-Z400SM Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/suzuki DR-Z400SM - VR019.jpg",
         rating: 4.7,
         reviews: 33,
         badge: "New",
-        description: "SuperMoto style for street and track"
+        description: "SuperMoto style for street and track",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 20,
         name: "Yamaha MT-15 Bike T-Shirt",
         category: "vehicles",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/vehicles/bikes/Yamaha MT 15 - VR020.jpg",
         rating: 4.5,
         reviews: 25,
         badge: "New",
-        description: "Naked bike aesthetics for modern riders"
+        description: "Naked bike aesthetics for modern riders",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 21,
         name: "Call of Duty Ghosts Game T-Shirt",
         category: "games",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/games/Call of Duty Ghosts - VR001.jpg",
         rating: 4.8,
         reviews: 67,
         badge: "New",
-        description: "Gaming excellence in comfortable wear"
+        description: "Gaming excellence in comfortable wear",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 22,
         name: "CM Punk Sports T-Shirt",
         category: "sports",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/sports/CM Punk - SR001.jpg",
         rating: 4.9,
         reviews: 89,
         badge: "New",
-        description: "Wrestling legend in bold design"
+        description: "Wrestling legend in bold design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 23,
         name: "Superman Film & TV Series T-Shirt",
         category: "filmtvseries",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/film & tvseries/Super Man - FR001.jpg",
         rating: 4.7,
         reviews: 73,
         badge: "New",
-        description: "Man of Steel in iconic style"
+        description: "Man of Steel in iconic style",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 24,
         name: "Squid Game Film & TV Series T-Shirt",
         category: "filmtvseries",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/film & tvseries/Squid Game - TR001.jpg",
         rating: 4.8,
         reviews: 81,
         badge: "New",
-        description: "Netflix sensation in streetwear"
+        description: "Netflix sensation in streetwear",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     },
     {
         id: 25,
         name: "Metallica Music T-Shirt",
         category: "music",
-        price: 2490,
+        price: 2400,
         originalPrice: 2990,
         image: "images/music/Metallica - MR001.jpg",
         rating: 4.9,
         reviews: 95,
         badge: "New",
-        description: "Heavy metal legends in bold print"
+        description: "Heavy metal legends in bold print",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     }
 
 ];
@@ -467,8 +942,8 @@ function toggleCart() {
     }
 }
 
-function addToCart(productId, quantity = 1) {
-    console.log('addToCart called with productId:', productId, 'quantity:', quantity);
+function addToCart(productId, quantity = 1, selectedSize = null) {
+    console.log('addToCart called with productId:', productId, 'quantity:', quantity, 'size:', selectedSize);
     const product = products.find(p => p.id === productId);
     if (!product) {
         console.log('Product not found with ID:', productId);
@@ -476,37 +951,61 @@ function addToCart(productId, quantity = 1) {
     }
     console.log('Product found:', product.name);
 
-    const existingItem = cart.find(item => item.id === productId);
+    // Determine the size and pricing
+    let size = selectedSize;
+    let price = product.price;
+    let originalPrice = product.originalPrice;
+    
+    if (product.sizes) {
+        if (!size) {
+            size = getSelectedSize(productId) || product.defaultSize || 'M';
+        }
+        const sizeData = product.sizes[size];
+        if (sizeData) {
+            price = sizeData.price;
+            originalPrice = sizeData.originalPrice;
+        }
+    }
+
+    // Create unique cart item ID based on product ID and size
+    const cartItemId = product.sizes ? `${productId}-${size}` : productId;
+    
+    const existingItem = cart.find(item => item.cartItemId === cartItemId);
     if (existingItem) {
         existingItem.quantity += quantity;
         console.log('Updated existing item quantity to:', existingItem.quantity);
     } else {
-        cart.push({
+        const cartItem = {
             ...product,
+            cartItemId: cartItemId,
+            selectedSize: size,
+            price: price,
+            originalPrice: originalPrice,
             quantity: quantity
-        });
-        console.log('Added new item to cart');
+        };
+        cart.push(cartItem);
+        console.log('Added new item to cart with size:', size);
     }
 
     console.log('Current cart:', cart);
     updateCartCount();
     saveCart();
-    showNotification('Product added to cart!', 'success');
+    showNotification(`Product added to cart${product.sizes ? ` (Size: ${size})` : ''}!`, 'success');
 }
 
-function removeFromCart(productId) {
-    cart = cart.filter(item => item.id !== productId);
+function removeFromCart(cartItemId) {
+    cart = cart.filter(item => (item.cartItemId || item.id) != cartItemId);
     updateCartCount();
     saveCart();
     if (cartItems) renderCart();
     showNotification('Product removed from cart!', 'info');
 }
 
-function updateCartItemQuantity(productId, quantity) {
-    const item = cart.find(item => item.id === productId);
+function updateCartItemQuantity(cartItemId, quantity) {
+    const item = cart.find(item => (item.cartItemId || item.id) == cartItemId);
     if (item) {
         if (quantity <= 0) {
-            removeFromCart(productId);
+            removeFromCart(cartItemId);
         } else {
             item.quantity = quantity;
             updateCartCount();
@@ -530,14 +1029,16 @@ function renderCart() {
             <img src="${item.image}" alt="${item.name}" class="cart-item-image">
             <div class="cart-item-details">
                 <h4>${item.name}</h4>
+                ${item.selectedSize ? `<p class="cart-item-size">Size: <strong>${item.selectedSize}</strong></p>` : ''}
+                ${item.specifications ? `<p class="cart-item-specs">${item.specifications.style} • ${item.specifications.color}</p>` : ''}
                 <p class="cart-item-price">රු${item.price.toLocaleString()}</p>
                 <div class="cart-item-quantity">
-                    <button class="quantity-btn minus" data-product-id="${item.id}" data-action="decrease">-</button>
+                    <button class="quantity-btn minus" data-cart-item-id="${item.cartItemId || item.id}" data-action="decrease">-</button>
                     <span>${item.quantity}</span>
-                    <button class="quantity-btn plus" data-product-id="${item.id}" data-action="increase">+</button>
+                    <button class="quantity-btn plus" data-cart-item-id="${item.cartItemId || item.id}" data-action="increase">+</button>
                 </div>
             </div>
-            <button class="remove-cart-item" data-product-id="${item.id}">
+            <button class="remove-cart-item" data-cart-item-id="${item.cartItemId || item.id}">
                 <i class="fas fa-trash"></i>
             </button>
         </div>
@@ -547,15 +1048,15 @@ function renderCart() {
     cartItems.querySelectorAll('.quantity-btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation(); // Prevent event bubbling
-            const productId = parseInt(this.dataset.productId);
+            const cartItemId = this.dataset.cartItemId;
             const action = this.dataset.action;
-            const item = cart.find(item => item.id === productId);
+            const item = cart.find(item => (item.cartItemId || item.id) == cartItemId);
             
             if (item) {
                 if (action === 'decrease') {
-                    updateCartItemQuantity(productId, item.quantity - 1);
+                    updateCartItemQuantity(cartItemId, item.quantity - 1);
                 } else if (action === 'increase') {
-                    updateCartItemQuantity(productId, item.quantity + 1);
+                    updateCartItemQuantity(cartItemId, item.quantity + 1);
                 }
             }
         });
@@ -564,8 +1065,8 @@ function renderCart() {
     cartItems.querySelectorAll('.remove-cart-item').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation(); // Prevent event bubbling
-            const productId = parseInt(this.dataset.productId);
-            removeFromCart(productId);
+            const cartItemId = this.dataset.cartItemId;
+            removeFromCart(cartItemId);
         });
     });
 
@@ -715,14 +1216,29 @@ function loadFeaturedProducts() {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             const productId = parseInt(this.dataset.productId);
-            addToCart(productId);
+            const selectedSize = getSelectedSize(productId);
+            addToCart(productId, 1, selectedSize);
+        });
+    });
+    
+    // Add event listeners for size selectors
+    featuredProducts.querySelectorAll('.size-selector').forEach(selector => {
+        selector.addEventListener('change', function(e) {
+            const productId = parseInt(this.dataset.productId);
+            const selectedSize = this.value;
+            updateProductPrice(productId, selectedSize);
         });
     });
 }
 
 function createProductCard(product) {
     const isInWishlist = wishlist.find(item => item.id === product.id);
-    const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+    
+    // Use size-based pricing if available, otherwise use default price
+    const defaultSize = product.defaultSize || 'M';
+    const currentPrice = product.sizes ? product.sizes[defaultSize].price : product.price;
+    const currentOriginalPrice = product.sizes ? product.sizes[defaultSize].originalPrice : product.originalPrice;
+    const discount = Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100);
     
     return `
         <div class="product-card" data-product-id="${product.id}">
@@ -746,9 +1262,26 @@ function createProductCard(product) {
                     </div>
                     <span class="rating-text">(${product.reviews})</span>
                 </div>
+                ${product.specifications ? `
+                <div class="product-specs">
+                    <span class="spec-item">${product.specifications.style}</span>
+                    <span class="spec-item">${product.specifications.gender}</span>
+                    <span class="spec-item">${product.specifications.color}</span>
+                </div>
+                ` : ''}
+                ${product.sizes ? `
+                <div class="size-selection">
+                    <label class="size-label">Size:</label>
+                    <select class="size-selector" data-product-id="${product.id}">
+                        ${Object.keys(product.sizes).map(size => 
+                            `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                ` : ''}
                 <div class="product-price">
-                    <span class="current-price">රු${product.price.toLocaleString()}</span>
-                    <span class="original-price">රු${product.originalPrice.toLocaleString()}</span>
+                    <span class="current-price" data-product-id="${product.id}">රු${currentPrice.toLocaleString()}</span>
+                    <span class="original-price" data-product-id="${product.id}">රු${currentOriginalPrice.toLocaleString()}</span>
                 </div>
                 <button class="add-to-cart" data-product-id="${product.id}">
                     Add to Cart
@@ -756,6 +1289,31 @@ function createProductCard(product) {
             </div>
         </div>
     `;
+}
+
+// Helper functions for size selection and pricing
+function getSelectedSize(productId) {
+    const sizeSelector = document.querySelector(`.size-selector[data-product-id="${productId}"]`);
+    return sizeSelector ? sizeSelector.value : 'M';
+}
+
+function updateProductPrice(productId, selectedSize) {
+    const product = products.find(p => p.id === productId);
+    if (!product || !product.sizes) return;
+    
+    const sizeData = product.sizes[selectedSize];
+    if (!sizeData) return;
+    
+    // Update price displays for this product
+    const currentPriceElement = document.querySelector(`.current-price[data-product-id="${productId}"]`);
+    const originalPriceElement = document.querySelector(`.original-price[data-product-id="${productId}"]`);
+    
+    if (currentPriceElement) {
+        currentPriceElement.textContent = `රු${sizeData.price.toLocaleString()}`;
+    }
+    if (originalPriceElement) {
+        originalPriceElement.textContent = `රු${sizeData.originalPrice.toLocaleString()}`;
+    }
 }
 
 function generateStars(rating) {
@@ -780,6 +1338,11 @@ function quickView(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
 
+    // Get default size and pricing
+    const defaultSize = product.defaultSize || 'M';
+    const currentPrice = product.sizes ? product.sizes[defaultSize].price : product.price;
+    const currentOriginalPrice = product.sizes ? product.sizes[defaultSize].originalPrice : product.originalPrice;
+
     // Create modal for quick view
     const modal = document.createElement('div');
     modal.className = 'quick-view-modal';
@@ -797,9 +1360,30 @@ function quickView(productId) {
                             ${generateStars(product.rating)} (${product.reviews} reviews)
                         </div>
                         <p class="product-description">${product.description}</p>
+                        ${product.specifications ? `
+                        <div class="product-specifications">
+                            <h4>Specifications:</h4>
+                            <ul>
+                                <li><strong>Style:</strong> ${product.specifications.style}</li>
+                                <li><strong>Gender:</strong> ${product.specifications.gender}</li>
+                                <li><strong>Color:</strong> ${product.specifications.color}</li>
+                                <li><strong>Fabric:</strong> ${product.specifications.fabric}</li>
+                            </ul>
+                        </div>
+                        ` : ''}
+                        ${product.sizes ? `
+                        <div class="modal-size-selection">
+                            <label class="size-label">Size:</label>
+                            <select class="modal-size-selector" data-product-id="${product.id}">
+                                ${Object.keys(product.sizes).map(size => 
+                                    `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                                ).join('')}
+                            </select>
+                        </div>
+                        ` : ''}
                         <div class="product-price">
-                            <span class="current-price">රු${product.price.toLocaleString()}</span>
-                            <span class="original-price">රු${product.originalPrice.toLocaleString()}</span>
+                            <span class="current-price modal-current-price">රු${currentPrice.toLocaleString()}</span>
+                            <span class="original-price modal-original-price">රු${currentOriginalPrice.toLocaleString()}</span>
                         </div>
                         <div class="product-actions">
                             <button class="btn btn-primary modal-add-to-cart" data-product-id="${product.id}">
@@ -817,11 +1401,25 @@ function quickView(productId) {
 
     document.body.appendChild(modal);
     
+    // Add event listener for size selector in modal
+    const modalSizeSelector = modal.querySelector('.modal-size-selector');
+    if (modalSizeSelector) {
+        modalSizeSelector.addEventListener('change', function() {
+            const selectedSize = this.value;
+            const sizeData = product.sizes[selectedSize];
+            if (sizeData) {
+                modal.querySelector('.modal-current-price').textContent = `රු${sizeData.price.toLocaleString()}`;
+                modal.querySelector('.modal-original-price').textContent = `රු${sizeData.originalPrice.toLocaleString()}`;
+            }
+        });
+    }
+    
     // Add event listeners for modal buttons
     modal.querySelector('.modal-add-to-cart').addEventListener('click', function(e) {
         e.stopPropagation();
         const productId = parseInt(this.dataset.productId);
-        addToCart(productId);
+        const selectedSize = modalSizeSelector ? modalSizeSelector.value : null;
+        addToCart(productId, 1, selectedSize);
         document.body.removeChild(modal);
     });
 
@@ -980,20 +1578,40 @@ function createWhatsAppMessage() {
     let message = `🛒 *NEW ORDER*\n\n`;
     message += `Hello! I would like to place an order:\n\n`;
     
-    // Add cart items
+    // Add cart items with size information
     cart.forEach((item, index) => {
         message += `${index + 1}. *${item.name}*\n`;
+        
+        // Include size information if available
+        if (item.selectedSize) {
+            message += `   Size: ${item.selectedSize}\n`;
+        }
+        
         message += `   Quantity: ${item.quantity}\n`;
-        message += `   Price: රු${item.price.toLocaleString()}\n`;
+        message += `   Unit Price: රු${item.price.toLocaleString()}\n`;
         message += `   Subtotal: රු${(item.price * item.quantity).toLocaleString()}\n\n`;
     });
     
     message += `💰 *Total Amount: රු${total.toLocaleString()}*\n\n`;
-    message += `Please provide:\n`;
-    message += `• Delivery address\n`;
-    message += `• Contact number\n`;
-    message += `• Preferred delivery time\n\n`;
-    message += `Thank you! 🙏`;
+    
+    // Add product specifications summary
+    const hasSpecifications = cart.some(item => item.specifications);
+    if (hasSpecifications) {
+        message += `📋 *Product Specifications:*\n`;
+        const specs = cart[0].specifications; // Assuming all products have same specs
+        if (specs) {
+            message += `• Style: ${specs.style}\n`;
+            message += `• Gender: ${specs.gender}\n`;
+            message += `• Color: ${specs.color}\n`;
+            message += `• Fabric: ${specs.fabric}\n\n`;
+        }
+    }
+    
+    message += `\n`;
+    message += `• Delivery address:\n`;
+    message += `• Contact number:\n`;
+    message += `• Preferred delivery time:\n\n`;
+    message += `Thank you!`;
     
     return message;
 }

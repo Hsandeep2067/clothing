@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Selection Test - Modern Clothes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>ModernClothes</h1>
+            </div>
+            <div class="nav-actions">
+                <div class="user-actions">
+                    <button class="wishlist-btn" id="wishlistBtn">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count" id="wishlistCount">0</span>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="test-section" style="padding: 150px 0 80px;">
+                <div class="section-header">
+                    <h2>All Products with Size Selection</h2>
+                    <p>All 25 products now include size selection with dynamic pricing</p>
+                </div>
+                
+                <div class="products-grid" id="testProducts">
+                    <!-- All products will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: <span id="cartTotal">රු0.00</span></span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-wishlist" id="closeWishlist">&times;</button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems">
+            <!-- Wishlist items will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Override loadFeaturedProducts to show all products for testing
+        document.addEventListener('DOMContentLoaded', function() {
+            const testProducts = document.getElementById('testProducts');
+            if (testProducts) {
+                // Show all 25 products for testing
+                const allProducts = products; // All products now have size selection
+                testProducts.innerHTML = allProducts.map(product => createProductCard(product)).join('');
+                
+                // Add event listeners for test products
+                testProducts.querySelectorAll('.wishlist-btn').forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const productId = parseInt(this.dataset.productId);
+                        addToWishlist(productId);
+                    });
+                });
+
+                testProducts.querySelectorAll('.quick-view-btn').forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const productId = parseInt(this.dataset.productId);
+                        quickView(productId);
+                    });
+                });
+
+                testProducts.querySelectorAll('.add-to-cart').forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const productId = parseInt(this.dataset.productId);
+                        const selectedSize = getSelectedSize(productId);
+                        addToCart(productId, 1, selectedSize);
+                    });
+                });
+                
+                // Add event listeners for size selectors
+                testProducts.querySelectorAll('.size-selector').forEach(selector => {
+                    selector.addEventListener('change', function(e) {
+                        const productId = parseInt(this.dataset.productId);
+                        const selectedSize = this.value;
+                        updateProductPrice(productId, selectedSize);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

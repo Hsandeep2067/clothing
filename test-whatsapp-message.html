@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Message Test - Modern Clothes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .test-section {
+            padding: 150px 0 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-cart {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .whatsapp-preview {
+            background: #e8f5e8;
+            border-radius: 15px;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            white-space: pre-line;
+            border: 2px solid #25d366;
+        }
+        .test-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .add-sample-btn {
+            padding: 12px 24px;
+            background: #27FFFF;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .add-sample-btn:hover {
+            background: #000;
+            color: #27FFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>ModernClothes</h1>
+            </div>
+            <div class="nav-actions">
+                <div class="user-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="test-section">
+                <div class="section-header">
+                    <h2>WhatsApp Message Test</h2>
+                    <p>Test the WhatsApp checkout message with size and pricing information</p>
+                </div>
+                
+                <div class="test-cart">
+                    <h3>Sample Cart Items</h3>
+                    <div class="test-buttons">
+                        <button class="add-sample-btn" onclick="addSampleItems()">Add Sample Cart Items</button>
+                        <button class="add-sample-btn" onclick="clearCart()">Clear Cart</button>
+                        <button class="add-sample-btn" onclick="generateWhatsAppPreview()">Generate WhatsApp Message</button>
+                    </div>
+                    
+                    <div class="cart-items" id="testCartItems">
+                        <p>Cart is empty. Click "Add Sample Cart Items" to test.</p>
+                    </div>
+                </div>
+                
+                <div class="whatsapp-preview" id="whatsappPreview" style="display: none;">
+                    <h3><i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp Message Preview</h3>
+                    <div id="messageContent"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: <span id="cartTotal">රු0.00</span></span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Generate WhatsApp Message</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function addSampleItems() {
+            // Clear cart first
+            cart = [];
+            
+            // Add sample items with different sizes
+            addToCart(1, 2, 'M');    // Mercedes C63 - Size M - රු2,400 each
+            addToCart(2, 1, 'L');    // GTR Nismo - Size L - රු2,700 each  
+            addToCart(11, 1, '4XL'); // BMW M1000RR - Size 4XL - රු3,200 each
+            addToCart(21, 3, 'S');   // Call of Duty - Size S - රු2,400 each
+            
+            updateTestCartDisplay();
+            updateCartCount();
+        }
+        
+        function clearCart() {
+            cart = [];
+            updateTestCartDisplay();
+            updateCartCount();
+            document.getElementById('whatsappPreview').style.display = 'none';
+        }
+        
+        function updateTestCartDisplay() {
+            const testCartItems = document.getElementById('testCartItems');
+            
+            if (cart.length === 0) {
+                testCartItems.innerHTML = '<p>Cart is empty. Click "Add Sample Cart Items" to test.</p>';
+                return;
+            }
+            
+            testCartItems.innerHTML = cart.map(item => `
+                <div style="padding: 10px; border: 1px solid #eee; margin: 5px 0; border-radius: 5px;">
+                    <strong>${item.name}</strong><br>
+                    Size: <span style="color: #27FFFF; font-weight: bold;">${item.selectedSize}</span><br>
+                    Quantity: ${item.quantity}<br>
+                    Price: රු${item.price.toLocaleString()} each<br>
+                    Subtotal: රු${(item.price * item.quantity).toLocaleString()}
+                </div>
+            `).join('');
+        }
+        
+        function generateWhatsAppPreview() {
+            if (cart.length === 0) {
+                alert('Please add some items to cart first!');
+                return;
+            }
+            
+            const message = createWhatsAppMessage();
+            document.getElementById('messageContent').textContent = message;
+            document.getElementById('whatsappPreview').style.display = 'block';
+            
+            // Scroll to preview
+            document.getElementById('whatsappPreview').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Override checkout function for testing
+        function proceedToCheckout() {
+            generateWhatsAppPreview();
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTestCartDisplay();
+        });
+    </script>
+</body>
+</html>

@@ -66,13 +66,32 @@ class AdminPanel {
                 id: 1,
                 name: "Mercedes-Benz C63 Vehicle T-Shirt",
                 category: "vehicles",
-                price: 2490,
+                price: 2400,
                 originalPrice: 2990,
                 image: "images/vehicles/MERCEDES BENZ C63 - VR001.jpg",
                 rating: 4.9,
                 reviews: 52,
                 badge: "New",
                 description: "Performance-inspired C63 print for vehicle enthusiasts",
+                specifications: {
+                    style: "Regular",
+                    gender: "Unisex",
+                    color: "Black",
+                    fabric: "220 GSM, Single Jersey"
+                },
+                sizes: {
+                    "XS": { price: 2400, originalPrice: 2990 },
+                    "S": { price: 2400, originalPrice: 2990 },
+                    "M": { price: 2400, originalPrice: 2990 },
+                    "L": { price: 2700, originalPrice: 3290 },
+                    "XL": { price: 2700, originalPrice: 3290 },
+                    "2XL": { price: 2700, originalPrice: 3290 },
+                    "3XL": { price: 2700, originalPrice: 3290 },
+                    "4XL": { price: 3200, originalPrice: 3790 },
+                    "5XL": { price: 3200, originalPrice: 3790 },
+                    "6XL": { price: 3200, originalPrice: 3790 }
+                },
+                defaultSize: "M",
                 stock: 50,
                 status: "active"
             }
@@ -691,7 +710,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 name: "Mercedes-Benz C63 Vehicle T-Shirt",
                 category: "vehicles",
-                price: 2490,
+                price: 2400,
                 originalPrice: 2990,
                 image: "images/vehicles/MERCEDES BENZ C63 - VR001.jpg",
                 rating: 4.9,
@@ -705,7 +724,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 name: "Call of Duty Ghosts Game T-Shirt",
                 category: "games",
-                price: 2490,
+                price: 2400,
                 originalPrice: 2990,
                 image: "images/games/Call of Duty Ghosts - VR001.jpg",
                 rating: 4.8,
@@ -728,7 +747,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 customerName: "John Doe",
                 customerId: "CUST001",
                 items: [
-                    { productId: 1, name: "Mercedes-Benz C63 Vehicle T-Shirt", quantity: 2, price: 2490 }
+                    { productId: 1, name: "Mercedes-Benz C63 Vehicle T-Shirt", quantity: 2, price: 2400, selectedSize: "M" }
                 ],
                 total: 4980,
                 status: "completed",

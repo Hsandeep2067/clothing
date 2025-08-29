@@ -359,8 +359,12 @@ function createProductCard(product) {
     card.className = 'product-card';
     card.dataset.productId = product.id;
     
-    const discount = product.originalPrice > product.price ? 
-        Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100) : 0;
+    // Use size-based pricing if available, otherwise use default price
+    const defaultSize = product.defaultSize || 'M';
+    const currentPrice = product.sizes ? product.sizes[defaultSize].price : product.price;
+    const currentOriginalPrice = product.sizes ? product.sizes[defaultSize].originalPrice : product.originalPrice;
+    const discount = currentOriginalPrice > currentPrice ? 
+        Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100) : 0;
     
     card.innerHTML = `
         <div class="product-image">
@@ -384,19 +388,45 @@ function createProductCard(product) {
                 </div>
                 <span class="rating-text">(${product.reviews})</span>
             </div>
+            ${product.specifications ? `
+            <div class="product-specs">
+                <span class="spec-item">${product.specifications.style}</span>
+                <span class="spec-item">${product.specifications.gender}</span>
+                <span class="spec-item">${product.specifications.color}</span>
+            </div>
+            ` : ''}
+            ${product.sizes ? `
+            <div class="size-selection">
+                <label class="size-label">Size:</label>
+                <select class="size-selector" data-product-id="${product.id}">
+                    ${Object.keys(product.sizes).map(size => 
+                        `<option value="${size}" ${size === defaultSize ? 'selected' : ''}>${size}</option>`
+                    ).join('')}
+                </select>
+            </div>
+            ` : ''}
             <div class="product-price">
-                <span class="current-price">Rs. ${product.price.toLocaleString()}</span>
-                ${product.originalPrice > product.price ? 
-                    `<span class="original-price">Rs. ${product.originalPrice.toLocaleString()}</span>` : ''}
+                <span class="current-price" data-product-id="${product.id}">Rs. ${currentPrice.toLocaleString()}</span>
+                ${currentOriginalPrice > currentPrice ? 
+                    `<span class="original-price" data-product-id="${product.id}">Rs. ${currentOriginalPrice.toLocaleString()}</span>` : ''}
             </div>
         </div>
         <div class="product-actions">
-            <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
+            <button class="add-to-cart-btn" onclick="addToCartWithSize(${product.id})">
                 <i class="fas fa-shopping-cart"></i>
                 Add to Cart
             </button>
         </div>
     `;
+    
+    // Add event listener for size selector
+    const sizeSelector = card.querySelector('.size-selector');
+    if (sizeSelector) {
+        sizeSelector.addEventListener('change', function() {
+            const selectedSize = this.value;
+            updateProductPriceInShop(product.id, selectedSize, card);
+        });
+    }
     
     return card;
 }
@@ -422,4 +452,49 @@ function generateStars(rating) {
     }
     
     return starsHTML;
+}
+
+// Helper functions for size selection and cart functionality
+function updateProductPriceInShop(productId, selectedSize, cardElement) {
+    const product = products.find(p => p.id === productId);
+    if (!product || !product.sizes) return;
+    
+    const sizeData = product.sizes[selectedSize];
+    if (!sizeData) return;
+    
+    // Update price displays for this product card
+    const currentPriceElement = cardElement.querySelector('.current-price');
+    const originalPriceElement = cardElement.querySelector('.original-price');
+    
+    if (currentPriceElement) {
+        currentPriceElement.textContent = `Rs. ${sizeData.price.toLocaleString()}`;
+    }
+    if (originalPriceElement) {
+        originalPriceElement.textContent = `Rs. ${sizeData.originalPrice.toLocaleString()}`;
+    }
+}
+
+function addToCartWithSize(productId) {
+    const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+    const sizeSelector = productCard ? productCard.querySelector('.size-selector') : null;
+    const selectedSize = sizeSelector ? sizeSelector.value : null;
+    
+    // Use the addToCart function from script.js with size parameter
+    if (typeof addToCart === 'function') {
+        addToCart(productId, 1, selectedSize);
+        
+        // Show confirmation with size information
+        const product = products.find(p => p.id === productId);
+        if (product && selectedSize) {
+            const sizeData = product.sizes[selectedSize];
+            if (sizeData) {
+                const message = `${product.name} (Size: ${selectedSize}) added to cart - රු${sizeData.price.toLocaleString()}`;
+                if (typeof showNotification === 'function') {
+                    showNotification(message, 'success');
+                }
+            }
+        }
+    } else {
+        console.error('addToCart function not found');
+    }
 }

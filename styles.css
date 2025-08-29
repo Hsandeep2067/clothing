@@ -3019,3 +3019,179 @@ main {
         font-size: 10px;
     }
 }
+
+/* Product Specifications and Size Selection Styles */
+.product-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.spec-item {
+    background: #f8f9fa;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.size-selection {
+    margin-bottom: 15px;
+}
+
+.size-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.size-selector {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-selector:focus {
+    outline: none;
+    border-color: #27FFFF;
+    box-shadow: 0 0 0 2px rgba(39, 255, 255, 0.1);
+}
+
+.size-selector:hover {
+    border-color: #27FFFF;
+}
+
+/* Modal Size Selection */
+.modal-size-selection {
+    margin-bottom: 20px;
+}
+
+.modal-size-selector {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-size-selector:focus {
+    outline: none;
+    border-color: #27FFFF;
+    box-shadow: 0 0 0 2px rgba(39, 255, 255, 0.1);
+}
+
+/* Product Specifications in Modal */
+.product-specifications {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.product-specifications h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.product-specifications ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-specifications li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #666;
+    font-size: 14px;
+}
+
+.product-specifications li:last-child {
+    border-bottom: none;
+}
+
+.product-specifications strong {
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Cart Item Size Display */
+.cart-item-size {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.cart-item-size strong {
+    color: #27FFFF;
+    font-weight: 600;
+}
+
+/* Cart Item Specifications Display */
+.cart-item-specs {
+    font-size: 11px;
+    color: #999;
+    margin: 3px 0;
+    font-style: italic;
+}
+
+/* Modal Price Display */
+.modal-current-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #010101;
+}
+
+.modal-original-price {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Responsive adjustments for size selection */
+@media (max-width: 768px) {
+    .product-specs {
+        gap: 6px;
+    }
+    
+    .spec-item {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    
+    .size-selector {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    .modal-size-selector {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .product-specifications {
+        padding: 12px;
+    }
+    
+    .product-specifications h4 {
+        font-size: 14px;
+    }
+    
+    .product-specifications li {
+        font-size: 13px;
+    }
+}

@@ -3,7 +3,6 @@ let filteredProducts = [];
 let currentPage = 1;
 let productsPerPage = 12;
 let currentView = 'grid';
-let currentSort = 'default';
 
 // Filter states
 let selectedCategories = [];
@@ -98,12 +97,6 @@ function setupEventListeners() {
     // Clear filters
     document.getElementById('clearFiltersBtn').addEventListener('click', clearAllFilters);
     
-    // Sort controls
-    document.getElementById('sortSelect').addEventListener('change', function() {
-        currentSort = this.value;
-        applyFilters();
-    });
-    
     // View controls
     document.querySelectorAll('.view-btn').forEach(btn => {
         btn.addEventListener('click', function() {
@@ -168,30 +161,10 @@ function applyFilters() {
         });
     }
     
-    // Apply sorting
-    filtered = sortProducts(filtered, currentSort);
-    
     filteredProducts = filtered;
     currentPage = 1;
     renderProducts();
     updateProductsCount();
-}
-
-function sortProducts(products, sortType) {
-    const sorted = [...products];
-    
-    switch (sortType) {
-        case 'price-low':
-            return sorted.sort((a, b) => a.price - b.price);
-        case 'price-high':
-            return sorted.sort((a, b) => b.price - a.price);
-        case 'rating':
-            return sorted.sort((a, b) => b.rating - a.rating);
-        case 'newest':
-            return sorted.sort((a, b) => b.id - a.id);
-        default:
-            return sorted;
-    }
 }
 
 function renderProducts() {
@@ -317,10 +290,6 @@ function clearAllFilters() {
     document.getElementById('minPrice').value = '';
     document.getElementById('maxPrice').value = 5000;
     priceRange = { min: 0, max: 5000 };
-    
-    // Reset sort
-    document.getElementById('sortSelect').value = 'default';
-    currentSort = 'default';
     
     // Clear search
     document.getElementById('searchInput').value = '';

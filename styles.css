@@ -3071,10 +3071,10 @@ main {
 
 .size-btn {
     padding: 8px 12px;
-    border: 2px solid #e9ecef;
+    border: 2px solid #666;
     border-radius: 6px;
-    background: white;
-    color: #666;
+    background: #e9ecef;
+    color: #000;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -3084,17 +3084,19 @@ main {
 }
 
 .size-btn:hover {
-    border-color: #27FFFF;
-    color: #27FFFF;
+    border-color: linear-gradient(135deg, grey 0%, #000000 100%);
+    background: #fff;
+    color:linear-gradient(135deg, grey 0%, #000000 100%);
     transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .size-btn.active {
-    background: #27FFFF;
-    border-color: #27FFFF;
-    color: #000;
+    background: linear-gradient(135deg, grey 0%, #000000 100%);
+    border-color: linear-gradient(135deg, grey 0%, #000000 100%);
+    color: #fff;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(39, 255, 255, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Legacy dropdown styles (keeping for backward compatibility) */
@@ -3133,10 +3135,10 @@ main {
 
 .modal-size-btn {
     padding: 10px 15px;
-    border: 2px solid #e9ecef;
+    border: 2px solid #666;
     border-radius: 8px;
-    background: white;
-    color: #666;
+    background: #e9ecef;
+    color: #000;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -3146,17 +3148,19 @@ main {
 }
 
 .modal-size-btn:hover {
-    border-color: #27FFFF;
-    color: #27FFFF;
+    border-color: #000;
+    background: #fff;
+    color: #000;
     transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .modal-size-btn.active {
-    background: #27FFFF;
-    border-color: #27FFFF;
-    color: #000;
+    background: #000;
+    border-color: #000;
+    color: #fff;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(39, 255, 255, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Legacy modal dropdown styles (keeping for backward compatibility) */

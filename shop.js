@@ -132,6 +132,47 @@ function setupEventListeners() {
             performSearch(this.value);
         }
     });
+    
+    // Cart and Wishlist functionality - get elements from script.js scope
+    const cartBtn = document.getElementById('cartBtn');
+    const cartSidebar = document.getElementById('cartSidebar');
+    const closeCart = document.getElementById('closeCart');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const wishlistBtn = document.getElementById('wishlistBtn');
+    const wishlistSidebar = document.getElementById('wishlistSidebar');
+    const closeWishlist = document.getElementById('closeWishlist');
+    
+    // Cart functionality - only if elements exist
+    if (cartBtn && cartSidebar && closeCart && checkoutBtn) {
+        console.log('Setting up cart event listeners in shop.js...');
+        cartBtn.addEventListener('click', toggleCart);
+        closeCart.addEventListener('click', toggleCart);
+        checkoutBtn.addEventListener('click', proceedToCheckout);
+    } else {
+        console.log('Cart elements missing:', { cartBtn: !!cartBtn, cartSidebar: !!cartSidebar, closeCart: !!closeCart, checkoutBtn: !!checkoutBtn });
+    }
+
+    // Wishlist functionality - only if elements exist
+    if (wishlistBtn && wishlistSidebar && closeWishlist) {
+        console.log('Setting up wishlist event listeners in shop.js...');
+        wishlistBtn.addEventListener('click', toggleWishlist);
+        closeWishlist.addEventListener('click', toggleWishlist);
+    } else {
+        console.log('Wishlist elements missing:', { wishlistBtn: !!wishlistBtn, wishlistSidebar: !!wishlistSidebar, closeWishlist: !!closeWishlist });
+    }
+    
+    // Close sidebars when clicking outside - only if elements exist
+    if (cartSidebar || wishlistSidebar) {
+        console.log('Setting up sidebar close event listeners in shop.js...');
+        document.addEventListener('click', function(e) {
+            if (cartSidebar && !cartSidebar.contains(e.target) && cartBtn && !cartBtn.contains(e.target)) {
+                cartSidebar.classList.remove('active');
+            }
+            if (wishlistSidebar && !wishlistSidebar.contains(e.target) && wishlistBtn && !wishlistBtn.contains(e.target)) {
+                wishlistSidebar.classList.remove('active');
+            }
+        });
+    }
 }
 
 function loadProducts() {

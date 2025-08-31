@@ -1697,11 +1697,11 @@ main {
     
     .filters-sidebar {
         position: static;
-        order: 2;
+        order: 1;
     }
     
     .products-section {
-        order: 1;
+        order: 2;
     }
     
     .products-header {

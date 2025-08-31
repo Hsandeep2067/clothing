@@ -177,6 +177,81 @@ body {
     color: #27FFFF;
 }
 
+/* Vehicles submenu styling */
+.vehicles-submenu {
+    position: relative;
+}
+
+.submenu-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin: 2px 8px;
+}
+
+.submenu-parent:hover {
+    background: #f8f9fa;
+    color: #27FFFF;
+}
+
+.submenu-content {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-left: 5px;
+    z-index: 1001;
+}
+
+.vehicles-submenu:hover .submenu-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.submenu-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.submenu-content a:hover {
+    background: #f8f9fa;
+    color: #27FFFF;
+    padding-left: 25px;
+}
+
+.subcategory-options {
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 2px solid #e9ecef;
+}
+
+.subcategory-options .filter-option {
+    font-size: 13px;
+    color: #777;
+}
+
+.subcategory-options .filter-option:hover {
+    color: #27FFFF;
+}
+
 /* Navigation Actions */
 .nav-actions {
     display: flex;

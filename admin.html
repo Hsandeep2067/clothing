@@ -313,13 +313,24 @@
                     
                     <div class="form-group">
                         <label for="productCategory">Category *</label>
-                        <select id="productCategory" required>
+                        <select id="productCategory" required onchange="toggleSubcategory('productCategory', 'productSubcategory')">
                             <option value="">Select Category</option>
                             <option value="games">GAMES</option>
                             <option value="sports">SPORTS</option>
                             <option value="filmtvseries">FILM & TVSERIES</option>
                             <option value="music">MUSIC</option>
                             <option value="vehicles">VEHICLES</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row" id="subcategoryRow" style="display: none;">
+                    <div class="form-group">
+                        <label for="productSubcategory">Subcategory</label>
+                        <select id="productSubcategory">
+                            <option value="">Select Subcategory</option>
+                            <option value="cars">Cars</option>
+                            <option value="bikes">Bikes</option>
                         </select>
                     </div>
                 </div>
@@ -444,13 +455,24 @@
                     
                     <div class="form-group">
                         <label for="editProductCategory">Category *</label>
-                        <select id="editProductCategory" required>
+                        <select id="editProductCategory" required onchange="toggleSubcategory('editProductCategory', 'editProductSubcategory')">
                             <option value="">Select Category</option>
                             <option value="games">GAMES</option>
                             <option value="sports">SPORTS</option>
                             <option value="filmtvseries">FILM & TVSERIES</option>
                             <option value="music">MUSIC</option>
                             <option value="vehicles">VEHICLES</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row" id="editSubcategoryRow" style="display: none;">
+                    <div class="form-group">
+                        <label for="editProductSubcategory">Subcategory</label>
+                        <select id="editProductSubcategory">
+                            <option value="">Select Subcategory</option>
+                            <option value="cars">Cars</option>
+                            <option value="bikes">Bikes</option>
                         </select>
                     </div>
                 </div>
@@ -512,5 +534,23 @@
     <div id="notificationContainer" class="notification-container"></div>
 
     <script src="admin.js"></script>
+    
+    <script>
+        // Toggle subcategory visibility based on category selection
+        function toggleSubcategory(categoryId, subcategoryId) {
+            const categorySelect = document.getElementById(categoryId);
+            const subcategoryRow = categoryId === 'productCategory' ? 
+                document.getElementById('subcategoryRow') : 
+                document.getElementById('editSubcategoryRow');
+            const subcategorySelect = document.getElementById(subcategoryId);
+            
+            if (categorySelect.value === 'vehicles') {
+                subcategoryRow.style.display = 'block';
+            } else {
+                subcategoryRow.style.display = 'none';
+                subcategorySelect.value = ''; // Clear subcategory selection
+            }
+        }
+    </script>
 </body>
 </html>

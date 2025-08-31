@@ -6,6 +6,7 @@ let currentView = 'grid';
 
 // Filter states
 let selectedCategories = [];
+let selectedSubcategories = [];
 let selectedRatings = [];
 let selectedAvailability = [];
 let priceRange = { min: 0, max: 5000 };
@@ -22,6 +23,7 @@ function initializeShop() {
     // Check URL parameters for category filter
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get('category');
+    const subcategory = urlParams.get('subcategory');
     const search = urlParams.get('search');
     
     if (category) {
@@ -29,6 +31,20 @@ function initializeShop() {
         // Check the corresponding checkbox
         const checkbox = document.querySelector(`input[value="${category}"]`);
         if (checkbox) checkbox.checked = true;
+        
+        // Show vehicle subcategories if vehicles category is selected
+        if (category === 'vehicles') {
+            const vehicleSubcategories = document.getElementById('vehicleSubcategories');
+            if (vehicleSubcategories) vehicleSubcategories.style.display = 'block';
+        }
+        
+        // Handle subcategory if specified
+        if (subcategory) {
+            selectedSubcategories = [subcategory];
+            const subcategoryCheckbox = document.querySelector(`input[value="${subcategory}"]`);
+            if (subcategoryCheckbox) subcategoryCheckbox.checked = true;
+        }
+        
         // Hide gallery since filter is applied
         hideRandomGallery();
     } else {
@@ -75,8 +91,35 @@ function setupEventListeners() {
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 selectedCategories.push(this.value);
+                // Show subcategory options for vehicles
+                if (this.value === 'vehicles') {
+                    const vehicleSubcategories = document.getElementById('vehicleSubcategories');
+                    if (vehicleSubcategories) vehicleSubcategories.style.display = 'block';
+                }
             } else {
                 selectedCategories = selectedCategories.filter(cat => cat !== this.value);
+                // Hide subcategory options for vehicles and clear subcategory selections
+                if (this.value === 'vehicles') {
+                    const vehicleSubcategories = document.getElementById('vehicleSubcategories');
+                    if (vehicleSubcategories) vehicleSubcategories.style.display = 'none';
+                    // Clear vehicle subcategory selections
+                    selectedSubcategories = selectedSubcategories.filter(sub => sub !== 'cars' && sub !== 'bikes');
+                    document.querySelectorAll('.subcategory-filter[data-parent="vehicles"]').forEach(sub => {
+                        sub.checked = false;
+                    });
+                }
+            }
+            applyFilters();
+        });
+    });
+    
+    // Subcategory filters
+    document.querySelectorAll('.subcategory-filter').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                selectedSubcategories.push(this.value);
+            } else {
+                selectedSubcategories = selectedSubcategories.filter(sub => sub !== this.value);
             }
             applyFilters();
         });
@@ -188,6 +231,19 @@ function applyFilters() {
     // Apply category filter
     if (selectedCategories.length > 0) {
         filtered = filtered.filter(product => selectedCategories.includes(product.category));
+        hasActiveFilters = true;
+    }
+    
+    // Apply subcategory filter (only if categories are selected)
+    if (selectedSubcategories.length > 0) {
+        filtered = filtered.filter(product => {
+            // If product has a subcategory, check if it matches selected subcategories
+            if (product.subcategory) {
+                return selectedSubcategories.includes(product.subcategory);
+            }
+            // If product doesn't have subcategory but is in vehicles category, don't show it when subcategories are selected
+            return false;
+        });
         hasActiveFilters = true;
     }
     
@@ -336,6 +392,16 @@ function clearAllFilters() {
         checkbox.checked = false;
     });
     selectedCategories = [];
+    
+    // Clear subcategory filters
+    document.querySelectorAll('.subcategory-filter').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    selectedSubcategories = [];
+    
+    // Hide vehicle subcategories
+    const vehicleSubcategories = document.getElementById('vehicleSubcategories');
+    if (vehicleSubcategories) vehicleSubcategories.style.display = 'none';
     
     // Clear rating filters
     document.querySelectorAll('.rating-filter').forEach(checkbox => {

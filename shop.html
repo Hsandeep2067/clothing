@@ -57,7 +57,13 @@
                 <a href="shop.html?category=sports">SPORTS</a>
                 <a href="shop.html?category=filmtvseries">FILM & TVSERIES</a>
                 <a href="shop.html?category=music">MUSIC</a>
-                <a href="shop.html?category=vehicles">VEHICLES</a>
+                <div class="vehicles-submenu">
+                  <a href="shop.html?category=vehicles" class="submenu-parent">VEHICLES ▼</a>
+                  <div class="submenu-content">
+                    <a href="shop.html?category=vehicles&subcategory=cars">Cars</a>
+                    <a href="shop.html?category=vehicles&subcategory=bikes">Bikes</a>
+                  </div>
+                </div>
                 <!-- <a href="shop.html?category=girls">Girl's T-shirts</a>
                           <a href="shop.html?category=butterfly">Butterfly Design</a> -->
               </div>
@@ -183,6 +189,16 @@
                                     <input type="checkbox" value="vehicles" class="category-filter">
                                     <span>VEHICLES</span>
                                 </label>
+                                <div class="subcategory-options" id="vehicleSubcategories" style="margin-left: 20px; display: none;">
+                                    <label class="filter-option">
+                                        <input type="checkbox" value="cars" class="subcategory-filter" data-parent="vehicles">
+                                        <span>Cars</span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" value="bikes" class="subcategory-filter" data-parent="vehicles">
+                                        <span>Bikes</span>
+                                    </label>
+                                </div>
                                 <!-- <label class="filter-option">
                                     <input type="checkbox" value="teddy" class="category-filter">
                                     <span>Teddy Bear T-shirts</span>
@@ -317,6 +333,8 @@
                 <li><a href="shop.html?category=filmtvseries">FILM & TVSERIES</a></li>
                 <li><a href="shop.html?category=music">MUSIC</a></li>
                 <li><a href="shop.html?category=vehicles">VEHICLES</a></li>
+                <!-- <li style="margin-left: 15px; font-size: 13px;"><a href="shop.html?category=vehicles&subcategory=cars">- Cars</a></li>
+                <li style="margin-left: 15px; font-size: 13px;"><a href="shop.html?category=vehicles&subcategory=bikes">- Bikes</a></li> -->
                 <!-- <li><a href="shop.html?category=girls">Girl's T-shirts (19)</a></li>
                           <li><a href="shop.html?category=teddy">Teddy Bear T-shirts (14)</a></li> -->
               </ul>

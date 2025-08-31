@@ -273,6 +273,7 @@ class AdminPanel {
             id: Date.now(),
             name: formData.get('productName') || document.getElementById('productName').value,
             category: formData.get('productCategory') || document.getElementById('productCategory').value,
+            subcategory: document.getElementById('productSubcategory').value || undefined,
             price: parseInt(document.getElementById('productPrice').value),
             originalPrice: parseInt(document.getElementById('productOriginalPrice').value) || parseInt(document.getElementById('productPrice').value),
             rating: parseFloat(document.getElementById('productRating').value) || 0,
@@ -309,6 +310,22 @@ class AdminPanel {
         document.getElementById('editProductReviews').value = product.reviews;
         document.getElementById('editProductDescription').value = product.description;
         document.getElementById('editProductBadge').value = product.badge;
+        
+        // Handle subcategory
+        if (product.subcategory) {
+            document.getElementById('editProductSubcategory').value = product.subcategory;
+        } else {
+            document.getElementById('editProductSubcategory').value = '';
+        }
+        
+        // Show/hide subcategory dropdown based on category
+        const categoryValue = product.category;
+        const subcategoryRow = document.getElementById('editSubcategoryRow');
+        if (categoryValue === 'vehicles') {
+            subcategoryRow.style.display = 'block';
+        } else {
+            subcategoryRow.style.display = 'none';
+        }
 
         // Show current image
         const imagePreview = document.getElementById('editImagePreview');
@@ -327,6 +344,7 @@ class AdminPanel {
             ...this.products[productIndex],
             name: document.getElementById('editProductName').value,
             category: document.getElementById('editProductCategory').value,
+            subcategory: document.getElementById('editProductSubcategory').value || undefined,
             price: parseInt(document.getElementById('editProductPrice').value),
             originalPrice: parseInt(document.getElementById('editProductOriginalPrice').value),
             rating: parseFloat(document.getElementById('editProductRating').value),
@@ -666,6 +684,20 @@ class AdminPanel {
         if (confirm('Are you sure you want to logout?')) {
             AdminLogin.logout();
         }
+    }
+}
+
+// Global function for toggleSubcategory
+function toggleSubcategory(categorySelectId, subcategorySelectId) {
+    const categorySelect = document.getElementById(categorySelectId);
+    const subcategorySelect = document.getElementById(subcategorySelectId);
+    const subcategoryRow = subcategorySelect.closest('.form-row');
+    
+    if (categorySelect.value === 'vehicles') {
+        subcategoryRow.style.display = 'block';
+    } else {
+        subcategoryRow.style.display = 'none';
+        subcategorySelect.value = ''; // Clear subcategory when hiding
     }
 }
 

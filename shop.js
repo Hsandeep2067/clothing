@@ -493,9 +493,6 @@ function createProductCard(product) {
         <div class="product-info">
             <h3 class="product-name">${product.name}</h3>
             <div class="product-rating">
-                <div class="stars">
-                    ${generateStars(product.rating)}
-                </div>
                 <span class="stock-status">In Stock</span>
             </div>
             ${product.specifications ? `

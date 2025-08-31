@@ -778,6 +778,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -792,13 +793,13 @@ main {
 
 /* Stock Status Styling */
 .stock-status {
-    color: #27FFFF;
+    color: #2effff;
     font-size: 14px;
     font-weight: 600;
-    background: rgba(39, 255, 255, 0.1);
+    background: #080808;
     padding: 2px 8px;
     border-radius: 12px;
-    border: 1px solid rgba(39, 255, 255, 0.3);
+    border: 1px solid #000000;
 }
 
 .product-price {

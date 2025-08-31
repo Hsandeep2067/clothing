@@ -1221,14 +1221,6 @@ function loadFeaturedProducts() {
         });
     });
 
-    featuredProducts.querySelectorAll('.quick-view-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const productId = parseInt(this.dataset.productId);
-            quickView(productId);
-        });
-    });
-
     featuredProducts.querySelectorAll('.add-to-cart').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -1274,17 +1266,11 @@ function createProductCard(product) {
                     <button class="action-btn wishlist-btn" data-product-id="${product.id}" title="Add to Wishlist">
                         <i class="fas fa-heart ${isInWishlist ? 'text-danger' : ''}"></i>
                     </button>
-                    <button class="action-btn quick-view-btn" data-product-id="${product.id}" title="Quick View">
-                        <i class="fas fa-eye"></i>
-                    </button>
                 </div>
             </div>
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
                 <div class="product-rating">
-                    <div class="stars">
-                        ${generateStars(product.rating)}
-                    </div>
                     <span class="stock-status">In Stock</span>
                 </div>
                 ${product.specifications ? `
@@ -1382,7 +1368,7 @@ function quickView(productId) {
                     <div class="product-details">
                         <h2>${product.name}</h2>
                         <div class="product-rating">
-                            ${generateStars(product.rating)} <span class="stock-status">In Stock</span>
+                            <span class="stock-status">In Stock</span>
                         </div>
                         <p class="product-description">${product.description}</p>
                         ${product.specifications ? `

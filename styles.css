@@ -177,6 +177,11 @@ body {
     color: #27FFFF;
 }
 
+/* Dropdown icon spacing */
+.dropdown .nav-link i.fa-chevron-down {
+    margin-left: 5px;
+}
+
 /* Vehicles submenu styling */
 .vehicles-submenu {
     position: relative;

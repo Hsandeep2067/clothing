@@ -1628,9 +1628,9 @@ function createWhatsAppMessage() {
     }
     
     message += `\n`;
-    message += `• Delivery address:\n`;
-    message += `• Contact number:\n`;
-    message += `• Preferred delivery time:\n\n`;
+    // message += `• Delivery address:\n`;
+    // message += `• Contact number:\n`;
+    // message += `• Preferred delivery time:\n\n`;
     message += `Thank you!`;
     
     return message;

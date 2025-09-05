@@ -2576,7 +2576,7 @@ main {
 .delivery-time {
     font-size: 18px;
     font-weight: 600;
-    color: #27FFFF;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -2607,7 +2607,7 @@ main {
 }
 
 .shipping-features i {
-    color: #27FFFF;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -3356,7 +3356,7 @@ main {
 }
 
 .cart-item-size strong {
-    color: #27FFFF;
+    color: #666;
     font-weight: 600;
 }
 

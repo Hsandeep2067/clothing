@@ -1,798 +1,7 @@
 // Product Data
 const products = [
     
-    {
-        id: 1,
-        name: "Mercedes-Benz C63 Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/MERCEDES BENZ C63 - VR001.jpg",
-        rating: 4.9,
-        reviews: 52,
-        badge: "New",
-        description: "Performance-inspired C63 print for vehicle enthusiasts",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 2,
-        name: "Nissan GTR Nismo Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/GTR Nismo - VR002.jpg",
-        rating: 4.8,
-        reviews: 47,
-        badge: "New",
-        description: "Iconic GTR Nismo silhouette with bold styling",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 3,
-        name: "Ayrton Senna 1988 Tribute T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Senna 1988 - VR006.jpg",
-        rating: 5.0,
-        reviews: 65,
-        badge: "New",
-        description: "Legendary Senna tribute design for racing fans",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 4,
-        name: "Ford Mustang Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Ford Mustang - VR007.jpg",
-        rating: 4.7,
-        reviews: 39,
-        badge: "New",
-        description: "Classic Mustang profile for muscle car lovers",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 5,
-        name: "Toyota Supra MK4 Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Toyota Supra mk4 - VR009.jpg",
-        rating: 4.9,
-        reviews: 58,
-        badge: "New",
-        description: "JDM legend Supra MK4 design with clean lines",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 6,
-        name: "Honda Civic Type R Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Honda Type R - VR010.jpg",
-        rating: 4.6,
-        reviews: 26,
-        badge: "New",
-        description: "Track-ready Type R inspired streetwear",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 7,
-        name: "BYD Seal Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/BYD SEAL - VR011.jpg",
-        rating: 4.5,
-        reviews: 18,
-        badge: "New",
-        description: "Modern EV aesthetic with minimalist lines",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 8,
-        name: "Ford GT Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Ford GT - VR012.jpg",
-        rating: 4.7,
-        reviews: 31,
-        badge: "New",
-        description: "Endurance racing icon rendered in bold graphic",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 9,
-        name: "McLaren P1 Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/Mclaren P1 - VR013.jpg",
-        rating: 4.9,
-        reviews: 44,
-        badge: "New",
-        description: "Hypercar excellence in streetwear form",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 10,
-        name: "Pagani Zonda C1 Vehicle T-Shirt",
-        category: "vehicles",
-        subcategory: "cars",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/The Pagani Zonda C1 - VR014.jpg",
-        rating: 4.8,
-        reviews: 37,
-        badge: "New",
-        description: "Italian craftsmanship meets automotive art",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 11,
-        name: "BMW M1000RR Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/BMW m1000RR - VR005.jpg",
-        rating: 4.9,
-        reviews: 51,
-        badge: "New",
-        description: "Track-focused superbike design for riders",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 12,
-        name: "Harley Davidson Bike T-Shirt",
-        category: "vehicles",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Harly Davidson - VR004.jpg",
-        rating: 4.7,
-        reviews: 38,
-        badge: "New",
-        description: "American cruiser heritage in bold print",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 13,
-        name: "Suzuki Djebel 250 Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Suzuki Djebel 250 - VR003.jpg",
-        rating: 4.6,
-        reviews: 29,
-        badge: "New",
-        description: "Adventure bike spirit for outdoor enthusiasts",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 14,
-        name: "Kawasaki Ninja H2 Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/KAWASAKI ninja h2 - VR008.jpg",
-        rating: 4.8,
-        reviews: 42,
-        badge: "New",
-        description: "Supercharged performance in streetwear",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 15,
-        name: "Kawasaki KLX250D Bike T-Shirt",
-        category: "vehicles",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Kawasaki KLX250D - VR015.jpg",
-        rating: 4.5,
-        reviews: 23,
-        badge: "New",
-        description: "Dual-sport versatility for adventure seekers",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 16,
-        name: "Yamaha YZF-R1 Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Yamaha YZF-R1 - VR016.jpg",
-        rating: 4.9,
-        reviews: 48,
-        badge: "New",
-        description: "MotoGP-inspired racing design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 17,
-        name: "Honda CB600 Hornet Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Honda CB 600 HORNET - VR017.jpg",
-        rating: 4.6,
-        reviews: 35,
-        badge: "New",
-        description: "Streetfighter attitude for urban riders",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 18,
-        name: "Honda CB250 Hornet Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Honda CB250 Hornet - VR018.jpg",
-        rating: 4.4,
-        reviews: 28,
-        badge: "New",
-        description: "Compact power in stylish design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 19,
-        name: "Suzuki DR-Z400SM Bike T-Shirt",
-        category: "vehicles",
-        subcategory: "bikes",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/suzuki DR-Z400SM - VR019.jpg",
-        rating: 4.7,
-        reviews: 33,
-        badge: "New",
-        description: "SuperMoto style for street and track",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 20,
-        name: "Yamaha MT-15 Bike T-Shirt",
-        category: "vehicles",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/vehicles/bikes/Yamaha MT 15 - VR020.jpg",
-        rating: 4.5,
-        reviews: 25,
-        badge: "New",
-        description: "Naked bike aesthetics for modern riders",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 21,
-        name: "Call of Duty Ghosts Game T-Shirt",
-        category: "games",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/games/Call of Duty Ghosts - VR001.jpg",
-        rating: 4.8,
-        reviews: 67,
-        badge: "New",
-        description: "Gaming excellence in comfortable wear",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 22,
-        name: "CM Punk Sports T-Shirt",
-        category: "sports",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/sports/CM Punk - SR001.jpg",
-        rating: 4.9,
-        reviews: 89,
-        badge: "New",
-        description: "Wrestling legend in bold design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 23,
-        name: "Superman Film & TV Series T-Shirt",
-        category: "filmtvseries",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/film & tvseries/Super Man - FR001.jpg",
-        rating: 4.7,
-        reviews: 73,
-        badge: "New",
-        description: "Man of Steel in iconic style",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    // {
-    //     id: 24,
-    //     name: "Squid Game Film & TV Series T-Shirt",
-    //     category: "filmtvseries",
-    //     price: 2400,
-    //     originalPrice: 2990,
-    //     image: "images/film & tvseries/Squid Game - TR001.jpg",
-    //     rating: 4.8,
-    //     reviews: 81,
-    //     badge: "New",
-    //     description: "Netflix sensation in streetwear",
-    //     specifications: {
-    //         style: "Regular",
-    //         gender: "Unisex",
-    //         color: "Black",
-    //         fabric: "220 GSM, Single Jersey"
-    //     },
-    //     sizes: {
-    //         "XS": { price: 2400, originalPrice: 2990 },
-    //         "S": { price: 2400, originalPrice: 2990 },
-    //         "M": { price: 2400, originalPrice: 2990 },
-    //         "L": { price: 2700, originalPrice: 3290 },
-    //         "XL": { price: 2700, originalPrice: 3290 },
-    //         "2XL": { price: 2700, originalPrice: 3290 },
-    //         "3XL": { price: 2700, originalPrice: 3290 },
-    //         "4XL": { price: 3200, originalPrice: 3790 },
-    //         "5XL": { price: 3200, originalPrice: 3790 },
-    //         "6XL": { price: 3200, originalPrice: 3790 }
-    //     },
-    //     defaultSize: "M"
-    // },
-    {
-        id: 24,
-        name: "Metallica Music T-Shirt",
-        category: "music",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/music/Metallica - MR001.jpg",
-        rating: 4.9,
-        reviews: 95,
-        badge: "New",
-        description: "Heavy metal legends in bold print",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
+    
     // Game Category Products
     {
         id: 25,
@@ -1291,37 +500,7 @@ const products = [
         },
         defaultSize: "M"
     },
-    // {
-    //     id: 42,
-    //     name: "Squid Game TV Series T-Shirt",
-    //     category: "filmtvseries",
-    //     price: 2400,
-    //     originalPrice: 2990,
-    //     image: "images/film & tvseries/Squid Game - TR001.jpg",
-    //     rating: 4.9,
-    //     reviews: 91,
-    //     badge: "New",
-    //     description: "Popular Netflix series design",
-    //     specifications: {
-    //         style: "Regular",
-    //         gender: "Unisex",
-    //         color: "Black",
-    //         fabric: "220 GSM, Single Jersey"
-    //     },
-    //     sizes: {
-    //         "XS": { price: 2400, originalPrice: 2990 },
-    //         "S": { price: 2400, originalPrice: 2990 },
-    //         "M": { price: 2400, originalPrice: 2990 },
-    //         "L": { price: 2700, originalPrice: 3290 },
-    //         "XL": { price: 2700, originalPrice: 3290 },
-    //         "2XL": { price: 2700, originalPrice: 3290 },
-    //         "3XL": { price: 2700, originalPrice: 3290 },
-    //         "4XL": { price: 3200, originalPrice: 3790 },
-    //         "5XL": { price: 3200, originalPrice: 3790 },
-    //         "6XL": { price: 3200, originalPrice: 3790 }
-    //     },
-    //     defaultSize: "M"
-    // },
+    
     {
         id: 41,
         name: "Squid Game Special Edition T-Shirt",
@@ -1353,37 +532,7 @@ const products = [
         },
         defaultSize: "M"
     },
-    {
-        id: 42,
-        name: "Superman Film T-Shirt",
-        category: "filmtvseries",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/film & tvseries/Super Man - FR001.jpg",
-        rating: 4.7,
-        reviews: 73,
-        badge: "New",
-        description: "Classic superhero design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
+    
     {
         id: 43,
         name: "The Boys - The Seven T-Shirt",
@@ -1541,6 +690,1042 @@ const products = [
     }
 
 ];
+
+// New products added based on uploaded images
+const newProducts = [
+    // New Sports Products
+    {
+        id: 48,
+        name: "AJ LEE - Love bites back T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/AJ LEE - Love bites back.png",
+        rating: 4.7,
+        reviews: 42,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 49,
+        name: "AJ LEE - Spider web T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/AJ LEE - Spider web.png",
+        rating: 4.6,
+        reviews: 38,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 50,
+        name: "CM PUNK - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/CM PUNK - 2K25 Edition.png",
+        rating: 4.9,
+        reviews: 75,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 51,
+        name: "CM PUNK - Hell Freeze Over T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/CM PUNK - Hell Freeze Over.png",
+        rating: 4.8,
+        reviews: 69,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 52,
+        name: "CM Punk - Collection T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/CM Punk - Collection.png",
+        rating: 4.9,
+        reviews: 82,
+        badge: "New",
+        description: "Wrestling legend collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 53,
+        name: "Cm punk - Best In the world T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Cm punk - Best In the world.png",
+        rating: 4.8,
+        reviews: 71,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 54,
+        name: "Cm punk - Cross Hands T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Cm punk - Cross Hands.png",
+        rating: 4.7,
+        reviews: 58,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 55,
+        name: "Cm punk - Thunder Bolt T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Cm punk - Thunder Bolt.png",
+        rating: 4.6,
+        reviews: 52,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 56,
+        name: "JOHN CENA - 17 time champion T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - 17 time champion.png",
+        rating: 4.9,
+        reviews: 95,
+        badge: "New",
+        description: "Wrestling icon design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 57,
+        name: "JOHN CENA - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - 2K25 Edition.png",
+        rating: 4.8,
+        reviews: 88,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 58,
+        name: "JOHN CENA - CENATION T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - CENATION.png",
+        rating: 4.7,
+        reviews: 76,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 59,
+        name: "JOHN CENA - ONE LAST TIME T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - ONE LAST TIME.png",
+        rating: 4.8,
+        reviews: 81,
+        badge: "New",
+        description: "Wrestling icon design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 60,
+        name: "JOHN CENA - YOU CANT SEE ME T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - YOU CANT SEE ME.png",
+        rating: 4.9,
+        reviews: 92,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 61,
+        name: "JOHN CENA - You Cant See Me with Face T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - You Cant See Me with Face.png",
+        rating: 4.8,
+        reviews: 87,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 62,
+        name: "JOHN CENA - rise above hate T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA - rise above hate.png",
+        rating: 4.7,
+        reviews: 73,
+        badge: "New",
+        description: "Wrestling icon design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 63,
+        name: "JOHN CENA T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/JOHN CENA.png",
+        rating: 4.9,
+        reviews: 98,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 64,
+        name: "Jey USO - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Jey USO - 2K25 Edition.png",
+        rating: 4.6,
+        reviews: 54,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 65,
+        name: "Liv-Dom - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Liv-Dom - 2K25 Edition.png",
+        rating: 4.7,
+        reviews: 59,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 66,
+        name: "NWO T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/NWO.png",
+        rating: 4.8,
+        reviews: 77,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 67,
+        name: "ROMAN RIEGNS - Tribal Chief T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/ROMAN RIEGNS - Tribal Chief.png",
+        rating: 4.9,
+        reviews: 89,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 68,
+        name: "Randy Orton - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Randy Orton - 2K25 Edition.png",
+        rating: 4.7,
+        reviews: 68,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 69,
+        name: "Randy Orton - RKO The Viper T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Randy Orton - RKO The Viper.png",
+        rating: 4.8,
+        reviews: 74,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 70,
+        name: "Randy Orton - RKO T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Randy Orton - RKO.png",
+        rating: 4.9,
+        reviews: 83,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 71,
+        name: "Randy Orton - The Viper T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Randy Orton - The Viper.png",
+        rating: 4.8,
+        reviews: 79,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 72,
+        name: "Randy Orton Collection T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Randy Orton Collection.png",
+        rating: 4.9,
+        reviews: 85,
+        badge: "New",
+        description: "Wrestling legend collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 73,
+        name: "drew mcintyre  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/drew mcintyre  - 2K25 Edition.png",
+        rating: 4.6,
+        reviews: 57,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 74,
+        name: "gunther  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/gunther  - 2K25 Edition.png",
+        rating: 4.7,
+        reviews: 61,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 75,
+        name: "la knight  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/la knight  - 2K25 Edition.png",
+        rating: 4.6,
+        reviews: 53,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 76,
+        name: "roman reigns  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/roman reigns  - 2K25 Edition.png",
+        rating: 4.9,
+        reviews: 91,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 77,
+        name: "terror twins  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/terror twins  - 2K25 Edition.png",
+        rating: 4.5,
+        reviews: 48,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 78,
+        name: "the rock - final boss T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/the rock - final boss.png",
+        rating: 4.9,
+        reviews: 96,
+        badge: "New",
+        description: "Wrestling legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 79,
+        name: "tiffany stratton  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/tiffany stratton  - 2K25 Edition.png",
+        rating: 4.6,
+        reviews: 56,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 80,
+        name: "wyatt sicks  - 2K25 Edition T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/wyatt sicks  - 2K25 Edition.png",
+        rating: 4.7,
+        reviews: 62,
+        badge: "New",
+        description: "Wrestling superstar design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    
+];
+
+// Combine existing products with new products
+const allProducts = [...products, ...newProducts];
+
+// Update the products array to include new products
+products.length = 0;
+products.push(...allProducts);
 
 // Cart and Wishlist Management
 let cart = JSON.parse(localStorage.getItem('cart')) || [];

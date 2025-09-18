@@ -693,7 +693,101 @@ const products = [
 
 // New products added based on uploaded images
 const newProducts = [
-    // New Sports Products
+    // General Sports Products (without WWE subcategory)
+    {
+        id: 81,
+        name: "Champions League Soccer T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Champions League.png",
+        rating: 4.8,
+        reviews: 85,
+        badge: "New",
+        description: "Football champions design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 82,
+        name: "NBA Basketball T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/NBA.png",
+        rating: 4.7,
+        reviews: 78,
+        badge: "New",
+        description: "Basketball legend design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 83,
+        name: "Olympic Games T-Shirt",
+        category: "sports",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/Olympic Games.png",
+        rating: 4.9,
+        reviews: 92,
+        badge: "New",
+        description: "Olympic spirit design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    // New Sports Products (WWE)
     {
         id: 48,
         name: "AJ LEE - Love bites back T-Shirt",

@@ -61,6 +61,12 @@
                 <a href="shop.html?category=games">GAMES</a>
                 <a href="shop.html?category=trending">TRENDING</a>
                 <a href="shop.html?category=sports">SPORTS</a>
+                <div class="sports-submenu">
+                  <a href="shop.html?category=sports" class="submenu-parent">SPORTS ▼</a>
+                  <div class="submenu-content">
+                    <a href="shop.html?category=sports&subcategory=wwe">WWE</a>
+                  </div>
+                </div>
                 <a href="shop.html?category=filmtvseries">FILM & TVSERIES</a>
                 <a href="shop.html?category=music">MUSIC</a>
                 <div class="vehicles-submenu">
@@ -182,7 +188,12 @@
                                     <input type="checkbox" value="sports" class="category-filter">
                                     <span>SPORTS</span>
                                 </label>
-                                
+                                <div class="subcategory-options" id="sportsSubcategories" style="margin-left: 20px; display: none;">
+                                    <label class="filter-option">
+                                        <input type="checkbox" value="wwe" class="subcategory-filter" data-parent="sports">
+                                        <span>WWE</span>
+                                    </label>
+                                </div>
                                 <label class="filter-option">
                                     <input type="checkbox" value="filmtvseries" class="category-filter">
                                     <span>FILM & TVSERIES</span>

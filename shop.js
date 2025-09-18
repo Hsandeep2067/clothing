@@ -38,6 +38,12 @@ function initializeShop() {
             if (vehicleSubcategories) vehicleSubcategories.style.display = 'block';
         }
         
+        // Show sports subcategories if sports category is selected
+        if (category === 'sports') {
+            const sportsSubcategories = document.getElementById('sportsSubcategories');
+            if (sportsSubcategories) sportsSubcategories.style.display = 'block';
+        }
+        
         // Handle subcategory if specified
         if (subcategory) {
             selectedSubcategories = [subcategory];
@@ -96,6 +102,11 @@ function setupEventListeners() {
                     const vehicleSubcategories = document.getElementById('vehicleSubcategories');
                     if (vehicleSubcategories) vehicleSubcategories.style.display = 'block';
                 }
+                // Show subcategory options for sports
+                if (this.value === 'sports') {
+                    const sportsSubcategories = document.getElementById('sportsSubcategories');
+                    if (sportsSubcategories) sportsSubcategories.style.display = 'block';
+                }
             } else {
                 selectedCategories = selectedCategories.filter(cat => cat !== this.value);
                 // Hide subcategory options for vehicles and clear subcategory selections
@@ -105,6 +116,16 @@ function setupEventListeners() {
                     // Clear vehicle subcategory selections
                     selectedSubcategories = selectedSubcategories.filter(sub => sub !== 'cars' && sub !== 'bikes');
                     document.querySelectorAll('.subcategory-filter[data-parent="vehicles"]').forEach(sub => {
+                        sub.checked = false;
+                    });
+                }
+                // Hide subcategory options for sports and clear subcategory selections
+                if (this.value === 'sports') {
+                    const sportsSubcategories = document.getElementById('sportsSubcategories');
+                    if (sportsSubcategories) sportsSubcategories.style.display = 'none';
+                    // Clear sports subcategory selections
+                    selectedSubcategories = selectedSubcategories.filter(sub => sub !== 'wwe');
+                    document.querySelectorAll('.subcategory-filter[data-parent="sports"]').forEach(sub => {
                         sub.checked = false;
                     });
                 }
@@ -237,11 +258,26 @@ function applyFilters() {
     // Apply subcategory filter (only if categories are selected)
     if (selectedSubcategories.length > 0) {
         filtered = filtered.filter(product => {
-            // If product has a subcategory, check if it matches selected subcategories
-            if (product.subcategory) {
+            // Special handling for sports category
+            if (selectedCategories.includes('sports')) {
+                // If sports category is selected and WWE subcategory is selected, show only WWE products
+                if (selectedSubcategories.includes('wwe') && product.subcategory === 'wwe') {
+                    return product.category === 'sports' && product.subcategory === 'wwe';
+                }
+                // If sports category is selected but no specific subcategory, show all sports products
+                else if (!selectedSubcategories.includes('wwe')) {
+                    return product.category === 'sports';
+                }
+                // If WWE subcategory is selected, only show WWE products
+                else {
+                    return product.subcategory === 'wwe';
+                }
+            }
+            // For other categories with subcategories (like vehicles)
+            else if (product.subcategory) {
                 return selectedSubcategories.includes(product.subcategory);
             }
-            // If product doesn't have subcategory but is in vehicles category, don't show it when subcategories are selected
+            // If product doesn't have subcategory but is in a category with subcategories, don't show it when subcategories are selected
             return false;
         });
         hasActiveFilters = true;

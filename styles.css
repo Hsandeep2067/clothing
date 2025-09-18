@@ -187,6 +187,11 @@ body {
     position: relative;
 }
 
+/* Sports submenu styling */
+.sports-submenu {
+    position: relative;
+}
+
 .submenu-parent {
     display: flex;
     align-items: center;
@@ -222,6 +227,12 @@ body {
 }
 
 .vehicles-submenu:hover .submenu-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.sports-submenu:hover .submenu-content {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);

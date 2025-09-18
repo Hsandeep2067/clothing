@@ -731,39 +731,39 @@ const products = [
         },
         defaultSize: "M"
     },
+    // {
+    //     id: 24,
+    //     name: "Squid Game Film & TV Series T-Shirt",
+    //     category: "filmtvseries",
+    //     price: 2400,
+    //     originalPrice: 2990,
+    //     image: "images/film & tvseries/Squid Game - TR001.jpg",
+    //     rating: 4.8,
+    //     reviews: 81,
+    //     badge: "New",
+    //     description: "Netflix sensation in streetwear",
+    //     specifications: {
+    //         style: "Regular",
+    //         gender: "Unisex",
+    //         color: "Black",
+    //         fabric: "220 GSM, Single Jersey"
+    //     },
+    //     sizes: {
+    //         "XS": { price: 2400, originalPrice: 2990 },
+    //         "S": { price: 2400, originalPrice: 2990 },
+    //         "M": { price: 2400, originalPrice: 2990 },
+    //         "L": { price: 2700, originalPrice: 3290 },
+    //         "XL": { price: 2700, originalPrice: 3290 },
+    //         "2XL": { price: 2700, originalPrice: 3290 },
+    //         "3XL": { price: 2700, originalPrice: 3290 },
+    //         "4XL": { price: 3200, originalPrice: 3790 },
+    //         "5XL": { price: 3200, originalPrice: 3790 },
+    //         "6XL": { price: 3200, originalPrice: 3790 }
+    //     },
+    //     defaultSize: "M"
+    // },
     {
         id: 24,
-        name: "Squid Game Film & TV Series T-Shirt",
-        category: "filmtvseries",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/film & tvseries/Squid Game - TR001.jpg",
-        rating: 4.8,
-        reviews: 81,
-        badge: "New",
-        description: "Netflix sensation in streetwear",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 25,
         name: "Metallica Music T-Shirt",
         category: "music",
         price: 2400,
@@ -795,7 +795,7 @@ const products = [
     },
     // Game Category Products
     {
-        id: 26,
+        id: 25,
         name: "Apex Legends Game T-Shirt",
         category: "games",
         price: 2400,
@@ -826,7 +826,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 27,
+        id: 26,
         name: "Call of Duty Cold War Game T-Shirt",
         category: "games",
         price: 2400,
@@ -857,7 +857,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 28,
+        id: 27,
         name: "Farcry 3 Game T-Shirt",
         category: "games",
         price: 2400,
@@ -888,7 +888,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 29,
+        id: 28,
         name: "Farcry 4 Game T-Shirt",
         category: "games",
         price: 2400,
@@ -919,7 +919,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 30,
+        id: 29,
         name: "Farcry 5 Game T-Shirt",
         category: "games",
         price: 2400,
@@ -950,7 +950,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 31,
+        id: 30,
         name: "Farcry 6 Game T-Shirt",
         category: "games",
         price: 2400,
@@ -981,7 +981,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 32,
+        id: 31,
         name: "Freefire Player Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1012,7 +1012,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 33,
+        id: 32,
         name: "Freefire Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1043,7 +1043,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 34,
+        id: 33,
         name: "GTA VI Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1074,7 +1074,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 35,
+        id: 34,
         name: "NFS Most Wanted Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1105,7 +1105,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 36,
+        id: 35,
         name: "PUBG Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1136,7 +1136,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 37,
+        id: 36,
         name: "Red Dead Redemption 2 Game T-Shirt",
         category: "games",
         price: 2400,
@@ -1146,6 +1146,379 @@ const products = [
         reviews: 79,
         badge: "New",
         description: "Wild west adventure design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    // Film & TV Series Category Products
+    {
+        id: 37,
+        name: "Knight Rider TV Series T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Knight Rider.png",
+        rating: 4.7,
+        reviews: 62,
+        badge: "New",
+        description: "Iconic television series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 38,
+        name: "Squid Game - 3 Red Mask Team T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game - 3 Red Mask Team.png",
+        rating: 4.9,
+        reviews: 85,
+        badge: "New",
+        description: "Popular Netflix series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 39,
+        name: "Squid Game - Mask Man T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game - Mask Man.png",
+        rating: 4.8,
+        reviews: 78,
+        badge: "New",
+        description: "Popular Netflix series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 40,
+        name: "Squid Game - Red Mask Team T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game - Red Mask Team.png",
+        rating: 4.9,
+        reviews: 82,
+        badge: "New",
+        description: "Popular Netflix series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    // {
+    //     id: 42,
+    //     name: "Squid Game TV Series T-Shirt",
+    //     category: "filmtvseries",
+    //     price: 2400,
+    //     originalPrice: 2990,
+    //     image: "images/film & tvseries/Squid Game - TR001.jpg",
+    //     rating: 4.9,
+    //     reviews: 91,
+    //     badge: "New",
+    //     description: "Popular Netflix series design",
+    //     specifications: {
+    //         style: "Regular",
+    //         gender: "Unisex",
+    //         color: "Black",
+    //         fabric: "220 GSM, Single Jersey"
+    //     },
+    //     sizes: {
+    //         "XS": { price: 2400, originalPrice: 2990 },
+    //         "S": { price: 2400, originalPrice: 2990 },
+    //         "M": { price: 2400, originalPrice: 2990 },
+    //         "L": { price: 2700, originalPrice: 3290 },
+    //         "XL": { price: 2700, originalPrice: 3290 },
+    //         "2XL": { price: 2700, originalPrice: 3290 },
+    //         "3XL": { price: 2700, originalPrice: 3290 },
+    //         "4XL": { price: 3200, originalPrice: 3790 },
+    //         "5XL": { price: 3200, originalPrice: 3790 },
+    //         "6XL": { price: 3200, originalPrice: 3790 }
+    //     },
+    //     defaultSize: "M"
+    // },
+    {
+        id: 41,
+        name: "Squid Game Special Edition T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Squid Game -.png",
+        rating: 4.8,
+        reviews: 76,
+        badge: "New",
+        description: "Popular Netflix series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 42,
+        name: "Superman Film T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Super Man - FR001.jpg",
+        rating: 4.7,
+        reviews: 73,
+        badge: "New",
+        description: "Classic superhero design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 43,
+        name: "The Boys - The Seven T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/The Boys - The Seven.png",
+        rating: 4.6,
+        reviews: 68,
+        badge: "New",
+        description: "Popular superhero series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 44,
+        name: "The Punisher - Frank T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/The Punisher - Frank.png",
+        rating: 4.8,
+        reviews: 75,
+        badge: "New",
+        description: "Anti-hero character design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 45,
+        name: "The Punisher T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/The Punisher.png",
+        rating: 4.7,
+        reviews: 71,
+        badge: "New",
+        description: "Anti-hero character design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 46,
+        name: "The Boys - Vought T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/The boys - Vought.png",
+        rating: 4.6,
+        reviews: 65,
+        badge: "New",
+        description: "Popular superhero series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 47,
+        name: "The Boys - Season 01 T-Shirt",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/the Boys - Season 01.png",
+        rating: 4.7,
+        reviews: 69,
+        badge: "New",
+        description: "Popular superhero series design",
         specifications: {
             style: "Regular",
             gender: "Unisex",

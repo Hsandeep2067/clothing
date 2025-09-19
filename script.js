@@ -694,102 +694,102 @@ const products = [
 // New products added based on uploaded images
 const newProducts = [
     // General Sports Products (with sporty subcategory)
-    {
-        id: 81,
-        name: "Champions League Soccer",
-        category: "sports",
-        subcategory: "sporty",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/sports/Champions League.png",
-        rating: 4.8,
-        reviews: 85,
-        badge: "New",
-        description: "Football champions design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 82,
-        name: "NBA Basketball",
-        category: "sports",
-        subcategory: "sporty",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/sports/NBA.png",
-        rating: 4.7,
-        reviews: 78,
-        badge: "New",
-        description: "Basketball legend design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
-    {
-        id: 83,
-        name: "Olympic Games",
-        category: "sports",
-        subcategory: "sporty",
-        price: 2400,
-        originalPrice: 2990,
-        image: "images/sports/Olympic Games.png",
-        rating: 4.9,
-        reviews: 92,
-        badge: "New",
-        description: "Olympic spirit design",
-        specifications: {
-            style: "Regular",
-            gender: "Unisex",
-            color: "Black",
-            fabric: "220 GSM, Single Jersey"
-        },
-        sizes: {
-            "XS": { price: 2400, originalPrice: 2990 },
-            "S": { price: 2400, originalPrice: 2990 },
-            "M": { price: 2400, originalPrice: 2990 },
-            "L": { price: 2700, originalPrice: 3290 },
-            "XL": { price: 2700, originalPrice: 3290 },
-            "2XL": { price: 2700, originalPrice: 3290 },
-            "3XL": { price: 2700, originalPrice: 3290 },
-            "4XL": { price: 3200, originalPrice: 3790 },
-            "5XL": { price: 3200, originalPrice: 3790 },
-            "6XL": { price: 3200, originalPrice: 3790 }
-        },
-        defaultSize: "M"
-    },
+    // {
+    //     id: 81,
+    //     name: "Champions League Soccer",
+    //     category: "sports",
+    //     subcategory: "sporty",
+    //     price: 2400,
+    //     originalPrice: 2990,
+    //     image: "images/sports/Champions League.png",
+    //     rating: 4.8,
+    //     reviews: 85,
+    //     badge: "New",
+    //     description: "Football champions design",
+    //     specifications: {
+    //         style: "Regular",
+    //         gender: "Unisex",
+    //         color: "Black",
+    //         fabric: "220 GSM, Single Jersey"
+    //     },
+    //     sizes: {
+    //         "XS": { price: 2400, originalPrice: 2990 },
+    //         "S": { price: 2400, originalPrice: 2990 },
+    //         "M": { price: 2400, originalPrice: 2990 },
+    //         "L": { price: 2700, originalPrice: 3290 },
+    //         "XL": { price: 2700, originalPrice: 3290 },
+    //         "2XL": { price: 2700, originalPrice: 3290 },
+    //         "3XL": { price: 2700, originalPrice: 3290 },
+    //         "4XL": { price: 3200, originalPrice: 3790 },
+    //         "5XL": { price: 3200, originalPrice: 3790 },
+    //         "6XL": { price: 3200, originalPrice: 3790 }
+    //     },
+    //     defaultSize: "M"
+    // },
+    // {
+    //     id: 82,
+    //     name: "NBA Basketball",
+    //     category: "sports",
+    //     subcategory: "sporty",
+    //     price: 2400,
+    //     originalPrice: 2990,
+    //     image: "images/sports/NBA.png",
+    //     rating: 4.7,
+    //     reviews: 78,
+    //     badge: "New",
+    //     description: "Basketball legend design",
+    //     specifications: {
+    //         style: "Regular",
+    //         gender: "Unisex",
+    //         color: "Black",
+    //         fabric: "220 GSM, Single Jersey"
+    //     },
+    //     sizes: {
+    //         "XS": { price: 2400, originalPrice: 2990 },
+    //         "S": { price: 2400, originalPrice: 2990 },
+    //         "M": { price: 2400, originalPrice: 2990 },
+    //         "L": { price: 2700, originalPrice: 3290 },
+    //         "XL": { price: 2700, originalPrice: 3290 },
+    //         "2XL": { price: 2700, originalPrice: 3290 },
+    //         "3XL": { price: 2700, originalPrice: 3290 },
+    //         "4XL": { price: 3200, originalPrice: 3790 },
+    //         "5XL": { price: 3200, originalPrice: 3790 },
+    //         "6XL": { price: 3200, originalPrice: 3790 }
+    //     },
+    //     defaultSize: "M"
+    // },
+    // {
+    //     id: 83,
+    //     name: "Olympic Games",
+    //     category: "sports",
+    //     subcategory: "sporty",
+    //     price: 2400,
+    //     originalPrice: 2990,
+    //     image: "images/sports/Olympic Games.png",
+    //     rating: 4.9,
+    //     reviews: 92,
+    //     badge: "New",
+    //     description: "Olympic spirit design",
+    //     specifications: {
+    //         style: "Regular",
+    //         gender: "Unisex",
+    //         color: "Black",
+    //         fabric: "220 GSM, Single Jersey"
+    //     },
+    //     sizes: {
+    //         "XS": { price: 2400, originalPrice: 2990 },
+    //         "S": { price: 2400, originalPrice: 2990 },
+    //         "M": { price: 2400, originalPrice: 2990 },
+    //         "L": { price: 2700, originalPrice: 3290 },
+    //         "XL": { price: 2700, originalPrice: 3290 },
+    //         "2XL": { price: 2700, originalPrice: 3290 },
+    //         "3XL": { price: 2700, originalPrice: 3290 },
+    //         "4XL": { price: 3200, originalPrice: 3790 },
+    //         "5XL": { price: 3200, originalPrice: 3790 },
+    //         "6XL": { price: 3200, originalPrice: 3790 }
+    //     },
+    //     defaultSize: "M"
+    // },
     // New Sports Products (WWE)
     {
         id: 48,
@@ -2270,8 +2270,33 @@ function saveWishlist() {
 function loadFeaturedProducts() {
     if (!featuredProducts) return;
     
-    const featured = products.slice(0, 8); // Show first 8 products
-    featuredProducts.innerHTML = featured.map(product => createProductCard(product)).join('');
+    // Get products from different categories to mix in featured products
+    const gamesProducts = products.filter(product => product.category === 'games');
+    const filmsTvSeriesProducts = products.filter(product => product.category === 'filmtvseries');
+    const sportsProducts = products.filter(product => product.category === 'sports');
+    
+    // Select 2-3 products from each category to create a mixed featured selection
+    const featured = [];
+    
+    // Add 3 games products
+    featured.push(...gamesProducts.slice(0, 3));
+    
+    // Add 3 films & TV series products
+    featured.push(...filmsTvSeriesProducts.slice(0, 3));
+    
+    // Add 2 sports products
+    featured.push(...sportsProducts.slice(0, 2));
+    
+    // Shuffle the array to mix products from different categories
+    for (let i = featured.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [featured[i], featured[j]] = [featured[j], featured[i]];
+    }
+    
+    // Limit to 8 products
+    const finalFeatured = featured.slice(0, 8);
+    
+    featuredProducts.innerHTML = finalFeatured.map(product => createProductCard(product)).join('');
     
     // Add event listeners for product card buttons
     featuredProducts.querySelectorAll('.wishlist-btn').forEach(btn => {

@@ -1981,7 +1981,13 @@ function setupEventListeners() {
         categoryCards.forEach(card => {
             card.addEventListener('click', function() {
                 const category = this.dataset.category;
-                window.location.href = `shop.html?category=${category}`;
+                const subcategory = this.dataset.subcategory;
+                
+                if (subcategory) {
+                    window.location.href = `shop.html?category=${category}&subcategory=${subcategory}`;
+                } else {
+                    window.location.href = `shop.html?category=${category}`;
+                }
             });
         });
     } else {

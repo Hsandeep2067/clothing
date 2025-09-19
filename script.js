@@ -2295,6 +2295,502 @@ const newProducts = [
         },
         defaultSize: "M"
     },
+    {
+        id: 98,
+        name: "BTS Team",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/BTS - Team.png",
+        rating: 4.8,
+        reviews: 65,
+        badge: "New",
+        description: "K-pop boy band BTS design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 99,
+        name: "BlackPINK Heart with Logo",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/BlackPINK - Heart with Logo.png",
+        rating: 4.7,
+        reviews: 58,
+        badge: "New",
+        description: "K-pop girl group BlackPINK heart design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 100,
+        name: "BlackPINK Illustration",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/BlackPINK - Illustration.png",
+        rating: 4.6,
+        reviews: 52,
+        badge: "New",
+        description: "K-pop girl group BlackPINK illustration design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 101,
+        name: "BTS Flowers with Logo",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Bts - Flowers with Logo.png",
+        rating: 4.9,
+        reviews: 72,
+        badge: "New",
+        description: "K-pop boy band BTS flowers design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 102,
+        name: "Guns N' Roses Two Guns Logo",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Gun n Roses - Two guns Logo.png",
+        rating: 4.8,
+        reviews: 68,
+        badge: "New",
+        description: "Rock band Guns N' Roses two guns logo design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 103,
+        name: "Iron Maiden Zombie Rider",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Iron Maiden - Zombie Rider.png",
+        rating: 4.7,
+        reviews: 61,
+        badge: "New",
+        description: "Heavy metal band Iron Maiden zombie rider design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 104,
+        name: "KORN",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/KORN.png",
+        rating: 4.6,
+        reviews: 55,
+        badge: "New",
+        description: "Nu metal band KORN design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 105,
+        name: "Lamb of God Skeleton Bird",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Lamb of god - Skeleton Bird.png",
+        rating: 4.7,
+        reviews: 59,
+        badge: "New",
+        description: "Metal band Lamb of God skeleton bird design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 106,
+        name: "Linkin Park Hybrid Theory Album",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Linkin Park - Hybrid Theory Album.png",
+        rating: 4.8,
+        reviews: 75,
+        badge: "New",
+        description: "Rock band Linkin Park Hybrid Theory album design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 107,
+        name: "Metallica Red Skull Heart",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Metallica - Red Skull Heart.png",
+        rating: 4.9,
+        reviews: 82,
+        badge: "New",
+        description: "Heavy metal band Metallica red skull heart design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 108,
+        name: "Metallica Skull Butterfly",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Metallica - Skull Butterfly.png",
+        rating: 4.8,
+        reviews: 78,
+        badge: "New",
+        description: "Heavy metal band Metallica skull butterfly design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 109,
+        name: "Metallica Skull Head Explosion",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Metallica - Skull Head Explosion.png",
+        rating: 4.9,
+        reviews: 85,
+        badge: "New",
+        description: "Heavy metal band Metallica skull head explosion design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 110,
+        name: "Metallica Skull Head XXX",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Metallica - Skull Head XXX.png",
+        rating: 4.7,
+        reviews: 71,
+        badge: "New",
+        description: "Heavy metal band Metallica skull head XXX design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 111,
+        name: "Slipknot All Hope Is Gone",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/Slipknot - All hope is gone.png",
+        rating: 4.6,
+        reviews: 63,
+        badge: "New",
+        description: "Nu metal band Slipknot all hope is gone design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 112,
+        name: "System of a Down Bandmates",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/System of a down - Bandmates.png",
+        rating: 4.8,
+        reviews: 69,
+        badge: "New",
+        description: "Alternative metal band System of a Down bandmates design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 113,
+        name: "Avenged Sevenfold Blue Cyborg Skull",
+        category: "music",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/music/avenged sevenfold - Blue Cyborg Skull.png",
+        rating: 4.7,
+        reviews: 66,
+        badge: "New",
+        description: "Metal band Avenged Sevenfold blue cyborg skull design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
     
 ];
 

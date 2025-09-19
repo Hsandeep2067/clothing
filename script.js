@@ -5,7 +5,7 @@ const products = [
     // Game Category Products
     {
         id: 25,
-        name: "Apex Legends Game T-Shirt",
+        name: "Apex Legends Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -36,7 +36,7 @@ const products = [
     },
     {
         id: 26,
-        name: "Call of Duty Cold War Game T-Shirt",
+        name: "Call of Duty Cold War Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -67,7 +67,7 @@ const products = [
     },
     {
         id: 27,
-        name: "Farcry 3 Game T-Shirt",
+        name: "Farcry 3 Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -98,7 +98,7 @@ const products = [
     },
     {
         id: 28,
-        name: "Farcry 4 Game T-Shirt",
+        name: "Farcry 4 Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -129,7 +129,7 @@ const products = [
     },
     {
         id: 29,
-        name: "Farcry 5 Game T-Shirt",
+        name: "Farcry 5 Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -160,7 +160,7 @@ const products = [
     },
     {
         id: 30,
-        name: "Farcry 6 Game T-Shirt",
+        name: "Farcry 6 Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -191,7 +191,7 @@ const products = [
     },
     {
         id: 31,
-        name: "Freefire Player Game T-Shirt",
+        name: "Freefire Player Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -222,7 +222,7 @@ const products = [
     },
     {
         id: 32,
-        name: "Freefire Game T-Shirt",
+        name: "Freefire Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -253,7 +253,7 @@ const products = [
     },
     {
         id: 33,
-        name: "GTA VI Game T-Shirt",
+        name: "GTA VI Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -284,7 +284,7 @@ const products = [
     },
     {
         id: 34,
-        name: "NFS Most Wanted Game T-Shirt",
+        name: "NFS Most Wanted Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -315,7 +315,7 @@ const products = [
     },
     {
         id: 35,
-        name: "PUBG Game T-Shirt",
+        name: "PUBG Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -346,7 +346,7 @@ const products = [
     },
     {
         id: 36,
-        name: "Red Dead Redemption 2 Game T-Shirt",
+        name: "Red Dead Redemption 2 Game",
         category: "games",
         price: 2400,
         originalPrice: 2990,
@@ -378,7 +378,7 @@ const products = [
     // Film & TV Series Category Products
     {
         id: 37,
-        name: "Knight Rider TV Series T-Shirt",
+        name: "Knight Rider TV Series",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -409,7 +409,7 @@ const products = [
     },
     {
         id: 38,
-        name: "Squid Game - 3 Red Mask Team T-Shirt",
+        name: "Squid Game - 3 Red Mask Team",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -440,7 +440,7 @@ const products = [
     },
     {
         id: 39,
-        name: "Squid Game - Mask Man T-Shirt",
+        name: "Squid Game - Mask Man",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -471,7 +471,7 @@ const products = [
     },
     {
         id: 40,
-        name: "Squid Game - Red Mask Team T-Shirt",
+        name: "Squid Game - Red Mask Team",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -503,7 +503,7 @@ const products = [
     
     {
         id: 41,
-        name: "Squid Game Special Edition T-Shirt",
+        name: "Squid Game Special Edition",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -535,7 +535,7 @@ const products = [
     
     {
         id: 43,
-        name: "The Boys - The Seven T-Shirt",
+        name: "The Boys - The Seven",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -566,7 +566,7 @@ const products = [
     },
     {
         id: 44,
-        name: "The Punisher - Frank T-Shirt",
+        name: "The Punisher - Frank",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -597,7 +597,7 @@ const products = [
     },
     {
         id: 45,
-        name: "The Punisher T-Shirt",
+        name: "The Punisher",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -628,7 +628,7 @@ const products = [
     },
     {
         id: 46,
-        name: "The Boys - Vought T-Shirt",
+        name: "The Boys - Vought",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -659,7 +659,7 @@ const products = [
     },
     {
         id: 47,
-        name: "The Boys - Season 01 T-Shirt",
+        name: "The Boys - Season 01",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -693,11 +693,12 @@ const products = [
 
 // New products added based on uploaded images
 const newProducts = [
-    // General Sports Products (without WWE subcategory)
+    // General Sports Products (with sporty subcategory)
     {
         id: 81,
-        name: "Champions League Soccer T-Shirt",
+        name: "Champions League Soccer",
         category: "sports",
+        subcategory: "sporty",
         price: 2400,
         originalPrice: 2990,
         image: "images/sports/Champions League.png",
@@ -727,8 +728,9 @@ const newProducts = [
     },
     {
         id: 82,
-        name: "NBA Basketball T-Shirt",
+        name: "NBA Basketball",
         category: "sports",
+        subcategory: "sporty",
         price: 2400,
         originalPrice: 2990,
         image: "images/sports/NBA.png",
@@ -758,8 +760,9 @@ const newProducts = [
     },
     {
         id: 83,
-        name: "Olympic Games T-Shirt",
+        name: "Olympic Games",
         category: "sports",
+        subcategory: "sporty",
         price: 2400,
         originalPrice: 2990,
         image: "images/sports/Olympic Games.png",
@@ -790,7 +793,7 @@ const newProducts = [
     // New Sports Products (WWE)
     {
         id: 48,
-        name: "AJ LEE - Love bites back T-Shirt",
+        name: "AJ LEE - Love bites back",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -822,7 +825,7 @@ const newProducts = [
     },
     {
         id: 49,
-        name: "AJ LEE - Spider web T-Shirt",
+        name: "AJ LEE - Spider web",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -854,7 +857,7 @@ const newProducts = [
     },
     {
         id: 50,
-        name: "CM PUNK - 2K25 Edition T-Shirt",
+        name: "CM PUNK - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -886,7 +889,7 @@ const newProducts = [
     },
     {
         id: 51,
-        name: "CM PUNK - Hell Freeze Over T-Shirt",
+        name: "CM PUNK - Hell Freeze Over",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -918,7 +921,7 @@ const newProducts = [
     },
     {
         id: 52,
-        name: "CM Punk - Collection T-Shirt",
+        name: "CM Punk - Collection",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -950,7 +953,7 @@ const newProducts = [
     },
     {
         id: 53,
-        name: "Cm punk - Best In the world T-Shirt",
+        name: "Cm punk - Best In the world",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -982,7 +985,7 @@ const newProducts = [
     },
     {
         id: 54,
-        name: "Cm punk - Cross Hands T-Shirt",
+        name: "Cm punk - Cross Hands",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1014,7 +1017,7 @@ const newProducts = [
     },
     {
         id: 55,
-        name: "Cm punk - Thunder Bolt T-Shirt",
+        name: "Cm punk - Thunder Bolt",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1046,7 +1049,7 @@ const newProducts = [
     },
     {
         id: 56,
-        name: "JOHN CENA - 17 time champion T-Shirt",
+        name: "JOHN CENA - 17 time champion",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1078,7 +1081,7 @@ const newProducts = [
     },
     {
         id: 57,
-        name: "JOHN CENA - 2K25 Edition T-Shirt",
+        name: "JOHN CENA - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1110,7 +1113,7 @@ const newProducts = [
     },
     {
         id: 58,
-        name: "JOHN CENA - CENATION T-Shirt",
+        name: "JOHN CENA - CENATION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1142,7 +1145,7 @@ const newProducts = [
     },
     {
         id: 59,
-        name: "JOHN CENA - ONE LAST TIME T-Shirt",
+        name: "JOHN CENA - ONE LAST TIME",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1174,7 +1177,7 @@ const newProducts = [
     },
     {
         id: 60,
-        name: "JOHN CENA - YOU CANT SEE ME T-Shirt",
+        name: "JOHN CENA - YOU CANT SEE ME",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1206,7 +1209,7 @@ const newProducts = [
     },
     {
         id: 61,
-        name: "JOHN CENA - You Cant See Me with Face T-Shirt",
+        name: "JOHN CENA - You Cant See Me with Face",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1238,7 +1241,7 @@ const newProducts = [
     },
     {
         id: 62,
-        name: "JOHN CENA - rise above hate T-Shirt",
+        name: "JOHN CENA - rise above hate",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1270,7 +1273,7 @@ const newProducts = [
     },
     {
         id: 63,
-        name: "JOHN CENA T-Shirt",
+        name: "JOHN CENA",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1302,7 +1305,7 @@ const newProducts = [
     },
     {
         id: 64,
-        name: "Jey USO - 2K25 Edition T-Shirt",
+        name: "Jey USO - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1334,7 +1337,7 @@ const newProducts = [
     },
     {
         id: 65,
-        name: "Liv-Dom - 2K25 Edition T-Shirt",
+        name: "Liv-Dom - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1366,7 +1369,7 @@ const newProducts = [
     },
     {
         id: 66,
-        name: "NWO T-Shirt",
+        name: "NWO",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1398,7 +1401,7 @@ const newProducts = [
     },
     {
         id: 67,
-        name: "ROMAN RIEGNS - Tribal Chief T-Shirt",
+        name: "ROMAN RIEGNS - Tribal Chief",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1430,7 +1433,7 @@ const newProducts = [
     },
     {
         id: 68,
-        name: "Randy Orton - 2K25 Edition T-Shirt",
+        name: "Randy Orton - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1462,7 +1465,7 @@ const newProducts = [
     },
     {
         id: 69,
-        name: "Randy Orton - RKO The Viper T-Shirt",
+        name: "Randy Orton - RKO The Viper",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1494,7 +1497,7 @@ const newProducts = [
     },
     {
         id: 70,
-        name: "Randy Orton - RKO T-Shirt",
+        name: "Randy Orton - RKO",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1526,7 +1529,7 @@ const newProducts = [
     },
     {
         id: 71,
-        name: "Randy Orton - The Viper T-Shirt",
+        name: "Randy Orton - The Viper",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1558,7 +1561,7 @@ const newProducts = [
     },
     {
         id: 72,
-        name: "Randy Orton Collection T-Shirt",
+        name: "Randy Orton Collection",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1590,7 +1593,7 @@ const newProducts = [
     },
     {
         id: 73,
-        name: "drew mcintyre  - 2K25 Edition T-Shirt",
+        name: "drew mcintyre  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1622,7 +1625,7 @@ const newProducts = [
     },
     {
         id: 74,
-        name: "gunther  - 2K25 Edition T-Shirt",
+        name: "gunther  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1654,7 +1657,7 @@ const newProducts = [
     },
     {
         id: 75,
-        name: "la knight  - 2K25 Edition T-Shirt",
+        name: "la knight  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1686,7 +1689,7 @@ const newProducts = [
     },
     {
         id: 76,
-        name: "roman reigns  - 2K25 Edition T-Shirt",
+        name: "roman reigns  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1718,7 +1721,7 @@ const newProducts = [
     },
     {
         id: 77,
-        name: "terror twins  - 2K25 Edition T-Shirt",
+        name: "terror twins  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1750,7 +1753,7 @@ const newProducts = [
     },
     {
         id: 78,
-        name: "the rock - final boss T-Shirt",
+        name: "the rock - final boss",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1782,7 +1785,7 @@ const newProducts = [
     },
     {
         id: 79,
-        name: "tiffany stratton  - 2K25 Edition T-Shirt",
+        name: "tiffany stratton  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1814,7 +1817,7 @@ const newProducts = [
     },
     {
         id: 80,
-        name: "wyatt sicks  - 2K25 Edition T-Shirt",
+        name: "wyatt sicks  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
         price: 2400,

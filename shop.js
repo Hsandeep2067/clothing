@@ -124,7 +124,7 @@ function setupEventListeners() {
                     const sportsSubcategories = document.getElementById('sportsSubcategories');
                     if (sportsSubcategories) sportsSubcategories.style.display = 'none';
                     // Clear sports subcategory selections
-                    selectedSubcategories = selectedSubcategories.filter(sub => sub !== 'wwe');
+                    selectedSubcategories = selectedSubcategories.filter(sub => sub !== 'wwe' && sub !== 'sporty');
                     document.querySelectorAll('.subcategory-filter[data-parent="sports"]').forEach(sub => {
                         sub.checked = false;
                     });
@@ -264,13 +264,21 @@ function applyFilters() {
                 if (selectedSubcategories.includes('wwe') && product.subcategory === 'wwe') {
                     return product.category === 'sports' && product.subcategory === 'wwe';
                 }
+                // If sports category is selected and sporty subcategory is selected, show only sporty products
+                if (selectedSubcategories.includes('sporty') && product.subcategory === 'sporty') {
+                    return product.category === 'sports' && product.subcategory === 'sporty';
+                }
                 // If sports category is selected but no specific subcategory, show all sports products
-                else if (!selectedSubcategories.includes('wwe')) {
+                else if (!selectedSubcategories.includes('wwe') && !selectedSubcategories.includes('sporty')) {
                     return product.category === 'sports';
                 }
                 // If WWE subcategory is selected, only show WWE products
-                else {
+                else if (selectedSubcategories.includes('wwe')) {
                     return product.subcategory === 'wwe';
+                }
+                // If sporty subcategory is selected, only show sporty products
+                else {
+                    return product.subcategory === 'sporty';
                 }
             }
             // For other categories with subcategories (like vehicles)

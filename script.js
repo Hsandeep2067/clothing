@@ -3133,6 +3133,136 @@ const newProducts = [
             "6XL": { price: 3200, originalPrice: 3790 }
         },
         defaultSize: "M"
+    },
+    
+    // Sporty Category Products
+    {
+        id: 111,
+        name: "Chicago Bulls - Jordan",
+        category: "sports",
+        subcategory: "sporty",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/sports/Chicago Bulls - Jordan.png",
+        rating: 4.9,
+        reviews: 88,
+        badge: "Hot",
+        description: "Chicago Bulls legendary design featuring Michael Jordan",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 112,
+        name: "Chicago Bulls",
+        category: "sports",
+        subcategory: "sporty",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/sports/Chicago Bulls.png",
+        rating: 4.8,
+        reviews: 76,
+        badge: "Hot",
+        description: "Classic Chicago Bulls basketball design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 113,
+        name: "Lakers - Kobe",
+        category: "sports",
+        subcategory: "sporty",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/sports/Lakers - Cobe.png",
+        rating: 4.9,
+        reviews: 92,
+        badge: "Hot",
+        description: "Los Angeles Lakers tribute to Kobe Bryant",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 114,
+        name: "Lakers - King James",
+        category: "sports",
+        subcategory: "sporty",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/sports/sports/Lakers - King James.png",
+        rating: 4.8,
+        reviews: 85,
+        badge: "Hot",
+        description: "Los Angeles Lakers design featuring LeBron James",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
     }
     
 ];

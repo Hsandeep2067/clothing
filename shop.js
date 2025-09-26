@@ -520,6 +520,15 @@ function createProductCard(product) {
     const discount = currentOriginalPrice > currentPrice ? 
         Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100) : 0;
     
+    // Create size dropdown options
+    let sizeDropdownOptions = '';
+    if (product.sizes) {
+        Object.keys(product.sizes).forEach(size => {
+            const selected = size === defaultSize ? 'selected' : '';
+            sizeDropdownOptions += `<option value="${size}" ${selected}>${size}</option>`;
+        });
+    }
+    
     card.innerHTML = `
         <div class="product-image">
             <img src="${product.image}" alt="${product.name}" onclick="zoomImage('${product.image}', '${product.name}')" style="cursor: zoom-in;">
@@ -538,22 +547,19 @@ function createProductCard(product) {
             <h3 class="product-name">${product.name}</h3>
             <div class="product-rating">
                 <span class="stock-status">In Stock</span>
+                ${product.sizes ? `
+                <div class="size-dropdown-container">
+                    <select class="size-dropdown" data-product-id="${product.id}">
+                        ${sizeDropdownOptions}
+                    </select>
+                </div>
+                ` : ''}
             </div>
             ${product.specifications ? `
             <div class="product-specs">
                 <span class="spec-item">${product.specifications.style}</span>
                 <span class="spec-item">${product.specifications.gender}</span>
                 <span class="spec-item">${product.specifications.color}</span>
-            </div>
-            ` : ''}
-            ${product.sizes ? `
-            <div class="size-selection">
-                <label class="size-label">Size:</label>
-                <div class="size-options" data-product-id="${product.id}">
-                    ${Object.keys(product.sizes).map(size => 
-                        `<button class="size-btn ${size === defaultSize ? 'active' : ''}" data-size="${size}" data-product-id="${product.id}">${size}</button>`
-                    ).join('')}
-                </div>
             </div>
             ` : ''}
             <div class="product-price">
@@ -570,22 +576,15 @@ function createProductCard(product) {
         </div>
     `;
     
-    // Add event listeners for size buttons
-    const sizeButtons = card.querySelectorAll('.size-btn');
-    if (sizeButtons.length > 0) {
-        sizeButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const selectedSize = this.dataset.size;
-                
-                // Update active button
-                const sizeOptions = this.parentElement;
-                sizeOptions.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Update price
-                updateProductPriceInShop(product.id, selectedSize, card);
-            });
+    // Add event listener for size dropdown
+    const sizeDropdown = card.querySelector('.size-dropdown');
+    if (sizeDropdown) {
+        sizeDropdown.addEventListener('change', function() {
+            const selectedSize = this.value;
+            const productId = parseInt(this.dataset.productId);
+            
+            // Update price
+            updateProductPriceInShop(productId, selectedSize, card);
         });
     }
     
@@ -637,8 +636,8 @@ function updateProductPriceInShop(productId, selectedSize, cardElement) {
 
 function addToCartWithSize(productId) {
     const productCard = document.querySelector(`[data-product-id="${productId}"]`);
-    const activeButton = productCard ? productCard.querySelector('.size-btn.active') : null;
-    const selectedSize = activeButton ? activeButton.dataset.size : null;
+    const sizeDropdown = productCard ? productCard.querySelector('.size-dropdown') : null;
+    const selectedSize = sizeDropdown ? sizeDropdown.value : null;
     
     // Use the addToCart function from script.js with size parameter
     if (typeof addToCart === 'function') {
@@ -649,7 +648,7 @@ function addToCartWithSize(productId) {
         if (product && selectedSize) {
             const sizeData = product.sizes[selectedSize];
             if (sizeData) {
-                const message = `${product.name} (Size: ${selectedSize}) added to cart - රු${sizeData.price.toLocaleString()}`;
+                const message = `${product.name} (Size: ${selectedSize}) added to cart - Rs. ${sizeData.price.toLocaleString()}`;
                 if (typeof showNotification === 'function') {
                     showNotification(message, 'success');
                 }

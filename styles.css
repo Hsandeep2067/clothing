@@ -1678,34 +1678,146 @@ main {
     background: #0f1114;
     border: 2px solid #27FFFF;
 }
+
+/* Size dropdown container - positions dropdown on the right side of "in stock" */
+.size-dropdown-container {
+    margin-left: auto;
+}
+
+.size-dropdown {
+    padding: 4px 8px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-dropdown:hover {
+    border-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.size-dropdown:focus {
+    outline: none;
+    border-color: #27FFFF;
+    box-shadow: 0 0 0 2px rgba(39, 255, 255, 0.2);
+}
+
+/* Update product rating to flex layout to position "in stock" and dropdown */
+.product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .page-shop .filter-group h3 {
     color: #ffffff;
 }
-.page-shop .filter-option { color: #cfd3d7; }
-.page-shop .filter-option:hover { color: #27FFFF; }
-.page-shop .filter-option input[type="checkbox"] { accent-color: #27FFFF; }
-.page-shop .price-range input[type="range"] { background: #1f232b; }
-.page-shop .price-range input[type="range"]::-webkit-slider-thumb { background: #27FFFF; }
-.page-shop .price-inputs input { background: #0f1114; color: #ffffff; border-color: #27FFFF; }
-.page-shop .price-inputs span { color: #9aa0a6; }
-.page-shop .clear-filters-btn { background: #0f1114; color: #ffffff; border-color: #27FFFF; }
-.page-shop .clear-filters-btn:hover { background: #11151b; }
 
-.page-shop .products-header { border-bottom-color: #1f232b; }
-.page-shop .products-info h2 { color: #ffffff; }
-.page-shop .products-info p { color: #9aa0a6; }
-.page-shop .sort-controls label { color: #cfd3d7; }
-.page-shop .sort-controls select { background: #0f1114; color: #ffffff; border-color: #27FFFF; }
+.page-shop .filter-option { 
+    color: #cfd3d7; 
+}
 
-.page-shop .view-btn { background: #0f1114; color: #9aa0a6; border-color: #27FFFF; }
+.page-shop .filter-option:hover { 
+    color: #27FFFF; 
+}
+
+.page-shop .filter-option input[type="checkbox"] { 
+    accent-color: #27FFFF; 
+}
+
+.page-shop .price-range input[type="range"] { 
+    background: #1f232b; 
+}
+
+.page-shop .price-range input[type="range"]::-webkit-slider-thumb { 
+    background: #27FFFF; 
+}
+
+.page-shop .price-inputs input { 
+    background: #0f1114; 
+    color: #ffffff; 
+    border-color: #27FFFF; 
+}
+
+.page-shop .price-inputs span { 
+    color: #9aa0a6; 
+}
+
+.page-shop .clear-filters-btn { 
+    background: #0f1114; 
+    color: #ffffff; 
+    border-color: #27FFFF; 
+}
+
+.page-shop .clear-filters-btn:hover { 
+    background: #11151b; 
+}
+
+.page-shop .products-header { 
+    border-bottom-color: #1f232b; 
+}
+
+.page-shop .products-info h2 { 
+    color: #ffffff; 
+}
+
+.page-shop .products-info p { 
+    color: #9aa0a6; 
+}
+
+.page-shop .sort-controls label { 
+    color: #cfd3d7; 
+}
+
+.page-shop .sort-controls select { 
+    background: #0f1114; 
+    color: #ffffff; 
+    border-color: #27FFFF; 
+}
+
+.page-shop .view-btn { 
+    background: #0f1114; 
+    color: #9aa0a6; 
+    border-color: #27FFFF; 
+}
+
 .page-shop .view-btn:hover,
-.page-shop .view-btn.active { background: #27FFFF; color: #000000; border-color: #27FFFF; }
+.page-shop .view-btn.active { 
+    background: #27FFFF; 
+    color: #000000; 
+    border-color: #27FFFF; 
+}
 
-.page-shop .pagination-btn { background: #0f1114; color: #cfd3d7; border-color: #27FFFF; }
-.page-shop .pagination-btn:hover:not(:disabled) { background: #27FFFF; color: #000000; border-color: #27FFFF; }
-.page-shop .pagination-numbers button { background: #0f1114; color: #cfd3d7; border-color: #27FFFF; }
+.page-shop .pagination-btn { 
+    background: #0f1114; 
+    color: #cfd3d7; 
+    border-color: #27FFFF; 
+}
+
+.page-shop .pagination-btn:hover:not(:disabled) { 
+    background: #27FFFF; 
+    color: #000000; 
+    border-color: #27FFFF; 
+}
+
+.page-shop .pagination-numbers button { 
+    background: #0f1114; 
+    color: #cfd3d7; 
+    border-color: #27FFFF; 
+}
+
 .page-shop .pagination-numbers button:hover,
-.page-shop .pagination-numbers button.active { background: #27FFFF; color: #000000; border-color: #27FFFF; }
+.page-shop .pagination-numbers button.active { 
+    background: #27FFFF; 
+    color: #000000; 
+    border-color: #27FFFF; 
+}
 
 /* Responsive Design for Shop Page */
 @media (max-width: 1024px) {

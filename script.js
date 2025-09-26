@@ -4412,20 +4412,23 @@ function loadFeaturedProducts() {
         });
     });
     
-    // Add event listeners for size buttons
-    featuredProducts.querySelectorAll('.size-btn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
+    // Add event listeners for size dropdowns
+    featuredProducts.querySelectorAll('.size-dropdown').forEach(dropdown => {
+        dropdown.addEventListener('change', function() {
             const productId = parseInt(this.dataset.productId);
-            const selectedSize = this.dataset.size;
-            
-            // Update active button
-            const sizeOptions = this.parentElement;
-            sizeOptions.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
+            const selectedSize = this.value;
             
             // Update price
             updateProductPrice(productId, selectedSize);
+        });
+    });
+    
+    // Add event listeners for add to cart buttons
+    featuredProducts.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const productId = parseInt(this.dataset.productId);
+            addToCart(productId, 1, getSelectedSize(productId));
         });
     });
 }
@@ -4438,6 +4441,15 @@ function createProductCard(product) {
     const currentPrice = product.sizes ? product.sizes[defaultSize].price : product.price;
     const currentOriginalPrice = product.sizes ? product.sizes[defaultSize].originalPrice : product.originalPrice;
     const discount = Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100);
+    
+    // Create size dropdown options
+    let sizeDropdownOptions = '';
+    if (product.sizes) {
+        Object.keys(product.sizes).forEach(size => {
+            const selected = size === defaultSize ? 'selected' : '';
+            sizeDropdownOptions += `<option value="${size}" ${selected}>${size}</option>`;
+        });
+    }
     
     return `
         <div class="product-card" data-product-id="${product.id}">
@@ -4454,22 +4466,19 @@ function createProductCard(product) {
                 <h3 class="product-title">${product.name}</h3>
                 <div class="product-rating">
                     <span class="stock-status">In Stock</span>
+                    ${product.sizes ? `
+                    <div class="size-dropdown-container">
+                        <select class="size-dropdown" data-product-id="${product.id}">
+                            ${sizeDropdownOptions}
+                        </select>
+                    </div>
+                    ` : ''}
                 </div>
                 ${product.specifications ? `
                 <div class="product-specs">
                     <span class="spec-item">${product.specifications.style}</span>
                     <span class="spec-item">${product.specifications.gender}</span>
                     <span class="spec-item">${product.specifications.color}</span>
-                </div>
-                ` : ''}
-                ${product.sizes ? `
-                <div class="size-selection">
-                    <label class="size-label">Size:</label>
-                    <div class="size-options" data-product-id="${product.id}">
-                        ${Object.keys(product.sizes).map(size => 
-                            `<button class="size-btn ${size === defaultSize ? 'active' : ''}" data-size="${size}" data-product-id="${product.id}">${size}</button>`
-                        ).join('')}
-                    </div>
                 </div>
                 ` : ''}
                 <div class="product-price">
@@ -4486,8 +4495,9 @@ function createProductCard(product) {
 
 // Helper functions for size selection and pricing
 function getSelectedSize(productId) {
-    const activeButton = document.querySelector(`.size-btn.active[data-product-id="${productId}"]`);
-    return activeButton ? activeButton.dataset.size : 'M';
+    const productCard = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+    const sizeDropdown = productCard ? productCard.querySelector('.size-dropdown') : null;
+    return sizeDropdown ? sizeDropdown.value : 'M';
 }
 
 function updateProductPrice(productId, selectedSize) {

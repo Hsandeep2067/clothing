@@ -3905,7 +3905,38 @@ const newProducts = [
             "6XL": { price: 3200, originalPrice: 3790 }
         },
         defaultSize: "M"
-    }
+    },
+    {
+        id: 135,
+        name: "Superman - 2025",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/Superman - 2025.png",
+        rating: 4.9,
+        reviews: 85,
+        badge: "New",
+        description: "Popular Netflix series design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
     
 ];
 

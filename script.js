@@ -4,7 +4,7 @@ const products = [
     
     // Game Category Products
     {
-        id: 25,
+        id: 1,
         name: "APEX LEGENDS",
         category: "games",
         price: 2400,
@@ -35,7 +35,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 26,
+        id: 2,
         name: "CALL OF DUTY COLD WAR",
         category: "games",
         price: 2400,
@@ -66,7 +66,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 27,
+        id: 3,
         name: "FARCRY 3",
         category: "games",
         price: 2400,
@@ -97,7 +97,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 28,
+        id: 4,
         name: "FARCRY 4",
         category: "games",
         price: 2400,
@@ -128,7 +128,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 29,
+        id: 5,
         name: "FARCRY 5",
         category: "games",
         price: 2400,
@@ -159,7 +159,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 30,
+        id: 6,
         name: "FARCRY 6",
         category: "games",
         price: 2400,
@@ -190,7 +190,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 31,
+        id: 7,
         name: "FREEFIRE PLAYER",
         category: "games",
         price: 2400,
@@ -221,7 +221,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 32,
+        id: 8,
         name: "FREEFIRE",
         category: "games",
         price: 2400,
@@ -252,7 +252,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 33,
+        id: 9,
         name: "GTA VI",
         category: "games",
         price: 2400,
@@ -283,7 +283,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 34,
+        id: 10,
         name: "NFS MOST WANTED",
         category: "games",
         price: 2400,
@@ -314,7 +314,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 35,
+        id: 11,
         name: "PUBG",
         category: "games",
         price: 2400,
@@ -345,7 +345,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 36,
+        id: 12,
         name: "RED DEAD REDEMPTION 2",
         category: "games",
         price: 2400,
@@ -377,7 +377,7 @@ const products = [
     },
     // Film & TV Series Category Products
     {
-        id: 37,
+        id: 13,
         name: "KNIGHT RIDER",
         category: "filmtvseries",
         price: 2400,
@@ -408,7 +408,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 38,
+        id: 14,
         name: "SQUID GAME - 3 Red Mask Team",
         category: "filmtvseries",
         price: 2400,
@@ -439,7 +439,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 39,
+        id: 15,
         name: "SQUID GAME - Mask Man",
         category: "filmtvseries",
         price: 2400,
@@ -470,7 +470,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 40,
+        id: 16,
         name: "SQUID GAME - Red Mask Team",
         category: "filmtvseries",
         price: 2400,
@@ -502,7 +502,7 @@ const products = [
     },
     
     {
-        id: 41,
+        id: 17,
         name: "SQUID GAME",
         category: "filmtvseries",
         price: 2400,
@@ -534,7 +534,7 @@ const products = [
     },
     
     {
-        id: 43,
+        id: 18,
         name: "THE BOYS - The Seven",
         category: "filmtvseries",
         price: 2400,
@@ -565,7 +565,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 44,
+        id: 19,
         name: "THE PUNISHER - Frank",
         category: "filmtvseries",
         price: 2400,
@@ -596,7 +596,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 45,
+        id: 20,
         name: "THE PUNISHER",
         category: "filmtvseries",
         price: 2400,
@@ -627,7 +627,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 46,
+        id: 21,
         name: "THE BOYS - Vought",
         category: "filmtvseries",
         price: 2400,
@@ -658,7 +658,7 @@ const products = [
         defaultSize: "M"
     },
     {
-        id: 47,
+        id: 22,
         name: "THE BOYS - Season 01",
         category: "filmtvseries",
         price: 2400,
@@ -792,7 +792,7 @@ const newProducts = [
     // },
     // New Sports Products (WWE)
     {
-        id: 48,
+        id: 23,
         name: "AJ LEE - Love bites back",
         category: "sports",
         subcategory: "wwe",
@@ -824,7 +824,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 49,
+        id: 24,
         name: "AJ LEE - Spider web",
         category: "sports",
         subcategory: "wwe",
@@ -856,7 +856,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 50,
+        id: 25,
         name: "CM PUNK - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -888,7 +888,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 51,
+        id: 26,
         name: "CM PUNK - Hell Freeze Over",
         category: "sports",
         subcategory: "wwe",
@@ -920,7 +920,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 52,
+        id: 27,
         name: "CM PUNK - Collection",
         category: "sports",
         subcategory: "wwe",
@@ -952,7 +952,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 53,
+        id: 28,
         name: "CM PUNK - Best In the world",
         category: "sports",
         subcategory: "wwe",
@@ -984,7 +984,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 54,
+        id: 29,
         name: "CM PUNK - Cross Hands",
         category: "sports",
         subcategory: "wwe",
@@ -1016,7 +1016,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 55,
+        id: 30,
         name: "CM PUNK - Thunder Bolt",
         category: "sports",
         subcategory: "wwe",
@@ -1048,7 +1048,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 56,
+        id: 31,
         name: "JOHN CENA - 17 Time champion",
         category: "sports",
         subcategory: "wwe",
@@ -1080,7 +1080,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 57,
+        id: 32,
         name: "JOHN CENA - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1112,7 +1112,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 58,
+        id: 33,
         name: "JOHN CENA - Cenation",
         category: "sports",
         subcategory: "wwe",
@@ -1144,7 +1144,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 59,
+        id: 34,
         name: "JOHN CENA - One last time",
         category: "sports",
         subcategory: "wwe",
@@ -1176,7 +1176,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 60,
+        id: 35,
         name: "JOHN CENA - You cant see me",
         category: "sports",
         subcategory: "wwe",
@@ -1208,7 +1208,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 61,
+        id: 36,
         name: "JOHN CENA - You Cant See Me with Face",
         category: "sports",
         subcategory: "wwe",
@@ -1240,7 +1240,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 62,
+        id: 37,
         name: "JOHN CENA - Rise above hate",
         category: "sports",
         subcategory: "wwe",
@@ -1272,7 +1272,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 63,
+        id: 38,
         name: "JOHN CENA",
         category: "sports",
         subcategory: "wwe",
@@ -1304,7 +1304,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 64,
+        id: 39,
         name: "Jey USO - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1336,7 +1336,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 65,
+        id: 40,
         name: "Liv-Dom - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1368,7 +1368,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 66,
+        id: 41,
         name: "NWO",
         category: "sports",
         subcategory: "wwe",
@@ -1400,7 +1400,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 67,
+        id: 42,
         name: "ROMAN RIEGNS - Tribal Chief",
         category: "sports",
         subcategory: "wwe",
@@ -1432,7 +1432,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 68,
+        id: 43,
         name: "RANDY ORTON - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1464,7 +1464,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 69,
+        id: 44,
         name: "RANDY ORTON - RKO The Viper",
         category: "sports",
         subcategory: "wwe",
@@ -1496,7 +1496,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 70,
+        id: 45,
         name: "RANDY ORTON - RKO",
         category: "sports",
         subcategory: "wwe",
@@ -1528,7 +1528,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 71,
+        id: 46,
         name: "RANDY ORTON - The Viper",
         category: "sports",
         subcategory: "wwe",
@@ -1560,7 +1560,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 72,
+        id: 47,
         name: "RANDY ORTON COLLECTION",
         category: "sports",
         subcategory: "wwe",
@@ -1592,7 +1592,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 73,
+        id: 48,
         name: "DREW MCINTYRE  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1624,7 +1624,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 74,
+        id: 49,
         name: "GUNTHER  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1656,7 +1656,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 75,
+        id: 50,
         name: "LA KNIGHT  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1688,7 +1688,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 76,
+        id: 51,
         name: "ROMAN REIGNS  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1720,7 +1720,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 77,
+        id: 52,
         name: "TERROR TWINS  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1752,7 +1752,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 78,
+        id: 53,
         name: "THE ROCK - Final boss",
         category: "sports",
         subcategory: "wwe",
@@ -1784,7 +1784,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 79,
+        id: 54,
         name: "TIFFANY STRATTON  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1816,7 +1816,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 80,
+        id: 55,
         name: "WYATT SICKS  - 2K25 Edition",
         category: "sports",
         subcategory: "wwe",
@@ -1848,7 +1848,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 84,
+        id: 56,
         name: "BMW M 1000RR",
         category: "vehicles",
         subcategory: "bikes",
@@ -1880,7 +1880,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 85,
+        id: 57,
         name: "HONDA AX1",
         category: "vehicles",
         subcategory: "bikes",
@@ -1912,7 +1912,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 86,
+        id: 58,
         name: "Honda BAJA XR 250cc",
         category: "vehicles",
         subcategory: "bikes",
@@ -1944,7 +1944,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 87,
+        id: 59,
         name: "HONDA HORNET CB250",
         category: "vehicles",
         subcategory: "bikes",
@@ -1976,7 +1976,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 88,
+        id: 60,
         name: "HONDA HORNET CB600",
         category: "vehicles",
         subcategory: "bikes",
@@ -2008,7 +2008,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 89,
+        id: 61,
         name: "KAWASAKI KLX250D",
         category: "vehicles",
         subcategory: "bikes",
@@ -2040,7 +2040,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 90,
+        id: 62,
         name: "KAWASAKI NINJA H2",
         category: "vehicles",
         subcategory: "bikes",
@@ -2072,7 +2072,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 91,
+        id: 63,
         name: "SUZUKI DRZ400",
         category: "vehicles",
         subcategory: "bikes",
@@ -2104,7 +2104,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 92,
+        id: 64,
         name: "SUZUKI DJEBEL",
         category: "vehicles",
         subcategory: "bikes",
@@ -2136,7 +2136,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 93,
+        id: 65,
         name: "TVS NTORQ",
         category: "vehicles",
         subcategory: "bikes",
@@ -2168,7 +2168,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 94,
+        id: 66,
         name: "YAMAHA Mt15",
         category: "vehicles",
         subcategory: "bikes",
@@ -2200,7 +2200,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 95,
+        id: 67,
         name: "YAMAHA RX100",
         category: "vehicles",
         subcategory: "bikes",
@@ -2232,7 +2232,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 96,
+        id: 68,
         name: "YAMAHA YZF R1",
         category: "vehicles",
         subcategory: "bikes",
@@ -2264,7 +2264,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 97,
+        id: 69,
         name: "HARLEY DAVIDSON",
         category: "vehicles",
         subcategory: "bikes",
@@ -2296,7 +2296,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 98,
+        id: 70,
         name: "BTS TEAM",
         category: "music",
         price: 2400,
@@ -2327,7 +2327,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 99,
+        id: 71,
         name: "BLACKPINK - Heart with Logo",
         category: "music",
         price: 2400,
@@ -3233,7 +3233,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 114,
+        id: 86,
         name: "LAKERS - King James",
         category: "sports",
         subcategory: "sporty",
@@ -3267,7 +3267,7 @@ const newProducts = [
     
     // Car Category Products
     {
-        id: 115,
+        id: 87,
         name: "AUDI - R8",
         category: "vehicles",
         subcategory: "cars",
@@ -3299,7 +3299,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 116,
+        id: 88,
         name: "AYRTON SENNA GRAND PRIX",
         category: "vehicles",
         subcategory: "cars",
@@ -3331,7 +3331,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 117,
+        id: 89,
         name: "AYRTON SENNA MP4-4 1988",
         category: "vehicles",
         subcategory: "cars",
@@ -3363,7 +3363,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 118,
+        id: 90,
         name: "AYRTON SENNA MP4-4",
         category: "vehicles",
         subcategory: "cars",
@@ -3395,7 +3395,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 119,
+        id: 91,
         name: "BYD - Seal",
         category: "vehicles",
         subcategory: "cars",
@@ -3427,7 +3427,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 120,
+        id: 92,
         name: "DODGE - Ram 3500",
         category: "vehicles",
         subcategory: "cars",
@@ -3459,7 +3459,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 121,
+        id: 93,
         name: "DODGE - SRT Demon",
         category: "vehicles",
         subcategory: "cars",
@@ -3491,7 +3491,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 122,
+        id: 94,
         name: "FERRARI - F8",
         category: "vehicles",
         subcategory: "cars",
@@ -3523,7 +3523,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 123,
+        id: 95,
         name: "FORD - GT 2017",
         category: "vehicles",
         subcategory: "cars",
@@ -3555,7 +3555,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 124,
+        id: 96,
         name: "FORD - Mustang",
         category: "vehicles",
         subcategory: "cars",
@@ -3587,7 +3587,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 125,
+        id: 97,
         name: "FORD - F 150",
         category: "vehicles",
         subcategory: "cars",
@@ -3619,7 +3619,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 126,
+        id: 98,
         name: "HONDA - Type R",
         category: "vehicles",
         subcategory: "cars",
@@ -3651,7 +3651,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 127,
+        id: 99,
         name: "LEWIS HAMILTON - Ferrari Scuderia",
         category: "vehicles",
         subcategory: "cars",
@@ -3683,7 +3683,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 128,
+        id: 100,
         name: "MCLAREN - P1",
         category: "vehicles",
         subcategory: "cars",
@@ -3715,7 +3715,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 129,
+        id: 101,
         name: "MERCEDES BENZ - C63",
         category: "vehicles",
         subcategory: "cars",
@@ -3747,7 +3747,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 130,
+        id: 102,
         name: "NISSAN - GTR Nismo",
         category: "vehicles",
         subcategory: "cars",
@@ -3779,7 +3779,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 131,
+        id: 103,
         name: "NISSAN - NV350",
         category: "vehicles",
         subcategory: "cars",
@@ -3811,7 +3811,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 132,
+        id: 104,
         name: "PAGANI - ZONDA C1",
         category: "vehicles",
         subcategory: "cars",
@@ -3843,7 +3843,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 133,
+        id: 105,
         name: "TOYOTA - KDH",
         category: "vehicles",
         subcategory: "cars",
@@ -3875,7 +3875,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 134,
+        id: 106,
         name: "TOYOTA - Supra MK4",
         category: "vehicles",
         subcategory: "cars",
@@ -3907,7 +3907,7 @@ const newProducts = [
         defaultSize: "M"
     },
     {
-        id: 135,
+        id: 107,
         name: "SUPERMAN - 2025",
         category: "filmtvseries",
         price: 2400,

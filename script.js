@@ -3937,6 +3937,224 @@ const newProducts = [
         },
         defaultSize: "M"
     },
+    // Marvel Zombie Collection
+    {
+        id: 115,
+        name: "MARVEL ZOMBIE - Poster 1",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/MARVEL ZOMBIE - Poster 1.png",
+        rating: 4.8,
+        reviews: 78,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 116,
+        name: "MARVEL ZOMBIE - Poster 2",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/MARVEL ZOMBIE - Poster 2.png",
+        rating: 4.7,
+        reviews: 75,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 117,
+        name: "MARVEL ZOMBIE - Best Moment Collection",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/MARVEL ZOMBIE- Best Moment Collection.png",
+        rating: 4.9,
+        reviews: 82,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 118,
+        name: "MARVEL ZOMBIES - Captain America Thanos Namor",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/MARVEL ZOMBIES - Captain America Thanos Namor.png",
+        rating: 4.8,
+        reviews: 80,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 119,
+        name: "ZOMBIE MARVEL - Moon Knight Blade Suit up",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/ZOMBIE MARVEL - Moon Knight Blade Suit up.png",
+        rating: 4.7,
+        reviews: 76,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 120,
+        name: "ZOMBIE MARVEL - Moon Knight Blade",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/ZOMBIE MARVEL - Moon Knight Blade.png",
+        rating: 4.8,
+        reviews: 79,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    },
+    {
+        id: 121,
+        name: "ZOMBIE MARVEL - Wanda",
+        category: "filmtvseries",
+        price: 2400,
+        originalPrice: 2990,
+        image: "images/film & tvseries/ZOMBIE MARVEL - Wanda.png",
+        rating: 4.9,
+        reviews: 83,
+        badge: "New",
+        description: "Marvel Zombies collection design",
+        specifications: {
+            style: "Regular",
+            gender: "Unisex",
+            color: "Black",
+            fabric: "220 GSM, Single Jersey"
+        },
+        sizes: {
+            "XS": { price: 2400, originalPrice: 2990 },
+            "S": { price: 2400, originalPrice: 2990 },
+            "M": { price: 2400, originalPrice: 2990 },
+            "L": { price: 2700, originalPrice: 3290 },
+            "XL": { price: 2700, originalPrice: 3290 },
+            "2XL": { price: 2700, originalPrice: 3290 },
+            "3XL": { price: 2700, originalPrice: 3290 },
+            "4XL": { price: 3200, originalPrice: 3790 },
+            "5XL": { price: 3200, originalPrice: 3790 },
+            "6XL": { price: 3200, originalPrice: 3790 }
+        },
+        defaultSize: "M"
+    }
     
 ];
 

@@ -2638,15 +2638,15 @@ const newProducts = [
     },
     {
         id: 109,
-        name: "METALLICA - Skull Head Explosion",
+        name: "METALLICA - SKULL EXPLOSION",
         category: "music",
         price: 2400,
         originalPrice: 2990,
-        image: "images/music/Metallica - Skull Head Explosion.png",
+        image: "images/music/Metallica - Skull Explosion.png",
         rating: 4.9,
         reviews: 85,
         badge: "New",
-        description: "Heavy metal band Metallica skull head explosion design",
+        description: "Heavy metal band Metallica skull explosion design",
         specifications: {
             style: "Regular",
             gender: "Unisex",
@@ -2669,7 +2669,7 @@ const newProducts = [
     },
     {
         id: 110,
-        name: "METALLICA - Skull Head XXX",
+        name: "METALLICA - SKULL XXX",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2677,7 +2677,7 @@ const newProducts = [
         rating: 4.7,
         reviews: 71,
         badge: "New",
-        description: "Heavy metal band Metallica skull head XXX design",
+        description: "Heavy metal band Metallica skull XXX design",
         specifications: {
             style: "Regular",
             gender: "Unisex",
@@ -2700,7 +2700,7 @@ const newProducts = [
     },
     {
         id: 111,
-        name: "SLIPKNOT - All Hope Is Gone",
+        name: "SLIPKNOT - ALL HOPE IS GONE",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2731,7 +2731,7 @@ const newProducts = [
     },
     {
         id: 112,
-        name: "SYSTEM OF A DOWN - Bandmates",
+        name: "SYSTEM OF A DOWN - BANDMATES",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2762,7 +2762,7 @@ const newProducts = [
     },
     {
         id: 113,
-        name: "AVENGED SEVENFOLD - Blue Cyborg Skull",
+        name: "AVENGED SEVENFOLD - BLUE CYBORG SKULL",
         category: "music",
         price: 2400,
         originalPrice: 2990,

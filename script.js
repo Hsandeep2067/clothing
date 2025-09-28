@@ -409,7 +409,7 @@ const products = [
     },
     {
         id: 14,
-        name: "SQUID GAME - 3 Red Mask Team",
+        name: "SQUID GAME - 3 RED MASK TEAM",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -440,7 +440,7 @@ const products = [
     },
     {
         id: 15,
-        name: "SQUID GAME - Mask Man",
+        name: "SQUID GAME - MASK MAN",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -471,7 +471,7 @@ const products = [
     },
     {
         id: 16,
-        name: "SQUID GAME - Red Mask Team",
+        name: "SQUID GAME - RED MASK TEAM",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -535,7 +535,7 @@ const products = [
     
     {
         id: 18,
-        name: "THE BOYS - The Seven",
+        name: "THE BOYS - THE SEVEN",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -566,7 +566,7 @@ const products = [
     },
     {
         id: 19,
-        name: "THE PUNISHER - Frank",
+        name: "THE PUNISHER - FRANK",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -628,7 +628,7 @@ const products = [
     },
     {
         id: 21,
-        name: "THE BOYS - Vought",
+        name: "THE BOYS - VOUGHT",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -659,7 +659,7 @@ const products = [
     },
     {
         id: 22,
-        name: "THE BOYS - Season 01",
+        name: "THE BOYS - SEASON 01",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -793,7 +793,7 @@ const newProducts = [
     // New Sports Products (WWE)
     {
         id: 23,
-        name: "AJ LEE - Love bites back",
+        name: "AJ LEE - LOVE BITES BACK",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -825,7 +825,7 @@ const newProducts = [
     },
     {
         id: 24,
-        name: "AJ LEE - Spider web",
+        name: "AJ LEE - SPIDER WEB",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -857,7 +857,7 @@ const newProducts = [
     },
     {
         id: 25,
-        name: "CM PUNK - 2K25 Edition",
+        name: "CM PUNK - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -889,7 +889,7 @@ const newProducts = [
     },
     {
         id: 26,
-        name: "CM PUNK - Hell Freeze Over",
+        name: "CM PUNK - HELL FREEZE OVER",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -921,7 +921,7 @@ const newProducts = [
     },
     {
         id: 27,
-        name: "CM PUNK - Collection",
+        name: "CM PUNK - COLLECTION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -953,7 +953,7 @@ const newProducts = [
     },
     {
         id: 28,
-        name: "CM PUNK - Best In the world",
+        name: "CM PUNK - BEST IN THE WORLD",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -985,7 +985,7 @@ const newProducts = [
     },
     {
         id: 29,
-        name: "CM PUNK - Cross Hands",
+        name: "CM PUNK - CROSS HANDS",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1017,7 +1017,7 @@ const newProducts = [
     },
     {
         id: 30,
-        name: "CM PUNK - Thunder Bolt",
+        name: "CM PUNK - THUNDER BOLT",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1049,7 +1049,7 @@ const newProducts = [
     },
     {
         id: 31,
-        name: "JOHN CENA - 17 Time champion",
+        name: "JOHN CENA - 17 TIME CHAMPION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1081,7 +1081,7 @@ const newProducts = [
     },
     {
         id: 32,
-        name: "JOHN CENA - 2K25 Edition",
+        name: "JOHN CENA - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1113,7 +1113,7 @@ const newProducts = [
     },
     {
         id: 33,
-        name: "JOHN CENA - Cenation",
+        name: "JOHN CENA - CENATION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1145,7 +1145,7 @@ const newProducts = [
     },
     {
         id: 34,
-        name: "JOHN CENA - One last time",
+        name: "JOHN CENA - ONE LAST TIME",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1177,7 +1177,7 @@ const newProducts = [
     },
     {
         id: 35,
-        name: "JOHN CENA - You cant see me",
+        name: "JOHN CENA - YOU CANT SEE ME",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1209,7 +1209,7 @@ const newProducts = [
     },
     {
         id: 36,
-        name: "JOHN CENA - You Cant See Me with Face",
+        name: "JOHN CENA - YOU CANT SEE ME WITH FACE",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1241,7 +1241,7 @@ const newProducts = [
     },
     {
         id: 37,
-        name: "JOHN CENA - Rise above hate",
+        name: "JOHN CENA - RISE ABOVE HATE",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1305,7 +1305,7 @@ const newProducts = [
     },
     {
         id: 39,
-        name: "Jey USO - 2K25 Edition",
+        name: "Jey USO - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1337,7 +1337,7 @@ const newProducts = [
     },
     {
         id: 40,
-        name: "Liv-Dom - 2K25 Edition",
+        name: "Liv-Dom - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1401,7 +1401,7 @@ const newProducts = [
     },
     {
         id: 42,
-        name: "ROMAN RIEGNS - Tribal Chief",
+        name: "ROMAN RIEGNS - TRIBAL CHIEF",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1433,7 +1433,7 @@ const newProducts = [
     },
     {
         id: 43,
-        name: "RANDY ORTON - 2K25 Edition",
+        name: "RANDY ORTON - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1465,7 +1465,7 @@ const newProducts = [
     },
     {
         id: 44,
-        name: "RANDY ORTON - RKO The Viper",
+        name: "RANDY ORTON - RKO THE VIPER",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1529,7 +1529,7 @@ const newProducts = [
     },
     {
         id: 46,
-        name: "RANDY ORTON - The Viper",
+        name: "RANDY ORTON - THE VIPER",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1593,7 +1593,7 @@ const newProducts = [
     },
     {
         id: 48,
-        name: "DREW MCINTYRE  - 2K25 Edition",
+        name: "DREW MCINTYRE  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1625,7 +1625,7 @@ const newProducts = [
     },
     {
         id: 49,
-        name: "GUNTHER  - 2K25 Edition",
+        name: "GUNTHER  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1657,7 +1657,7 @@ const newProducts = [
     },
     {
         id: 50,
-        name: "LA KNIGHT  - 2K25 Edition",
+        name: "LA KNIGHT  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1689,7 +1689,7 @@ const newProducts = [
     },
     {
         id: 51,
-        name: "ROMAN REIGNS  - 2K25 Edition",
+        name: "ROMAN REIGNS  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1721,7 +1721,7 @@ const newProducts = [
     },
     {
         id: 52,
-        name: "TERROR TWINS  - 2K25 Edition",
+        name: "TERROR TWINS  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1753,7 +1753,7 @@ const newProducts = [
     },
     {
         id: 53,
-        name: "THE ROCK - Final boss",
+        name: "THE ROCK - FINAL BOSS",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1785,7 +1785,7 @@ const newProducts = [
     },
     {
         id: 54,
-        name: "TIFFANY STRATTON  - 2K25 Edition",
+        name: "TIFFANY STRATTON  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -1817,7 +1817,7 @@ const newProducts = [
     },
     {
         id: 55,
-        name: "WYATT SICKS  - 2K25 Edition",
+        name: "WYATT SICKS  - 2K25 EDITION",
         category: "sports",
         subcategory: "wwe",
         price: 2400,
@@ -2328,7 +2328,7 @@ const newProducts = [
     },
     {
         id: 71,
-        name: "BLACKPINK - Heart with Logo",
+        name: "BLACKPINK - HEART WITH LOGO",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2359,7 +2359,7 @@ const newProducts = [
     },
     {
         id: 100,
-        name: "BLACKPINK - Illustration",
+        name: "BLACKPINK - ILLUSTRATION",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2390,7 +2390,7 @@ const newProducts = [
     },
     {
         id: 101,
-        name: "BTS - Flowers with Logo",
+        name: "BTS - FLOWERS WITH LOGO",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2421,7 +2421,7 @@ const newProducts = [
     },
     {
         id: 102,
-        name: "GUNS N' ROSES - Two Guns Logo",
+        name: "GUNS N' ROSES - TWO GUNS LOGO",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2452,7 +2452,7 @@ const newProducts = [
     },
     {
         id: 103,
-        name: "IRON MAIDEN - Zombie Rider",
+        name: "IRON MAIDEN - ZOMBIE RIDER",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2514,7 +2514,7 @@ const newProducts = [
     },
     {
         id: 105,
-        name: "LAMB OF GOD - Skeleton Bird",
+        name: "LAMB OF GOD - SKELETON BIRD",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2545,7 +2545,7 @@ const newProducts = [
     },
     {
         id: 106,
-        name: "LINKIN PARK - Hybrid Theory Album",
+        name: "LINKIN PARK - HYBRID THEORY ALBUM",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2576,7 +2576,7 @@ const newProducts = [
     },
     {
         id: 107,
-        name: "METALLICA - Red Skull Heart",
+        name: "METALLICA - RED SKULL HEART",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -2607,7 +2607,7 @@ const newProducts = [
     },
     {
         id: 108,
-        name: "METALLICA - Skull Butterfly",
+        name: "METALLICA - SKULL BUTTERFLY",
         category: "music",
         price: 2400,
         originalPrice: 2990,
@@ -3138,7 +3138,7 @@ const newProducts = [
     // Sporty Category Products
     {
         id: 111,
-        name: "CHICAGO BULLS - Jordan",
+        name: "CHICAGO BULLS - JORDAN",
         category: "sports",
         subcategory: "sporty",
         price: 2400,
@@ -3202,7 +3202,7 @@ const newProducts = [
     },
     {
         id: 113,
-        name: "LAKERS - Cobe",
+        name: "LAKERS - COBE",
         category: "sports",
         subcategory: "sporty",
         price: 2400,
@@ -3234,7 +3234,7 @@ const newProducts = [
     },
     {
         id: 86,
-        name: "LAKERS - King James",
+        name: "LAKERS - KING JAMES",
         category: "sports",
         subcategory: "sporty",
         price: 2400,
@@ -3396,7 +3396,7 @@ const newProducts = [
     },
     {
         id: 91,
-        name: "BYD - Seal",
+        name: "BYD - SEAL",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3460,7 +3460,7 @@ const newProducts = [
     },
     {
         id: 93,
-        name: "DODGE - SRT Demon",
+        name: "DODGE - SRT DEMON",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3556,7 +3556,7 @@ const newProducts = [
     },
     {
         id: 96,
-        name: "FORD - Mustang",
+        name: "FORD - MUSTANG",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3620,7 +3620,7 @@ const newProducts = [
     },
     {
         id: 98,
-        name: "HONDA - Type R",
+        name: "HONDA - TYPE R",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3652,7 +3652,7 @@ const newProducts = [
     },
     {
         id: 99,
-        name: "LEWIS HAMILTON - Ferrari Scuderia",
+        name: "LEWIS HAMILTON - FERRARI SCUDERIA",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3748,7 +3748,7 @@ const newProducts = [
     },
     {
         id: 102,
-        name: "NISSAN - GTR Nismo",
+        name: "NISSAN - GTR NISMO",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3876,7 +3876,7 @@ const newProducts = [
     },
     {
         id: 106,
-        name: "TOYOTA - Supra MK4",
+        name: "TOYOTA - SUPRA MK4",
         category: "vehicles",
         subcategory: "cars",
         price: 2400,
@@ -3940,7 +3940,7 @@ const newProducts = [
     // Marvel Zombie Collection
     {
         id: 115,
-        name: "MARVEL ZOMBIE - Poster 1",
+        name: "MARVEL ZOMBIE - POSTER 1",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -3971,7 +3971,7 @@ const newProducts = [
     },
     {
         id: 116,
-        name: "MARVEL ZOMBIE - Poster 2",
+        name: "MARVEL ZOMBIE - POSTER 2",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -4002,7 +4002,7 @@ const newProducts = [
     },
     {
         id: 117,
-        name: "MARVEL ZOMBIE - Best Moment Collection",
+        name: "MARVEL ZOMBIE - BEST MOMENT COLLECTION",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -4033,7 +4033,7 @@ const newProducts = [
     },
     {
         id: 118,
-        name: "MARVEL ZOMBIES - Captain America Thanos Namor",
+        name: "MARVEL ZOMBIES - CAPTAIN AMERICA THANOS NAMOR",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -4064,7 +4064,7 @@ const newProducts = [
     },
     {
         id: 119,
-        name: "ZOMBIE MARVEL - Moon Knight Blade Suit up",
+        name: "ZOMBIE MARVEL - MOON KNIGHT BLADE SUIT UP",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -4095,7 +4095,7 @@ const newProducts = [
     },
     {
         id: 120,
-        name: "ZOMBIE MARVEL - Moon Knight Blade",
+        name: "ZOMBIE MARVEL - MOON KNIGHT BLADE",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
@@ -4126,7 +4126,7 @@ const newProducts = [
     },
     {
         id: 121,
-        name: "ZOMBIE MARVEL - Wanda",
+        name: "ZOMBIE MARVEL - WANDA",
         category: "filmtvseries",
         price: 2400,
         originalPrice: 2990,
